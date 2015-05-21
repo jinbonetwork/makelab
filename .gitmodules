@@ -1,0 +1,3 @@
+[submodule "jframework"]
+	path = jframework
+	url = https://github.com/jinbonetwork/jframework.git

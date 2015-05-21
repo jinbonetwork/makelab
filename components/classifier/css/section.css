@@ -1,0 +1,24 @@
+.ml-classify-section {
+	display: inline-block;
+	height: 100%;
+	padding: 0 10px 0 7px;
+	color: #AAAAAA;
+	text-decoration: none;
+}
+.ml-classify-section:hover {
+	color: #222222;
+}
+.ml-classify-section:before {
+	font: 400 20px/40px dashicons;
+	content: '\f108';
+}
+.ml-classify-section span {
+	display: none;
+}
+.ttfmake-section-open .ml-classify-section {
+	color: #BBBBBB;
+}
+.ttfmake-section-open .ml-classify-section:hover {
+	color: #FFFFFF;
+}
+
