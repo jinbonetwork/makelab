@@ -1,4 +1,18 @@
 <?php
+
+function ml_get_post_meta_json($id,$key){
+	$meta = get_post_meta($id,$key,true);
+	//return json_decode($meta);
+	return json_decode(base64_decode($meta));
+}
+
+function ml_update_post_meta_json($id,$key,$value){
+	//$meta = json_encode($value);
+	$meta = base64_encode(json_encode($value));
+	return update_post_meta($id,$key,$meta);
+}
+
+
 if(!class_exists('ML_App')):
 class ML_App {
 	var $version = '0.9';
@@ -31,6 +45,7 @@ class ML_App {
 		load_plugin_textdomain('makelab',null,$this->root_dir.'/languages/');
 		add_action('after_setup_theme',array($this,'load_shared_functions'));
 		add_action('after_setup_theme',array($this,'load_components'));
+		add_action('admin_enqueue_scripts',array($this,'print_data'));
 	}
 	public function load_shared_functions(){
 		$file = $this->root_dir.'/resources.php';
@@ -56,6 +71,16 @@ class ML_App {
 				}
 			}
 		}
+	}
+	public function print_data($hook_suffix){
+		if(!in_array($hook_suffix,array('post.php','post-new.php'))||'page'!==get_post_type()){
+			return;
+		}
+		echo <<<DATA
+			<script>
+				var ml = {};
+			</script>
+DATA;
 	}
 }
 endif;

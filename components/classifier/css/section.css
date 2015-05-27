@@ -1,5 +1,7 @@
+/* Button */
 .ml-classify-section {
 	display: inline-block;
+	display: none;
 	height: 100%;
 	padding: 0 10px 0 7px;
 	color: #AAAAAA;
@@ -9,6 +11,7 @@
 	color: #222222;
 }
 .ml-classify-section:before {
+	min-width: 20px;
 	font: 400 20px/40px dashicons;
 	content: '\f108';
 }
@@ -16,9 +19,20 @@
 	display: none;
 }
 .ttfmake-section-open .ml-classify-section {
+	display: inline-block;
 	color: #BBBBBB;
 }
 .ttfmake-section-open .ml-classify-section:hover {
 	color: #FFFFFF;
+}
+
+.ml-spinner.ml-classify-section:before,
+.ttfmake-section-open .ml-spinner.ml-classify-section:before {
+}
+.ml-spinner.ml-classify-section:before {
+	content: url(images/spinner-close.gif);
+}
+.ttfmake-section-open .ml-spinner.ml-classify-section:before {
+	content: url(images/spinner-open.gif);
 }
 

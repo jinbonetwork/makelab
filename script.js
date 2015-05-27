@@ -1,3 +1,44 @@
+jQuery(document).ready(function(e){
+	var $containers = jQuery('[data-wow-item-delay-step]');
+	if($containers.length){
+		$containers.each(function(index){
+			var $container = jQuery(this);
+			var $items = $container.find('.builder-gallery-item,.builder-text-column');
+			var classes = $container.attr('class').replace(/ builder\-[^ ]+/g,"");
+			var delay = $container.attr('data-wow-delay');
+			var item_delay_step = parseInt($container.attr('data-wow-item-delay-step').replace("s","000"));
+			var data;
+
+			delay = delay || 0;
+			delay = parseInt(delay) || 0;
+
+			for(var name in $container.data()){
+				if(name.search(/^wow/)){
+					newName = 'data-'+name.replace(/([A-Z])/g,"-$1").toLowerCase();
+					data[newName] = $container.attr(name);
+				}	
+			}
+
+			$items.each(function(index){
+				var $item = jQuery(this);
+				$item.addClass(classes);
+				for(var name in data){
+					$item.attr(name,data[name]);
+				}
+				$item.attr('data-wow-delay',delay+(item_delay_step*index))
+				if(index==$items.length-1){
+					jQuery.removeData($container.removeClass(classes));
+					new WOW().init();
+				}
+			});
+		});
+	}else{
+		new WOW().init();
+	}
+});
+
+
+/*
 var makelab = {
 	window: jQuery(window),
 	document: jQuery(document),
@@ -41,7 +82,6 @@ makelab.resetTimeout = function(callback,timeout){
 };
 
 makelab.resize = function(){
-	alert('resize');
 };
 
 makelab.scroll = function(){
@@ -70,4 +110,4 @@ jQuery(document).ready(function(e){
 		}
 	});
 });
-
+*/
