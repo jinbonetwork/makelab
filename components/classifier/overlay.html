@@ -12,17 +12,27 @@
 	<form>
 
 		<div id="ml-overlay-input-class" class="ml-overlay-input ttfmake-configuration-overlay-input-wrap">
-			<label for="classes" class="ml-overlay-input-label">%label_input_classes%</label>
+			<label for="ml-overlay-input-control-classifier-classes" class="ml-overlay-input-label">%label_input_classes%</label>
 			<div class="ml-overlay-input-control">
-				<input type="text" id="classes" class="ml-overlay-input-control-input" name="classes" value="{{ml_classifier_classes}}">
+				<input type="text" id="ml-overlay-input-control-classifier-classes" class="ml-overlay-input-control-input" name="classes" value="{{ml_classifier_classes}}">
 			</div>
 		</div><!--/.ml-overlay-input-->
 
 		<div id="ml-overlay-input-attributes" class="ml-overlay-input ml-overlay-input-block ttfmake-configuration-overlay-input-wrap">
-			<label for="" class="ml-overlay-input-label">%label_input_attributes%</label>
-			<div class="ml-overlay-input-control ml-overlay-input-control-editor">
-				<div id="ml-overlay-input-control-editor-placeholder-classifier" class="ml-overlay-input-control-editor-placeholder">{{ml_classifier_attributes}}</div>
+			<label for="ml-overlay-input-control-classifier-attributes" class="ml-overlay-input-label">%label_input_attributes%</label>
+			<div class="ml-overlay-input-control ml-overlay-input-control-editor-container">
+				<div id="ml-overlay-input-control-classifier-attributes" class="ml-overlay-input-control-editor">{{ml_classifier_attributes}}</div>
 			</div>
+		</div><!--/.ml-overlay-input-->
+
+		<div id="ml-overlay-input-data" class="ml-overlay-input ml-overlay-input-block ttfmake-configuration-overlay-input-wrap">
+			<label for="ml-overlay-input-control-classifier-data" class="ml-overlay-input-label">%label_input_data%</label>
+			<div class="ml-overlay-input-control ml-overlay-input-control-editor-container">
+				<div id="ml-overlay-input-control-classifier-data" class="ml-overlay-input-control-editor">{{ml_classifier_data}}</div>
+			</div>
+		</div><!--/.ml-overlay-input-->
+
+		<div id="ml-overlay-input-help" class="ml-overlay-input ml-overlay-input-help ttfmake-configuration-overlay-input-wrap">
 			<ul>
 				<li><a href="http://mynameismatthieu.com/WOW/">WOW.js</a></li>
 				<li><a href="http://daneden.github.io/animate.css/">animate.css</a></li>
