@@ -42,9 +42,10 @@ class ML_App {
 			'ml',
 		);
 		$this->deps_frontend = array(
+			'jquery',
+			'make',
 			'wow.js',
 			'skrollr',
-			'jquery',
 			'jframework',
 			'maniprop.js',
 			'lazydo.js',
@@ -172,6 +173,10 @@ class ML_App {
 		// admin
 		wp_register_style('makelab-admin',"{$url_base}/css/admin.css",$this->deps_backend,$this->version);
 		wp_register_script('makelab-admin',"{$url_base}/js/admin.js",array_merge(array('ttfmake-builder/js/views/section.js'),$this->deps_backend),$this->version,true);
+
+		// parent theme
+		wp_register_style('make',"{$url_base}/css/make.css",array(),$this->version);
+		wp_register_script('make',"{$url_base}/js/dummy.js",array(),$this->version);
 
 		// frontend
 		wp_register_style('makelab',"{$url_base}/css/style.css",$this->deps_frontend,$this->version);
