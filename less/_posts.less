@@ -1,0 +1,287 @@
+/*---------------------------------------------------------
+ 6. Posts (_posts.scss)
+-------------------------------------------------------- */
+.entry-header {
+	margin-bottom: @makelab-grid-base-width;
+	.entry-thumbnail {
+		line-height: 1; //reset
+		text-align: center;
+		margin-bottom: (@makelab-grid-base-width / 2);
+		&.post-header {
+			margin-right: 0; //reset
+		}
+	}
+}
+.entry-thumbnail-caption {
+	text-align: left; //reset
+	margin-top: (@makelab-grid-base-width / 4);
+}
+.entry-title {
+	font-weight: bold;
+	margin-top: (@makelab-grid-base-width / 4);
+	word-spacing: -1px;
+}
+.entry-date {
+	display: block;
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-bottom: (@makelab-grid-base-width / 2);
+	.entry-header & {
+		line-height: 40px;
+	}
+	.entry-footer & {
+		display: inline-block;
+		float: none; //reset
+		text-transform: none; //reset
+		letter-spacing: 0; //reset
+		font-size: 14px;
+		margin-bottom: @makelab-grid-base-width;
+	}
+	a {
+		color: @makelab-color-text;
+		text-decoration: none; //reset
+	}
+}
+.entry-author {
+	float: left;
+	clear: both;
+	margin: @makelab-grid-base-width 0 @makelab-grid-base-width;
+	.entry-header & {
+		display: inline-block;
+		margin-top: 0; //reset
+		margin-bottom: 0; //reset
+		.entry-author-byline {
+			display: inline-block;
+			margin-right: 8px;
+		}
+	}
+	.entry-footer & {
+		display: block;
+		float: none; //reset
+		margin: (@makelab-grid-base-width * 2) 0 @makelab-grid-base-width;
+	}
+}
+.entry-content {
+	clear: both;
+	&:extend(.clear);
+}
+.entry-author-bio {
+	margin-top: (@makelab-grid-base-width / 2);
+	font-size: 13px;
+}
+.entry-author-byline {
+	font-style: italic;
+	line-height: 40px;
+	font-size: 15px;
+	a.vcard {
+		color: @makelab-color-primary;
+		font-weight: bold;
+		font-style: normal; //reset
+	}
+}
+.entry-comment-count {
+	margin-bottom: (@makelab-grid-base-width / 2);
+	.entry-header & {
+		float: right;
+		clear: both;
+		line-height: 40px;
+	}
+	.entry-footer & {
+		margin-bottom: @makelab-grid-base-width;
+	}
+}
+.entry-comment-count a,
+.comment-count-icon a {
+	color: @makelab-color-detail;
+	font-weight: normal; //reset
+	font-size: 14px;
+	&:hover {
+		color: @makelab-color-primary;
+	}
+}
+.comment-count-icon:before {
+	position: relative;
+	content: "\f075";
+	float: left;
+	font-family: FontAwesome;
+	color: @makelab-color-detail;
+	top: 1px;
+	padding-right: 8px;
+	.entry-footer & {
+		top: 0; //reset
+	}
+}
+.entry-author-avatar {
+	float: left;
+	line-height: 0; //reset
+	padding-right: (@makelab-grid-gutter-width / 4);
+	img {
+		width: 40px;
+		.border-radius(50%);
+	}
+}
+.entry-footer {
+	font-size: 14px;
+	a {
+		color: @makelab-color-detail;
+		font-weight: 400; //reset
+		&:hover {
+			color: @makelab-color-primary;
+		}
+	}
+	.fa {
+		position: relative;
+		float: left;
+		color: @makelab-color-detail;
+		top: 4px;
+		padding-right: (@makelab-grid-gutter-width / 4);
+	}
+}
+.post {
+	border-bottom: 1px solid @makelab-color-secondary;
+	padding-bottom: @makelab-grid-base-width;
+	margin: (@makelab-grid-base-width * 3) 0 (@makelab-grid-base-width * 4);
+	&:first-of-type {
+		margin-top: 0; //reset
+	}
+	.single & {
+		margin-bottom: (@makelab-grid-base-width * 2);
+	}
+}
+.post-header {
+	margin-top: (@makelab-grid-base-width / 2);
+}
+.post-categories,
+.post-tags {
+	padding-left: 0; //reset
+	list-style: none; //reset
+	margin-bottom: (@makelab-grid-base-width / 2);
+	li {
+		display: inline;
+		&:after {
+			content: "\002F";
+			color: @makelab-color-detail;
+			padding: 0 0 0 4px;
+		}
+		&:last-of-type:after {
+			content: none; //reset
+		}
+	}
+}
+/*---------------------------------------------------------
+ Sticky label (_posts.scss)
+-------------------------------------------------------- */
+.sticky-post-label-wrapper {
+	clear: both;
+}
+.sticky-post-label {
+	text-transform: uppercase;
+	background-color: @makelab-color-secondary;
+	padding: 4px 6px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	.border-radius;
+}
+/*---------------------------------------------------------
+ Navigation (_posts.scss)
+-------------------------------------------------------- */
+#infinite-handle span {
+	background: inherit;
+	border-radius: 0;
+	color: inherit;
+	cursor: pointer;
+	font-size: inherit;
+	padding: inherit;
+}
+[class*="navigation"] .nav-previous,
+[class*="navigation"] .nav-next,
+#infinite-handle {
+	width: 50%;
+	a, span {
+		color: @makelab-color-text;
+		font-weight: bold;
+		text-decoration: none; //reset
+		font-size: 14px;
+		&:before,
+		&:after {
+			font-family: FontAwesome;
+			font-weight: normal; //reset
+		}
+	}
+}
+[class*="navigation"] .nav-previous {
+	float: left;
+	a:before {
+		content: "\f177  ";
+	}
+}
+[class*="navigation"] .nav-next,
+#infinite-handle {
+	float: right;
+	text-align: right;
+	a:after, span:after {
+		content: "  \f178";
+	}
+}
+.infinite-scroll {
+	.paging-navigation {
+		display: none;
+	}
+}
+.infinite-loader {
+	color: @makelab-color-text;
+	display: block;
+	float: right;
+	height: 28px;
+	padding-right: 28px;
+	text-indent: -9999px;
+}
+/*---------------------------------------------------------
+ Jetpack Sharing (_posts.scss)
+-------------------------------------------------------- */
+.site-wrapper {
+	div.sharedaddy div.sd-block {
+		border-top: 0;
+	}
+	div.sharedaddy {
+		h3, .sd-content {
+			display: block;
+			float: left;
+			//height: 40px;
+			width: auto;
+		}
+		h3 {
+			font-family: inherit;
+			padding-right: @makelab-grid-base-width;
+			&:extend(.entry-date);
+		}
+	}
+}
+/*---------------------------------------------------------
+ Gallery shortcode slider (_posts.scss)
+-------------------------------------------------------- */
+.ttfmake-shortcode-slider {
+	.cycle-slide {
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+	.cycle-caption {
+		display: block;
+		display: none;
+		position: absolute;
+		z-index: 10;
+		color: @makelab-color-secondary;
+		text-align: left;
+		text-shadow: 1px 0 3px rgba(0,0,0,0.15);
+		left: (@makelab-grid-gutter-width / 2);
+		right: (@makelab-grid-gutter-width / 2);
+		bottom: @makelab-grid-base-width;
+	}
+	.cycle-pager {
+		margin-top: (@makelab-grid-base-width * 2);
+	}
+}

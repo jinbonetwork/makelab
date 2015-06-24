@@ -1,0 +1,52 @@
+body {
+
+	#site {
+		#site-header {
+			.header-bar {
+				.container {
+					.container-boxed;
+				}
+			}
+			.site-header-main {
+				.container {
+					.container-boxed;
+				}
+			}
+		}
+		#site-content {
+		}
+		#site-footer {
+			.container {
+				.container-boxed;
+			}
+		}
+		#global-footer {
+			.container {
+				.container-boxed;
+			}
+		}
+	}
+
+	&.boxed {
+		#site {
+			.container-boxed;
+			padding-left: 0;
+			padding-right: 0;
+			#site-content {
+				.builder-section {
+					.container-boxed;
+				}
+			}
+		}
+	}
+
+	&.blog,
+	&.single {
+		#site {
+			#site-content {
+				.container-boxed;
+			}
+		}
+	}
+
+}

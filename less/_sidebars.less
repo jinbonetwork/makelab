@@ -1,0 +1,50 @@
+/*---------------------------------------------------------
+ 9. Sidebars (_sidebars.scss)
+-------------------------------------------------------- */
+#sidebar-left {
+	float: left;
+}
+#sidebar-right {
+	.for(medium-screens,{
+		float: right;
+	});
+	float: left;
+}
+.site-main {
+	float: left;
+}
+/*---------------------------------------------------------
+ Left and right (_sidebars.scss)
+-------------------------------------------------------- */
+.for(medium-screens,{
+	.has-left-sidebar .site-main {
+		margin-left: percentage(@makelab-grid-column-width / @makelab-grid-md);
+	}
+	.has-right-sidebar,
+	.has-left-sidebar {
+		.site-main {
+			width: percentage((@makelab-grid-column-width * 5 + @makelab-grid-gutter-width * 5) / @makelab-grid-md);
+		}
+		#sidebar-left, #sidebar-right {
+			width: percentage((@makelab-grid-column-width * 2 + @makelab-grid-gutter-width * 2) / @makelab-grid-md);
+		}
+	}
+});
+/*---------------------------------------------------------
+ Left and right together (_sidebars.scss)
+-------------------------------------------------------- */
+.for(medium-screens,{
+	.has-left-sidebar.has-right-sidebar {
+		.entry-title {
+			font-size: 34px;
+		}
+		.site-main {
+			width: percentage((@makelab-grid-column-width * 4 + @makelab-grid-gutter-width * 3) / @makelab-grid-md);
+			margin-left: percentage(@makelab-grid-gutter-width / @makelab-grid-md);
+		}
+		#sidebar-left,
+		#sidebar-right {
+			width: percentage((@makelab-grid-column-width * 2 + @makelab-grid-gutter-width) / @makelab-grid-md);
+		}
+	}
+});

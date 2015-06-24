@@ -43,9 +43,11 @@ class ML_App {
 		);
 		$this->deps_frontend = array(
 			'jquery',
-			'make',
+			//'make',
 			'wow.js',
 			'skrollr',
+			'notosans-subset',
+			'notosans-subset-black-and-thin',
 			'jframework',
 			'maniprop.js',
 			'lazydo.js',
@@ -86,6 +88,7 @@ class ML_App {
 		add_action('admin_enqueue_scripts',array($this,'admin_enqueue_scripts'));
 		add_filter('script_loader_tag',array($this,'filter_resource_tag'),0,2);
 		add_filter('style_loader_tag',array($this,'filter_resource_tag'),0,2);
+		add_filter('make_css_add',array($this,'make_css_add'));
 	}
 
 	public function load_components(){
@@ -174,9 +177,11 @@ class ML_App {
 		wp_register_style('makelab-admin',"{$url_base}/css/admin.css",$this->deps_backend,$this->version);
 		wp_register_script('makelab-admin',"{$url_base}/js/admin.js",array_merge(array('ttfmake-builder/js/views/section.js'),$this->deps_backend),$this->version,true);
 
+		/*
 		// parent theme
 		wp_register_style('make',"{$url_base}/css/make.css",array(),$this->version);
 		wp_register_script('make',"{$url_base}/js/dummy.js",array(),$this->version);
+		*/
 
 		// frontend
 		wp_register_style('makelab',"{$url_base}/css/style.css",$this->deps_frontend,$this->version);
@@ -208,6 +213,31 @@ class ML_App {
 		wp_enqueue_style('makelab-admin');
 		wp_enqueue_script('makelab-admin');
 		//makelab_test_resources();
+	}
+
+	public function make_css_add_selector_patch($selector){
+		switch($selector):
+		case '.footer-social-links':
+			$selector = '.footer-social-links li a';
+			break;
+		endswitch;
+		return $selector;
+	}
+
+	public function make_css_add($data){
+		$new_selectors = array();
+		foreach($data['selectors'] as $selector){
+			$new_selectors[] = '#site '.$this->make_css_add_selector_patch($selector);
+		}
+		$data['selectors'] = $new_selectors;
+		return $data;
+	}
+
+	public function the_content($content){
+		$pattern = array(
+		);
+		$content = str_replace(array_keys($pattern),array_values($pattern),$content);
+		return $content;
 	}
 }
 endif;

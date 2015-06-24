@@ -1,0 +1,422 @@
+//-----------------------------------------------------------------------------
+//	Basis
+//-----------------------------------------------------------------------------
+
+// typography
+body {
+	background-color: @makelab-color-document;
+	text-rendering: optimizeLegibility;
+	font-size: 17px;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: @makelab-color-text;
+	font-family: @makelab-font-family-sans-serif;
+	line-height: 1.6;
+}
+
+pre,
+code,
+input,
+textarea {
+	font: inherit;
+}
+
+// blocks
+p,ul,ol,dl,blockquote {
+	&:extend(.break);
+}
+
+// links
+a {
+	color: @makelab-color-primary;
+	font-weight: bold;
+	text-decoration: none; //reset
+}
+
+//-----------------------------------------------------------------------------
+//	Header
+//-----------------------------------------------------------------------------
+
+.site-header {
+	// header-bar
+	.header-bar {
+		.menu-box();
+	}
+
+	// site-header-main
+	.site-header-main {
+		.container {
+			.site-branding {
+				.custom-logo {
+					a {
+					}
+				}
+				.site-title {
+				}
+				.site-description {
+				}
+			}
+			.site-navigation {
+			}
+		}
+	}
+
+	// layout 2
+	&.header-layout-2 {
+		.site-branding,
+		.site-navigation {
+			float: none; //reset
+			max-width: 100%;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		.custom-logo {
+			display: inline-block;
+		}
+	}
+
+	// layout 3
+	&.header-layout-3 {
+		.site-navigation {
+			float: left; //reset
+			max-width: 100%;
+			width: 100%;
+			text-align: left;
+			.menu {
+				border-top: 1px solid @makelab-color-secondary;
+				border-bottom: 1px solid @makelab-color-secondary;
+			}
+			.nav-menu {
+				margin-bottom: 0; //reset
+			}
+		}
+		.search-form {
+			.for(medium-screens,{
+				float: right;
+				.branding-right & {
+					float: left;
+				}
+			});
+			input {
+				.for(medium-screens,{
+					width: auto;
+				});
+				width: 100%;
+			}
+		}
+		.search-submit {
+			display: none;
+		}
+	}
+
+	// responsive
+	.for(medium-screens,{
+		.site-branding {
+			float: left;
+			max-width: 50%;
+			.branding-right & {
+				float: right;
+			}
+		}
+	});
+}
+
+//-----------------------------------------------------------------------------
+//	Navigation
+//-----------------------------------------------------------------------------
+.site-navigation {
+	.for(medium-screens,{
+		float: right;
+		max-width: 50%;
+		.branding-right .header-layout-1 & {
+			float: left;
+			text-align: left;
+		}
+		.branding-right .header-layout-3 & {
+			float: right;
+			text-align: right;
+		}
+	});
+	margin-bottom: 0; //reset
+	.no-select;
+	.menu,
+	.nav-menu {
+		padding-left: 0; //reset
+		ul,
+		ol {
+			margin-left: 0; //reset
+		}
+		li {
+			.for(medium-screens,{
+				display: inline-block;
+				position: relative;
+			});
+			text-align: left; //reset
+			list-style: none; //reset
+			a {
+				.for(medium-screens,{
+					line-height: 1.4;
+					border-bottom: 0; //reset
+					padding: (@makelab-grid-base-width / 2) (@makelab-grid-gutter-width / 2);
+				});
+				display: block;
+				font-weight: normal; //reset
+				color: @makelab-color-text;
+				line-height: 1.8;
+				border-bottom: @makelab-style-rule;
+				padding: (@makelab-grid-base-width / 2) 0;
+				font-size: 14px;
+				text-decoration: none;
+			}
+		}
+		.sub-menu,
+		.children {
+			padding: 0; //reset
+			text-align: left;
+			li a {
+				padding-left: (@makelab-grid-gutter-width / 2);
+				&:before {
+					content: "\2013  ";
+				}
+			}
+		}
+		.for(medium-screens,{
+			.sub-menu,
+			.children {
+				position: absolute;
+				display: none;
+				z-index: 99999;
+				overflow: hidden;
+				background-color: @makelab-color-secondary;
+				li {
+					width: 100%;
+					&:first-of-type a {
+						padding: 15px (@makelab-grid-gutter-width / 2);
+					}
+				}
+				a {
+					border-bottom: 1px solid @makelab-color-detail;
+					padding: 15px (@makelab-grid-gutter-width / 2);
+					font-size: 13px;
+					&:after {
+						content: none; //reset
+					}
+				}
+				.page_item_has_children a:after,
+				.menu-item-has-children a:after {
+					content: "  \f054";
+					position: relative;
+					float: right;
+					font-family: FontAwesome;
+					font-weight: normal; //reset
+					top: 4px;
+					font-size: 10px;
+				}
+				.sub-menu,
+				.children {
+					li:not(.menu-item-has-children) a:after,
+					li:not(.page_item_has_children) a:after {
+						content: none; //reset
+					}
+				}
+				li {
+					padding-left: 0; //reset
+					a:before {
+						content: none; //reset
+					}
+				}
+				ul {
+					top: 0; //reset
+					left: 100%;
+				}
+			}
+		});
+		.for(medium-screens,{
+			.current_page_item,
+			.current_page_ancestor,
+			.current-menu-item,
+			.current-menu-ancestor {
+				> a {
+					font-weight: bold;
+				}
+			}
+		});
+		.current_page_item,
+		.current-menu-item {
+			> a {
+				font-weight: bold;
+			}
+		}
+	}
+	.for(medium-screens,{
+		.page_item_has_children a:after,
+		.menu-item-has-children a:after {
+			content: "  \f078";
+			font-family: FontAwesome;
+			font-weight: normal; //reset
+			color: @makelab-color-detail;
+			padding-left: 2px;
+			font-size: 10px;
+			position: relative;
+			top: -1px;
+		}
+		ul.menu ul a,
+		.menu ul ul a {
+			margin: 0; //reset
+			min-width: 180px;
+			max-width: 250px;
+			&:hover,
+			&:focus {
+				color: @makelab-color-document;
+				background-color: @makelab-color-primary;
+				&:after {
+					color: @makelab-color-document;
+				}
+			}
+		}
+		ul.menu li:hover > ul,
+		.menu ul li:hover > ul,
+		ul.menu .focus > ul,
+		.menu .focus > ul {
+			display: block;
+			overflow: inherit;
+			height: inherit;
+			width: inherit;
+		}
+	});
+}
+.menu-toggle {
+	color: @makelab-color-document;
+	text-align: left;
+	border: 0; //reset
+	background-color: @makelab-color-text;
+	cursor: pointer;
+	margin: @makelab-grid-base-width 0 0;
+	padding: 10px 14px;
+	font-size: 13px;
+	.border-radius;
+	&:before {
+		content: "\f0c9";
+		font-family: FontAwesome;
+		padding-right: 6px;
+	}
+}
+.menu-toggle,
+.site-navigation.toggled .nav-menu,
+.site-navigation.toggled .menu {
+	display: block;
+}
+.site-navigation .menu {
+	.for(medium-screens,{
+		display: block;
+	});
+	display: none;
+}
+.for(medium-screens,{
+	.site-navigation ul {
+		display: none;
+	}
+});
+.for(medium-screens,{
+	.menu-toggle {
+		display: none;
+	}
+	.site-navigation ul {
+		display: block;
+	}
+});
+
+//-----------------------------------------------------------------------------
+//	Main
+//-----------------------------------------------------------------------------
+.site-content {
+	float: left;
+	width: 100%;
+	background-color: @makelab-color-document;
+	padding: @makelab-grid-base-width 0;
+	&:extend(.clear);
+}
+
+//-----------------------------------------------------------------------------
+//	Footer
+//-----------------------------------------------------------------------------
+.site-footer {
+	.menu-box(footer);
+	color: @makelab-color-detail;
+	background-color: @makelab-color-secondary;
+	.footer-widget-container {
+		.row;
+		// widget
+		.widget-area {
+			.for(medium-screens,{
+				margin-bottom: (@makelab-grid-base-width * 2);
+			});
+			width: 100%;
+			float: left;
+			margin-right: percentage( @makelab-grid-gutter-width / @makelab-grid-md );
+			margin-bottom: @makelab-grid-base-width;
+			&:last-of-type {
+				margin-right: 0; //reset
+			}
+		}
+		// responsive
+		.for(medium-screens,{
+			.columns-container(columns,widget-area);
+		});
+	}
+	.site-info {
+		.for(medium-screens,{
+			float: left;
+		});
+		text-align: center;
+	}
+	.site-info,
+	.site-info a {
+		.for(medium-screens,{
+			font-size: 13px;
+		});
+		color: inherit;
+		font-weight: bold;
+		font-size: 12px;
+		a {
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none; //reset
+			}
+		}
+		.theme-by {
+			font-weight: normal;
+			font-style: italic;
+			text-transform: lowercase;
+			padding: 0 4px;
+			letter-spacing: 1px;
+		}
+	}
+	.infinite-scroll.neverending & {
+		display: none;
+	}
+	.infinity-end.neverending & {
+		display: block;
+	}
+
+	// layout 2
+	&.footer-layout-2 {
+		.site-info,
+		.footer-text,
+		.footer-social-links {
+			float: none; //reset
+			clear: both;
+			text-align: center;
+		}
+		.footer-social-links {
+			margin-top: (@makelab-grid-base-width / 2);
+		}
+	}}
+

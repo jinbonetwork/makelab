@@ -1,0 +1,76 @@
+blockquote {
+	&.ttfmake-testimonial {
+		line-height: 0; //reset
+		background-color: @makelab-color-secondary;
+		margin-bottomi: (@makelab-grid-base-width * 2);
+		padding: (@makelab-grid-base-width * 1.5) @makelab-grid-gutter-width;
+		.border-radius;
+		p {
+			margin-bottom: 0; // reset
+		}
+		cite {
+			display: block;
+			margin-bottom: 0; // reset
+			font-weight: bold;
+			padding: (@makelab-grid-base-width / 2) 0;
+			font-size: 14px;
+		}
+		&:after {
+			content: "";
+			position: relative;
+			width: 0; //reset
+			height: 0; //reset
+			border-left: 22px solid transparent;
+			border-right: 22px solid transparent;
+			border-top: 22px solid @makelab-color-secondary;
+			left: 5px;
+			bottom: -60px;
+		}
+	}
+}
+ul,
+ol {
+	&.ttfmake-list {
+		padding-left: 0; //reset
+		list-style: none; //reset
+		li:before {
+			font-family: FontAwesome;
+			padding-right: (@makelab-grid-gutter-width / 3);
+		}
+	}
+	&.ttfmake-list-check li:before {
+		content: "\f14a";
+		color: #339d56;
+	}
+	&.ttfmake-list-check2 li:before {
+		content: "\f046";
+		color: #339d56;
+	}
+	&.ttfmake-list-star li:before {
+		content: "\f005";
+		color: #f89e01;
+	}
+	&.ttfmake-list-dot li:before {
+		content: "\f192";
+		color: @makelab-color-primary;
+	}
+}
+.ttfmake-embed-wrapper {
+	max-width: 100%;
+	width: 100%;
+	margin-bottom: @makelab-grid-base-width;
+	&.aligncenter {
+		margin-bottom: @makelab-grid-base-width;
+	}
+}
+.ttfmake-notice {
+	background: #e5e5e5;
+	border: 2px solid #808080;
+	color: #808080;
+	// margin-bottom set in scaffolding
+	padding: 10px 20px;
+	p:last-of-type {
+		margin-bottom: 0; //reset
+	}
+}
+
