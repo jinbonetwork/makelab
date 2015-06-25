@@ -1,32 +1,36 @@
 body {
-
 	#site {
 		#site-header {
+			.clearblock;
 			.header-bar {
+				.clearblock;
 				.container {
 					.container-boxed;
 				}
 			}
 			.site-header-main {
+				.clearblock;
 				.container {
 					.container-boxed;
 				}
 			}
 		}
 		#site-content {
+			.clearblock;
 		}
 		#site-footer {
+			.clearblock;
 			.container {
 				.container-boxed;
 			}
 		}
 		#global-footer {
+			.clearblock;
 			.container {
 				.container-boxed;
 			}
 		}
 	}
-
 	&.boxed {
 		#site {
 			.container-boxed;
@@ -39,14 +43,77 @@ body {
 			}
 		}
 	}
-
 	&.blog,
+	&.archive,
+	&.search,
 	&.single {
 		#site {
 			#site-content {
 				.container-boxed;
+				.wrap {
+					.row;
+				}
 			}
 		}
 	}
 
+	&.has-left-sidebar,
+	&.has-right-sidebar {
+		#site {
+			#site-main,
+			#sidebar-left,
+			#sidebar-right {
+				.col;
+			}
+			#site-main {
+				float: left;
+			}
+			#sidebar-left {
+				float: left;
+			}
+			#sidebar-right {
+				float: left;
+			}
+		}
+	}
+
+	&.has-left-sidebar {
+		#site {
+			#site-content {
+				#site-main {
+					width: 75%;
+				}
+				#sidebar-left {
+					width: 25%;
+				}
+			}
+		}
+	}
+
+	&.has-right-sidebar {
+		#site {
+			#site-content {
+				#site-main {
+					width: 75%;
+				}
+				#sidebar-right {
+					width: 25%;
+				}
+			}
+		}
+	}
+
+	&.has-left-sidebar.has-right-sidebar {
+		#site {
+			#site-content {
+				#site-main {
+					width: 50%;
+				}
+				#sidebar-left,
+				#sidebar-right {
+					width: 25%;
+				}
+			}
+		}
+	}
 }

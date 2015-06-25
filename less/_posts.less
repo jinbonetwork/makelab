@@ -18,7 +18,6 @@
 }
 .entry-title {
 	font-weight: bold;
-	margin-top: (@makelab-grid-base-width / 4);
 	word-spacing: -1px;
 }
 .entry-date {
@@ -26,7 +25,7 @@
 	float: left;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: @makelab-font-size-small;
 	letter-spacing: 1px;
 	margin-bottom: (@makelab-grid-base-width / 2);
 	.entry-header & {
@@ -37,7 +36,7 @@
 		float: none; //reset
 		text-transform: none; //reset
 		letter-spacing: 0; //reset
-		font-size: 14px;
+		font-size: @makelab-font-size-small;
 		margin-bottom: @makelab-grid-base-width;
 	}
 	a {
@@ -65,17 +64,18 @@
 	}
 }
 .entry-content {
+	.editor-generated-content;
 	clear: both;
 	&:extend(.clear);
 }
 .entry-author-bio {
 	margin-top: (@makelab-grid-base-width / 2);
-	font-size: 13px;
+	font-size: @makelab-font-size-small;
 }
 .entry-author-byline {
 	font-style: italic;
 	line-height: 40px;
-	font-size: 15px;
+	font-size: @makelab-font-size-medium;
 	a.vcard {
 		color: @makelab-color-primary;
 		font-weight: bold;
@@ -97,7 +97,7 @@
 .comment-count-icon a {
 	color: @makelab-color-detail;
 	font-weight: normal; //reset
-	font-size: 14px;
+	font-size: @makelab-font-size-small;
 	&:hover {
 		color: @makelab-color-primary;
 	}
@@ -124,7 +124,7 @@
 	}
 }
 .entry-footer {
-	font-size: 14px;
+	font-size: @makelab-font-size-small;
 	a {
 		color: @makelab-color-detail;
 		font-weight: 400; //reset
@@ -181,49 +181,60 @@
 	text-transform: uppercase;
 	background-color: @makelab-color-secondary;
 	padding: 4px 6px;
-	font-size: 12px;
+	font-size: @makelab-font-size-tiny;
 	letter-spacing: 2px;
 	.border-radius;
 }
+
 /*---------------------------------------------------------
  Navigation (_posts.scss)
 -------------------------------------------------------- */
-#infinite-handle span {
-	background: inherit;
-	border-radius: 0;
-	color: inherit;
-	cursor: pointer;
-	font-size: inherit;
-	padding: inherit;
-}
-[class*="navigation"] .nav-previous,
-[class*="navigation"] .nav-next,
-#infinite-handle {
-	width: 50%;
-	a, span {
-		color: @makelab-color-text;
-		font-weight: bold;
-		text-decoration: none; //reset
-		font-size: 14px;
-		&:before,
-		&:after {
-			font-family: FontAwesome;
-			font-weight: normal; //reset
+.nav-links {
+	.clear;
+	.nav-previous,
+	.nav-next {
+		font-size: @makelab-font-size-small;
+		a {
+			.link-with-icon;
+			color: @makelab-color-text;
+			
+		}
+		&.nav-previous {
+			float: left;
+			a:before {
+				content: "\F177";
+				margin-right: @makelab-item-spacing;
+			}
+		}
+		&.nav-next {
+			float: right;
+			a:after {
+				content: "\F178";
+				margin-left: @makelab-item-spacing;
+			}
 		}
 	}
 }
-[class*="navigation"] .nav-previous {
-	float: left;
-	a:before {
-		content: "\f177  ";
-	}
-}
-[class*="navigation"] .nav-next,
 #infinite-handle {
 	float: right;
+	width: 50%;
 	text-align: right;
-	a:after, span:after {
-		content: "  \f178";
+	font-size: @makelab-font-size-small;
+	a, span {
+		.link-with-icon;
+		color: @makelab-color-text;
+		font-weight: bold;
+		&:after {
+			content: "\f178";
+		}
+	}
+	span {
+		background: inherit;
+		border-radius: 0;
+		color: inherit;
+		cursor: pointer;
+		font-size: inherit;
+		padding: inherit;
 	}
 }
 .infinite-scroll {

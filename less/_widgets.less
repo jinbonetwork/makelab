@@ -6,11 +6,10 @@
 }
 .widget-title {
 	font-weight: bold;
-	margin: 0 0 (@makelab-grid-base-width / 2);
-	font-size: 13px;
+	font-size: @makelab-font-size-small;
 	.builder-text-content & {
 		line-height: 1.4;
-		font-size: 24px;
+		font-size: @makelab-font-size-large;
 	}
 	a {
 		text-decoration: none;
@@ -22,13 +21,17 @@
 }
 .widget {
 	max-width: 100%;
-	margin-bottom: (@makelab-grid-base-width * 2);
-	font-size: 13px;
+	margin-bottom: @makelab-grid-gutter-width;
+	font-size: @makelab-font-size-small;
 	.builder-text-content & {
-		font-size: 17px;
+		font-size: @makelab-font-size-medium;
 	}
-	.search-form {
-		margin-top: (@makelab-grid-base-width / 2);
+	a {
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
 	}
 	select {
 		max-width: 100%;
@@ -36,22 +39,8 @@
 	ul,
 	ol {
 		padding-left: 0; //reset
-	}
-	li {
-		list-style: none; //reset
-		border-bottom: 1px solid @makelab-color-secondary;
-		padding: (@makelab-grid-base-width / 2) 0;
-		&:last-of-type {
-			margin-bottom: 0; //reset
-			padding-bottom: 0; //reset
-			border-bottom: 0; //reset
-		}
-	}
-	a {
-		text-decoration: none;
-		&:hover,
-		&:focus {
-			text-decoration: none;
+		li {
+			list-style: none; //reset
 		}
 	}
 	.children,

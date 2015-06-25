@@ -1,8 +1,10 @@
+</div><!--/.wrap-->
 </div><!--/#site-content-->
 
 <?php
 	ttfmake_maybe_show_site_region( 'footer' );
 
+	/*
 	echo implode(PHP_EOL,array(
 		'<footer id="global-footer">',
 		'<div class="container">',
@@ -12,6 +14,7 @@
 		'</div>',
 		'</footer>',
 	));
+	*/
 ?>
 
 </div><!--/#site-wrapper-->

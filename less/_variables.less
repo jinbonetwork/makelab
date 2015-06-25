@@ -11,8 +11,14 @@
 @makelab-font-family-monospace: @font-family-monospace;
 @makelab-font-family-heading: @font-family-heading;
 
-@makelab-font-size: 16px;
-@makelab-menu-font-size: 13px;
+@makelab-font-size-big: 32px;
+@makelab-font-size-large: 24px;
+@makelab-font-size-medium: 16px;
+@makelab-font-size-small: 13px;
+@makelab-font-size-tiny: 11px;
+
+@makelab-font-size: @makelab-font-size-medium;
+@makelab-menu-font-size: @makelab-font-size-small;
 
 // Grid
 @makelab-grid-columns: 4;
@@ -25,7 +31,11 @@
 @makelab-grid-md: @container-md;
 @makelab-grid-lg: @container-lg;
 @makelab-grid-gutter-width: @grid-gutter-width;
-@makelab-grid-column-width:	(@makelab-grid-gutter-width * 3);
+
+// Spacing 
+@makelab-column-spacing:	(@makelab-grid-gutter-width * 3);
+@makelab-hr-size: (@grid-gutter-width / 2);
+@makelab-item-spacing: @makelab-grid-gutter-width / 5;
 
 // Baseline
 @makelab-grid-base-width: (@makelab-grid-gutter-width / 3 * 2);

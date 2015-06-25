@@ -10,4 +10,4 @@
 <?php ttfmake_maybe_show_site_region( 'header' ); ?>
 
 <div id="site-content" class="site-content">
-
+<div class="wrap">

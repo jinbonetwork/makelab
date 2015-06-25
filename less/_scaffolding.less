@@ -6,7 +6,7 @@
 body {
 	background-color: @makelab-color-document;
 	text-rendering: optimizeLegibility;
-	font-size: 17px;
+	font-size: @makelab-font-size-medium;
 }
 
 body,
@@ -34,7 +34,6 @@ p,ul,ol,dl,blockquote {
 // links
 a {
 	color: @makelab-color-primary;
-	font-weight: bold;
 	text-decoration: none; //reset
 }
 
@@ -49,10 +48,14 @@ a {
 	}
 
 	// site-header-main
+	.header-bar + .site-header-main {
+		margin-top: @makelab-grid-gutter-width;
+	}
 	.site-header-main {
 		.container {
 			.site-branding {
 				.custom-logo {
+					margin-bottom: @makelab-hr-size;
 					a {
 					}
 				}
@@ -129,218 +132,13 @@ a {
 }
 
 //-----------------------------------------------------------------------------
-//	Navigation
-//-----------------------------------------------------------------------------
-.site-navigation {
-	.for(medium-screens,{
-		float: right;
-		max-width: 50%;
-		.branding-right .header-layout-1 & {
-			float: left;
-			text-align: left;
-		}
-		.branding-right .header-layout-3 & {
-			float: right;
-			text-align: right;
-		}
-	});
-	margin-bottom: 0; //reset
-	.no-select;
-	.menu,
-	.nav-menu {
-		padding-left: 0; //reset
-		ul,
-		ol {
-			margin-left: 0; //reset
-		}
-		li {
-			.for(medium-screens,{
-				display: inline-block;
-				position: relative;
-			});
-			text-align: left; //reset
-			list-style: none; //reset
-			a {
-				.for(medium-screens,{
-					line-height: 1.4;
-					border-bottom: 0; //reset
-					padding: (@makelab-grid-base-width / 2) (@makelab-grid-gutter-width / 2);
-				});
-				display: block;
-				font-weight: normal; //reset
-				color: @makelab-color-text;
-				line-height: 1.8;
-				border-bottom: @makelab-style-rule;
-				padding: (@makelab-grid-base-width / 2) 0;
-				font-size: 14px;
-				text-decoration: none;
-			}
-		}
-		.sub-menu,
-		.children {
-			padding: 0; //reset
-			text-align: left;
-			li a {
-				padding-left: (@makelab-grid-gutter-width / 2);
-				&:before {
-					content: "\2013  ";
-				}
-			}
-		}
-		.for(medium-screens,{
-			.sub-menu,
-			.children {
-				position: absolute;
-				display: none;
-				z-index: 99999;
-				overflow: hidden;
-				background-color: @makelab-color-secondary;
-				li {
-					width: 100%;
-					&:first-of-type a {
-						padding: 15px (@makelab-grid-gutter-width / 2);
-					}
-				}
-				a {
-					border-bottom: 1px solid @makelab-color-detail;
-					padding: 15px (@makelab-grid-gutter-width / 2);
-					font-size: 13px;
-					&:after {
-						content: none; //reset
-					}
-				}
-				.page_item_has_children a:after,
-				.menu-item-has-children a:after {
-					content: "  \f054";
-					position: relative;
-					float: right;
-					font-family: FontAwesome;
-					font-weight: normal; //reset
-					top: 4px;
-					font-size: 10px;
-				}
-				.sub-menu,
-				.children {
-					li:not(.menu-item-has-children) a:after,
-					li:not(.page_item_has_children) a:after {
-						content: none; //reset
-					}
-				}
-				li {
-					padding-left: 0; //reset
-					a:before {
-						content: none; //reset
-					}
-				}
-				ul {
-					top: 0; //reset
-					left: 100%;
-				}
-			}
-		});
-		.for(medium-screens,{
-			.current_page_item,
-			.current_page_ancestor,
-			.current-menu-item,
-			.current-menu-ancestor {
-				> a {
-					font-weight: bold;
-				}
-			}
-		});
-		.current_page_item,
-		.current-menu-item {
-			> a {
-				font-weight: bold;
-			}
-		}
-	}
-	.for(medium-screens,{
-		.page_item_has_children a:after,
-		.menu-item-has-children a:after {
-			content: "  \f078";
-			font-family: FontAwesome;
-			font-weight: normal; //reset
-			color: @makelab-color-detail;
-			padding-left: 2px;
-			font-size: 10px;
-			position: relative;
-			top: -1px;
-		}
-		ul.menu ul a,
-		.menu ul ul a {
-			margin: 0; //reset
-			min-width: 180px;
-			max-width: 250px;
-			&:hover,
-			&:focus {
-				color: @makelab-color-document;
-				background-color: @makelab-color-primary;
-				&:after {
-					color: @makelab-color-document;
-				}
-			}
-		}
-		ul.menu li:hover > ul,
-		.menu ul li:hover > ul,
-		ul.menu .focus > ul,
-		.menu .focus > ul {
-			display: block;
-			overflow: inherit;
-			height: inherit;
-			width: inherit;
-		}
-	});
-}
-.menu-toggle {
-	color: @makelab-color-document;
-	text-align: left;
-	border: 0; //reset
-	background-color: @makelab-color-text;
-	cursor: pointer;
-	margin: @makelab-grid-base-width 0 0;
-	padding: 10px 14px;
-	font-size: 13px;
-	.border-radius;
-	&:before {
-		content: "\f0c9";
-		font-family: FontAwesome;
-		padding-right: 6px;
-	}
-}
-.menu-toggle,
-.site-navigation.toggled .nav-menu,
-.site-navigation.toggled .menu {
-	display: block;
-}
-.site-navigation .menu {
-	.for(medium-screens,{
-		display: block;
-	});
-	display: none;
-}
-.for(medium-screens,{
-	.site-navigation ul {
-		display: none;
-	}
-});
-.for(medium-screens,{
-	.menu-toggle {
-		display: none;
-	}
-	.site-navigation ul {
-		display: block;
-	}
-});
-
-//-----------------------------------------------------------------------------
 //	Main
 //-----------------------------------------------------------------------------
 .site-content {
 	float: left;
 	width: 100%;
 	background-color: @makelab-color-document;
-	padding: @makelab-grid-base-width 0;
+	padding: @makelab-grid-base-width 0; // overridable in the theme customizer
 	&:extend(.clear);
 }
 
@@ -353,6 +151,7 @@ a {
 	background-color: @makelab-color-secondary;
 	.footer-widget-container {
 		.row;
+		padding-top: @makelab-grid-gutter-width;
 		// widget
 		.widget-area {
 			.for(medium-screens,{
@@ -371,26 +170,14 @@ a {
 			.columns-container(columns,widget-area);
 		});
 	}
-	.site-info {
-		.for(medium-screens,{
-			float: left;
-		});
-		text-align: center;
+	.footer-text {
+		float: left;
 	}
-	.site-info,
-	.site-info a {
-		.for(medium-screens,{
-			font-size: 13px;
-		});
-		color: inherit;
-		font-weight: bold;
-		font-size: 12px;
-		a {
-			text-decoration: underline;
-			&:hover {
-				text-decoration: none; //reset
-			}
-		}
+	.site-info {
+		clear: both;
+		float: left;
+		font-size: @makelab-font-size-small;
+		.text-inline();
 		.theme-by {
 			font-weight: normal;
 			font-style: italic;
@@ -418,5 +205,44 @@ a {
 		.footer-social-links {
 			margin-top: (@makelab-grid-base-width / 2);
 		}
-	}}
+	}
+}
 
+//-----------------------------------------------------------------------------
+//	Global footer
+//-----------------------------------------------------------------------------
+#global-footer {
+	.container {
+		#global-sitemap {
+			.row;
+			dl {
+				.col;
+				width: 25%;
+				dt {
+				}
+				dd {
+					ul {
+						list-style: none;
+						li {
+							a {
+								color: @makelab-color-detail;
+							}
+						}
+					}
+				}
+			}
+		}
+		#global-contact {
+			.row;
+			.contact {
+				.col;
+			}
+		}
+		#global-license {
+			.row;
+			.license {
+				.col;
+			}
+		}
+	}
+}

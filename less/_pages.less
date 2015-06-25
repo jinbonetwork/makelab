@@ -25,7 +25,7 @@ body.page-template-template-builder {
 				.editor-generated-content;
 			}
 			.builder-text-image + .builder-text-content {
-				margin-top: @grid-gutter-width;
+				margin-top: @makelab-hr-size;
 			}
 		}
 
@@ -54,10 +54,10 @@ body.page-template-template-builder {
 	margin-bottom: (@makelab-grid-base-width * 2);
 }
 .section-title {
-	font-size: 24px;
+	font-size: @makelab-font-size-large;
 }
 .section-description {
-	font-size: 13px;
+	font-size: @makelab-font-size-small;
 }
 .builder-section-content {
 	position: relative;
@@ -164,7 +164,7 @@ body.page-template-template-builder {
 	line-height: 1.35;
 	text-shadow: 1px 0 8px rgba(0,0,0,0.15);
 	padding: (@makelab-grid-base-width / 2) @makelab-grid-gutter-width;
-	font-size: 15px;
+	font-size: @makelab-font-size-medium;
 	-webkit-transform-style: preserve-3d;
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
@@ -253,7 +253,7 @@ position: relative;
 			color: @makelab-color-secondary;
 			line-height: 1; //reset
 			top: -34px;
-			font-size: 34px;
+			font-size: @makelab-font-size-big;
 		}
 	}
 	&:hover,
@@ -295,7 +295,7 @@ position: relative;
 .builder-gallery-title {
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: @makelab-font-size-medium;
 }
 .builder-gallery-content {
 	background-color: @makelab-color-document; //fallback
@@ -309,7 +309,7 @@ position: relative;
  Gallery: Captions (_pages.scss)
 -------------------------------------------------------- */
 .builder-gallery-item {
-	font-size: 14px;
+	font-size: @makelab-font-size-small;
 	&.has-link {
 		cursor: pointer;
 	}
