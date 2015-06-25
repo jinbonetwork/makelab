@@ -46,12 +46,18 @@ body {
 	&.blog,
 	&.archive,
 	&.search,
-	&.single {
+	&.single,
+	&.page-template-default {
 		#site {
 			#site-content {
 				.container-boxed;
 				.wrap {
 					.row;
+					#site-main,
+					#sidebar-left,
+					#sidebar-right {
+						.col;
+					}
 				}
 			}
 		}
@@ -60,11 +66,6 @@ body {
 	&.has-left-sidebar,
 	&.has-right-sidebar {
 		#site {
-			#site-main,
-			#sidebar-left,
-			#sidebar-right {
-				.col;
-			}
 			#site-main {
 				float: left;
 			}

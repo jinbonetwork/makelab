@@ -71,6 +71,10 @@ body.single #site #site-content .wrap:before,
 body.single #site #site-content .wrap:after,
 body.single #site #site-content .wrap:before,
 body.single #site #site-content .wrap:after,
+body.page-template-default #site #site-content .wrap:before,
+body.page-template-default #site #site-content .wrap:after,
+body.page-template-default #site #site-content .wrap:before,
+body.page-template-default #site #site-content .wrap:after,
 .site-footer .footer-widget-container:before,
 .site-footer .footer-widget-container:after,
 .site-footer .footer-widget-container:before,
@@ -113,6 +117,8 @@ body.search #site #site-content .wrap:after,
 body.search #site #site-content .wrap:after,
 body.single #site #site-content .wrap:after,
 body.single #site #site-content .wrap:after,
+body.page-template-default #site #site-content .wrap:after,
+body.page-template-default #site #site-content .wrap:after,
 .site-footer .footer-widget-container:after,
 .site-footer .footer-widget-container:after,
 #global-footer .container #global-sitemap:after,
@@ -258,8 +264,8 @@ blockquote {
   position: static;
   width: auto;
 }
-.framed-figure {
-  border: 1px solid #333333;
+.bordered {
+  border: 1px solid #777777;
 }
 .link-with-icon {
   color: inherit;
@@ -279,7 +285,7 @@ blockquote {
 }
 img.featured-figure,
 .featured-figure img {
-  border: 1px solid #333333;
+  border: 1px solid #777777;
 }
 .featured-figure img {
   width: 100%;
@@ -291,7 +297,7 @@ img.featured-figure,
 }
 img.banner,
 .banner img {
-  border: 1px solid #333333;
+  border: 1px solid #777777;
 }
 .banner img {
   width: 100%;
@@ -831,7 +837,8 @@ body.boxed #site #site-content .builder-section:after {
 body.blog #site #site-content,
 body.archive #site #site-content,
 body.search #site #site-content,
-body.single #site #site-content {
+body.single #site #site-content,
+body.page-template-default #site #site-content {
   float: none;
   clear: both;
   padding-left: 15px;
@@ -844,7 +851,8 @@ body.single #site #site-content {
 body.blog #site #site-content:after,
 body.archive #site #site-content:after,
 body.search #site #site-content:after,
-body.single #site #site-content:after {
+body.single #site #site-content:after,
+body.page-template-default #site #site-content:after {
   content: '';
   display: block;
   clear: both;
@@ -852,18 +860,28 @@ body.single #site #site-content:after {
 body.blog #site #site-content .wrap,
 body.archive #site #site-content .wrap,
 body.search #site #site-content .wrap,
-body.single #site #site-content .wrap {
+body.single #site #site-content .wrap,
+body.page-template-default #site #site-content .wrap {
   margin-left: -15px;
   margin-right: -15px;
   width: auto;
   max-width: none;
 }
-body.has-left-sidebar #site #site-main,
-body.has-right-sidebar #site #site-main,
-body.has-left-sidebar #site #sidebar-left,
-body.has-right-sidebar #site #sidebar-left,
-body.has-left-sidebar #site #sidebar-right,
-body.has-right-sidebar #site #sidebar-right {
+body.blog #site #site-content .wrap #site-main,
+body.archive #site #site-content .wrap #site-main,
+body.search #site #site-content .wrap #site-main,
+body.single #site #site-content .wrap #site-main,
+body.page-template-default #site #site-content .wrap #site-main,
+body.blog #site #site-content .wrap #sidebar-left,
+body.archive #site #site-content .wrap #sidebar-left,
+body.search #site #site-content .wrap #sidebar-left,
+body.single #site #site-content .wrap #sidebar-left,
+body.page-template-default #site #site-content .wrap #sidebar-left,
+body.blog #site #site-content .wrap #sidebar-right,
+body.archive #site #site-content .wrap #sidebar-right,
+body.search #site #site-content .wrap #sidebar-right,
+body.single #site #site-content .wrap #sidebar-right,
+body.page-template-default #site #site-content .wrap #sidebar-right {
   float: left;
   position: relative;
   min-height: 1px;
@@ -1097,6 +1115,15 @@ a {
 }
 .site-header .site-header-main .container .site-branding .custom-logo {
   margin-bottom: 15px;
+}
+.site-header .site-header-main .container .site-branding .site-title {
+  margin-bottom: 15px;
+}
+.site-header.no-site-title .site-header-main .container .site-branding .custom-logo {
+  margin-bottom: 0;
+}
+.site-header.no-site-tagline .site-header-main .container .site-branding .site-title {
+  margin-bottom: 0;
 }
 .site-header.header-layout-2 .site-branding,
 .site-header.header-layout-2 .site-navigation {
@@ -1337,11 +1364,6 @@ a {
   float: left;
   margin-right: 3.09278351%;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 970px) {
-  .site-footer .footer-widget-container .widget-area {
-    margin-bottom: 40px;
-  }
 }
 .site-footer .footer-widget-container .widget-area:last-of-type {
   margin-right: 0;
@@ -1998,7 +2020,7 @@ body.page-template-template-builder .builder-section .builder-section-content .b
 }
 imgbody.page-template-template-builder .builder-section .builder-section-content .builder-text-image,
 body.page-template-template-builder .builder-section .builder-section-content .builder-text-image img {
-  border: 1px solid #333333;
+  border: 1px solid #777777;
 }
 body.page-template-template-builder .builder-section .builder-section-content .builder-text-image img {
   width: 100%;
@@ -2152,7 +2174,7 @@ body.page-template-template-builder .builder-section.builder-section-gallery.bui
 }
 img.builder-text-image,
 .builder-text-image img {
-  border: 1px solid #333333;
+  border: 1px solid #777777;
 }
 .builder-text-image img {
   width: 100%;
@@ -2227,13 +2249,14 @@ img.builder-text-image,
 .builder-banner-inner-content {
   position: relative;
   top: 50%;
+  left: 50%;
   display: inline-block;
   vertical-align: middle;
-  max-width: 100%;
   width: 100%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  max-width: 1140px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .builder-banner-inner-content *:last-child {
   margin-bottom: 0;
@@ -2408,6 +2431,7 @@ img.builder-text-image,
  Gallery: Images (_pages.scss)
 -------------------------------------------------------- */
 .builder-gallery-image {
+  border: 1px solid #777777;
   height: 0;
   line-height: 0;
   background-position: center;
@@ -2458,8 +2482,10 @@ img.builder-text-image,
 }
 .widget {
   max-width: 100%;
-  margin-bottom: 30px;
   font-size: 13px;
+}
+.widget + .widget {
+  margin-top: 30px;
 }
 .builder-text-content .widget {
   font-size: 16px;

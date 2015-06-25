@@ -60,11 +60,36 @@ a {
 					}
 				}
 				.site-title {
+					margin-bottom: @makelab-hr-size;
 				}
 				.site-description {
 				}
 			}
 			.site-navigation {
+			}
+		}
+	}
+
+	&.no-site-title {
+		.site-header-main {
+			.container {
+				.site-branding {
+					.custom-logo {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&.no-site-tagline {
+		.site-header-main {
+			.container {
+				.site-branding {
+					.site-title {
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
 	}
@@ -154,9 +179,6 @@ a {
 		padding-top: @makelab-grid-gutter-width;
 		// widget
 		.widget-area {
-			.for(medium-screens,{
-				margin-bottom: (@makelab-grid-base-width * 2);
-			});
 			width: 100%;
 			float: left;
 			margin-right: percentage( @makelab-grid-gutter-width / @makelab-grid-md );
