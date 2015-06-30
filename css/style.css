@@ -280,6 +280,10 @@ img.banner,
   user-select: none;
 }
 .menu-toggle {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   float: none;
   display: block;
   width: 100%;
