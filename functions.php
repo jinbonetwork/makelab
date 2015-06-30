@@ -1,5 +1,7 @@
 <?php
 require_once dirname(__FILE__).'/jframework/jframework.php';
+define(JF_FOOTER_KEYWORD,'('.JF::$slug.')');
+
 if(!class_exists('ML_App')):
 class ML_App {
 

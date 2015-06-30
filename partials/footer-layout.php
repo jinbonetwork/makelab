@@ -43,7 +43,7 @@ if ( $sidebar_count > 0 ) {
 		<?php ttfmake_maybe_show_social_links( 'footer' ); ?>
 
 <?php
-if(get_theme_mod('footer-text',ttfmake_get_default('footer-text'))=='jframework'){
+if(strpos(get_theme_mod('footer-text',ttfmake_get_default('footer-text')),JF_FOOTER_KEYWORD)!==false){
 	$pattern = array(
 		'columns-container' => 'columns-container columns-4',
 	);

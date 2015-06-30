@@ -17,13 +17,12 @@ $footer_credit = apply_filters( 'make_show_footer_credit', true );
 
 <?php
 if($footer_text || ttfmake_is_preview()):
-	if($footer_text!=JF::$slug){
-		echo implode(PHP_EOL,array(
-			'<div class="footer-text">',
-			ttfmake_sanitize_text($footer_text),
-			'</div>',
-		));
-	}
+	$footer_text = trim(str_replace(JF_FOOTER_KEYWORD,'',$footer_text));
+	echo implode(PHP_EOL,array(
+		'<div class="footer-text">',
+		ttfmake_sanitize_text($footer_text),
+		'</div>',
+	));
 endif;
 ?>
 
