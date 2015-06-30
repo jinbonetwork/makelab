@@ -6,6 +6,7 @@
 @makelab-color-secondary: @gray-lighter;
 @makelab-color-detail: @gray-light;
 
+@makelab-color-box-border: darken(@gray-lighter,3%);
 @makelab-color-box-background: lighten(@gray-lighter,3%);
 
 @makelab-color-facebook: @color-facebook;
@@ -73,8 +74,8 @@
 @makelab-grid-base-width: (@makelab-grid-gutter-width / 3 * 2);
 
 // Element
-@makelab-grid-indent-width:	(@makelab-grid-gutter-width / 3 * 2);
-@makelab-style-rule: 1px solid @makelab-color-text;
+@makelab-element-indent-width:	(@makelab-grid-gutter-width / 3 * 2);
+@makelab-element-border-rule: 1px solid @makelab-color-box-border;
 
 // Layout
 @makelab-header-bar-height: 50px;

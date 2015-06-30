@@ -231,7 +231,7 @@ body.page-template-template-builder .builder-section .builder-section-content:af
   width: auto;
 }
 .bordered {
-  border: 1px solid #777777;
+  border: 1px solid #e7e7e7;
 }
 .link-with-icon {
   color: inherit;
@@ -255,7 +255,7 @@ body.page-template-template-builder .builder-section .builder-section-content:af
 }
 img.featured-figure,
 .featured-figure img {
-  border: 1px solid #777777;
+  border: 1px solid #e7e7e7;
 }
 .featured-figure img {
   width: 100%;
@@ -267,7 +267,7 @@ img.featured-figure,
 }
 img.banner,
 .banner img {
-  border: 1px solid #777777;
+  border: 1px solid #e7e7e7;
 }
 .banner img {
   width: 100%;
@@ -2907,7 +2907,7 @@ ol.ttfmake-list-dot li:before {
 }
 img.entry-thumbnail,
 .entry-thumbnail img {
-  border: 1px solid #777777;
+  border: 1px solid #e7e7e7;
 }
 .entry-thumbnail img {
   width: 100%;
@@ -3334,7 +3334,7 @@ body.page-template-template-builder .builder-section .builder-section-content .b
 }
 imgbody.page-template-template-builder .builder-section .builder-section-content .builder-text-image,
 body.page-template-template-builder .builder-section .builder-section-content .builder-text-image img {
-  border: 1px solid #777777;
+  border: 1px solid #e7e7e7;
 }
 body.page-template-template-builder .builder-section .builder-section-content .builder-text-image img {
   width: 100%;
@@ -3574,7 +3574,7 @@ body.page-template-template-builder .builder-section.builder-section-gallery.bui
 }
 img.builder-text-image,
 .builder-text-image img {
-  border: 1px solid #777777;
+  border: 1px solid #e7e7e7;
 }
 .builder-text-image img {
   width: 100%;
@@ -3831,7 +3831,7 @@ img.builder-text-image,
  Gallery: Images (_pages.scss)
 -------------------------------------------------------- */
 .builder-gallery-image {
-  border: 1px solid #777777;
+  border: 1px solid #e7e7e7;
   height: 0;
   line-height: 0;
   background-position: center;
@@ -4818,7 +4818,7 @@ div.wp-video-shortcode {
 }
 img#site .wp-caption,
 #site .wp-caption img {
-  border: 1px solid #777777;
+  border: 1px solid #e7e7e7;
 }
 #site .wp-caption img {
   width: 100%;
@@ -4977,7 +4977,7 @@ img#site .wp-caption,
 }
 img#site .gallery .gallery-icon,
 #site .gallery .gallery-icon img {
-  border: 1px solid #777777;
+  border: 1px solid #e7e7e7;
 }
 #site .gallery .gallery-icon img {
   width: 100%;
