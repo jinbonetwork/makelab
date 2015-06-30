@@ -112,11 +112,6 @@
 //-----------------------------------------------------------------------------
 //	General
 //-----------------------------------------------------------------------------
-.clearblock {
-	float: left;
-	width: 100%;
-	&:extend(.clear);
-}
 .clear {
 	zoom: 1;
 	&:before,
@@ -125,6 +120,11 @@
 		content: "";
 		clear: both;
 	}
+}
+.clearblock {
+	float: left;
+	width: 100%;
+	.clear;
 }
 .break {
 	word-break: break-word;
@@ -323,6 +323,10 @@
 			font-weight: normal;
 			font-size: inherit;
 			color: inherit;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
 		}
 		&.current_page_item,
 		&.current-menu-item,
@@ -360,6 +364,8 @@
 	height: @makelab-menu-inline-item-height;
 	line-height: @makelab-menu-inline-item-height;
 	word-spacing: 0;
+	margin-left: (0 - @makelab-item-padding);
+	margin-right: (0 - @makelab-item-padding);
 	li {
 		position: relative;
 		float: left;
@@ -368,7 +374,7 @@
 		min-height: 0;
 		line-height: @makelab-menu-inline-item-height;
 		& + li {
-			margin-left: (@makelab-grid-gutter-width / 4);
+			margin-left: @makelab-item-spacing;
 		}
 		a {
 			/*
@@ -381,7 +387,7 @@
 			display: block;
 			height: @makelab-menu-inline-item-height;
 			line-height: @makelab-menu-inline-item-height;
-			padding: 0 0.5em;
+			padding: 0 @makelab-item-padding;
 			background: @makelab-menu-inline-item-background;
 			border: @makelab-menu-inline-item-border;
 			&:before {
@@ -512,7 +518,7 @@
 			padding: 0 !important;
 			i {
 				span {
-					&:extend(.screen-reader-text);
+					.screen-reader-text;
 				}
 			}
 			&:hover .fa,
@@ -570,7 +576,7 @@
 	min-height: @makelab-header-bar-height;
 	color: @makelab-color-document;
 	background-color: @makelab-color-text;
-	&:extend(.clear);
+	.clear;
 
 	// elements
 	a {
@@ -592,21 +598,28 @@
 	.@{context}-social-links,
 	.@{context}-text,
 	.@{context}-bar-menu {
-		height: @makelab-header-bar-height;
+		height: auto;
+		min-height: @makelab-header-bar-height;
 	}
 	.search-form {
 		.search-form-inline();
+		float: left;
 	}
 	.@{context}-social-links {
 		.social-links-inline();
+		float: left;
+	}
+	.search-form + .@{context}-social-links {
+		margin-left: @makelab-item-spacing;
 	}
 	.@{context}-text {
+		.clear;
 		.text-inline();
 	}
 	.@{context}-bar-menu {
-		height: @makelab-header-bar-height;
+		.clear;
 		.menu {
-			.menu-inline();
+			.menu-inline-responsive();
 		}
 	}
 
@@ -615,7 +628,7 @@
 		.search-form,
 		.@{context}-social-links {
 			float: right;
-			margin-left: (@makelab-grid-gutter-width / 2);
+			margin-left: @makelab-item-spacing;
 			margin-right: 0;
 		}
 		.@{context}-bar-menu {

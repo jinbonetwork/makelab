@@ -50,8 +50,8 @@
  Jetpack (_support.scss)
 -------------------------------------------------------- */
 div.sharedaddy {
+	.clear;
 	margin: @makelab-grid-base-width 0;
-	&:extend(.clear);
 }
 .contact-form {
 	textarea,
@@ -76,7 +76,7 @@ div.sharedaddy {
 	}
 }
 .infinite-footer-container {
-	&:extend(.container);
+	.container;
 }
 .infinite-scroll.neverending #site-footer {
 	display: none;
@@ -109,7 +109,7 @@ div.sharedaddy {
 .page-template-template-builder-php {
 	.entry-content {
 		> .twitter-share {
-			&:extend(.container);
+			.container;
 		}
 	}
 }

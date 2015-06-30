@@ -28,7 +28,7 @@ textarea {
 
 // blocks
 p,ul,ol,dl,blockquote {
-	&:extend(.break);
+	.break;
 }
 
 // links
@@ -45,6 +45,18 @@ a {
 	// header-bar
 	.header-bar {
 		.menu-box();
+		.menu-toggle {
+			margin-top: 0;
+			padding: 0;
+		}
+		.header-bar-menu {
+			.menu {
+				padding-bottom: @makelab-hr-size;
+				.min(@makelab-menu-breakpoint,{
+					padding-bottom: 0;
+				});
+			}
+		}
 	}
 
 	// site-header-main
@@ -215,13 +227,13 @@ a {
 //	Main
 //-----------------------------------------------------------------------------
 .site-content {
+	.clear;
 	float: left;
 	width: 100%;
 	background-color: @makelab-color-document;
 	.site-header + & {
 		padding: @makelab-grid-base-width 0; // overridable in the theme customizer
 	}
-	&:extend(.clear);
 }
 
 //-----------------------------------------------------------------------------
@@ -231,7 +243,7 @@ a {
 	.menu-box(footer);
 	min-height: 0;
 	color: @makelab-color-detail;
-	background-color: @makelab-color-secondary;
+	background-color: @makelab-color-box-background;
 
 	// footer-widgets
 	.footer-widget-container {
@@ -291,8 +303,14 @@ a {
 						&.jinbonet-accounts {
 							dt {
 								display: block;
+								font-family: @makelab-font-family-heading;
 								a {
-									font-size: @makelab-font-size-large;
+									font-size: @makelab-font-size-medium;
+									i {
+										display: inline-block;
+										vertical-align: baseline;
+										margin-right: @makelab-icon-spacing;
+									}
 								}
 							}
 							dd {
@@ -302,7 +320,6 @@ a {
 										float: left;
 										a {
 											.link-with-icon;
-											font-size: @makelab-font-size-medium;
 											&:after {
 												text-align: center;
 											}

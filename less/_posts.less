@@ -67,9 +67,8 @@
 	}
 }
 .entry-content {
+	.clear;
 	.editor-generated-content;
-	clear: both;
-	&:extend(.clear);
 }
 .entry-author-bio {
 	margin-top: (@makelab-grid-base-width / 2);
@@ -267,9 +266,9 @@
 			width: auto;
 		}
 		h3 {
+			.entry-date;
 			font-family: inherit;
 			padding-right: @makelab-grid-base-width;
-			&:extend(.entry-date);
 		}
 	}
 }

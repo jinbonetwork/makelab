@@ -36,17 +36,15 @@ object {
 	display: block;
 	width: 100%;
 	max-width: 100%;
-	margin: @makelab-grid-gutter-width 0;
 	img {
 		width: 100%;
 		height: auto;
 	}
-}
-.min(@makelab-column-breakpoint,{
-	.alignnone,
-	.aligncenter,
-	.alignleft,
-	.alignright {
+	* + &,
+	& + * {
+		margin-top: @makelab-paragraph-spacing;
+	}
+	.min(@makelab-column-breakpoint,{
 		width: auto;
 		&.alignnone {
 			clear: none;
@@ -63,8 +61,8 @@ object {
 			float: right;
 			margin: @makelab-paragraph-spacing 0 @makelab-grid-gutter-width @makelab-grid-gutter-width;
 		}
-	}
-});
+	});
+}
 .entry-content iframe[src*="google.com/maps"] {
 	height: 600px;
 	width: 100%;

@@ -12,9 +12,11 @@ $subheader_class = ( 1 === $show_social || 1 === $show_search ) ? ' right-conten
 $hide_site_title = (int) get_theme_mod( 'hide-site-title', ttfmake_get_default( 'hide-site-title' ) );
 $hide_tagline    = (int) get_theme_mod( 'hide-tagline', ttfmake_get_default( 'hide-tagline' ) );
 $menu_label      = get_theme_mod( 'navigation-mobile-label', ttfmake_get_default( 'navigation-mobile-label' ) );
+$menu_toggle			= '<span class="menu-toggle">'.esc_html($menu_label).'</span>';
 $header_bar_menu = wp_nav_menu( array(
 	'theme_location'  => 'header-bar',
 	'container_class' => 'header-bar-menu',
+	'items_wrap' => $menu_toggle.'<ul id="%1$s" class="%2$s">%3$s</ul>',
 	'depth'           => 1,
 	'fallback_cb'     => false,
 	'echo'            => false,
@@ -69,8 +71,8 @@ $header_bar_menu = wp_nav_menu( array(
 
 			<nav id="site-navigation" class="site-navigation" role="navigation">
 				<a class="skip-link screen-reader-text" href="#site-content"><?php _e( 'Skip to content', 'make' ); ?></a>
-				<span class="menu-toggle"><?php echo esc_html( $menu_label ); ?></span>
 				<?php
+				echo $menu_toggle;
 				wp_nav_menu(array(
 					'theme_location' => 'primary',
 					'container' => false,
