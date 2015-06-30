@@ -16,8 +16,8 @@ $footer_credit = apply_filters( 'make_show_footer_credit', true );
 ?>
 
 <?php
+$footer_text = trim(str_replace(JF_FOOTER_KEYWORD,'',$footer_text));
 if($footer_text || ttfmake_is_preview()):
-	$footer_text = trim(str_replace(JF_FOOTER_KEYWORD,'',$footer_text));
 	echo implode(PHP_EOL,array(
 		'<div class="footer-text">',
 		ttfmake_sanitize_text($footer_text),
