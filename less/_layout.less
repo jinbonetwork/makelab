@@ -1,32 +1,38 @@
 body {
 	#site {
 		#site-header {
+			position: relative;
+			z-index: 100;
 			.clearblock;
 			.header-bar {
 				.clearblock;
-				.container {
+				& > .container {
 					.container-boxed;
 				}
 			}
 			.site-header-main {
 				.clearblock;
-				.container {
+				& > .container {
 					.container-boxed;
 				}
 			}
 		}
 		#site-content {
+			position: relative;
+			z-index: 1;
 			.clearblock;
 		}
 		#site-footer {
+			position: relative;
+			z-index: 100;
 			.clearblock;
-			.container {
+			& > .container {
 				.container-boxed;
 			}
 		}
 		#global-footer {
 			.clearblock;
-			.container {
+			& > .container {
 				.container-boxed;
 			}
 		}
@@ -51,7 +57,7 @@ body {
 		#site {
 			#site-content {
 				.container-boxed;
-				.wrap {
+				& > .wrap {
 					.row;
 					#site-main,
 					#sidebar-left,
@@ -62,59 +68,79 @@ body {
 			}
 		}
 	}
-
-	&.has-left-sidebar,
-	&.has-right-sidebar {
-		#site {
-			#site-main {
-				float: left;
-			}
-			#sidebar-left {
-				float: left;
-			}
+	#site {
+		#site-content {
+			#site-main,
+			#sidebar-left,
 			#sidebar-right {
-				float: left;
+				width: 100%;
+			}
+			#sidebar-left + #site-main,
+			#site-main + #sidebar-right {
+				margin-top: @makelab-grid-gutter-width;
 			}
 		}
 	}
+	.min(@makelab-layout-breakpoint,{
+		&.has-left-sidebar,
+		&.has-right-sidebar {
+			#site {
+				#site-content {
+					#site-main {
+						float: left;
+					}
+					#sidebar-left {
+						float: left;
+					}
+					#sidebar-right {
+						float: left;
+					}
+					#sidebar-left + #site-main,
+					#site-main + #sidebar-right {
+						margin-top: 0;
+					}
+				}
+			}
+		}
 
-	&.has-left-sidebar {
-		#site {
-			#site-content {
-				#site-main {
-					width: 75%;
-				}
-				#sidebar-left {
-					width: 25%;
+		&.has-left-sidebar {
+			#site {
+				#site-content {
+					#site-main {
+						.width(3);
+					}
+					#sidebar-left {
+						.width(1);
+					}
 				}
 			}
 		}
-	}
 
-	&.has-right-sidebar {
-		#site {
-			#site-content {
-				#site-main {
-					width: 75%;
-				}
-				#sidebar-right {
-					width: 25%;
+		&.has-right-sidebar {
+			#site {
+				#site-content {
+					#site-main {
+						.width(3);
+					}
+					#sidebar-right {
+						.width(1)
+					}
 				}
 			}
 		}
-	}
 
-	&.has-left-sidebar.has-right-sidebar {
-		#site {
-			#site-content {
-				#site-main {
-					width: 50%;
-				}
-				#sidebar-left,
-				#sidebar-right {
-					width: 25%;
+		&.has-left-sidebar.has-right-sidebar {
+			#site {
+				#site-content {
+					#site-main {
+						.width(2.5);
+					}
+					#sidebar-left,
+					#sidebar-right {
+						.width(0.75);
+					}
 				}
 			}
 		}
-	}
+	});
 }

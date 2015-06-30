@@ -6,6 +6,20 @@
 @makelab-color-secondary: @gray-lighter;
 @makelab-color-detail: @gray-light;
 
+@makelab-color-facebook: @color-facebook;
+@makelab-color-twitter: @color-twitter;
+@makelab-color-googleplus: @color-googleplus;
+@makelab-color-linkedin: @color-linkedin;
+@makelab-color-instagram: @color-instagram;
+@makelab-color-flickr: @color-flickr;
+@makelab-color-youtube: @color-youtube;
+@makelab-color-vimeo: @color-vimeo;
+@makelab-color-pinterest: @color-pinterest;
+@makelab-color-github: @color-github;
+@makelab-color-email: @color-email;
+@makelab-color-rss: @color-rss;
+@makelab-color-support: @color-support;
+
 // Fonts
 @makelab-font-family-sans-serif: @font-family-sans-serif;
 @makelab-font-family-monospace: @font-family-monospace;
@@ -26,16 +40,31 @@
 @makelab-header-bar-background-color: #171717;
 @makelab-header-bar-text-color: #FFFFFF;
 
-@makelab-grid-xs: @container-sm;
-@makelab-grid-sm: @container-sm;
-@makelab-grid-md: @container-md;
-@makelab-grid-lg: @container-lg;
+@makelab-grid-xs-min: @screen-xs-min;
+@makelab-grid-sm-min: @screen-sm-min;
+@makelab-grid-md-min: @screen-md-min;
+@makelab-grid-lg-min: @screen-lg-min;
+@makelab-grid-xs-max: (@screen-sm-min - 1);
+@makelab-grid-sm-max: (@screen-md-min - 1);
+@makelab-grid-md-max: (@screen-lg-min - 1);
+@makelab-grid-lg-max: 99999px;
+@makelab-grid-xs: @makelab-grid-xs-min;
+@makelab-grid-sm: @makelab-grid-sm-min;
+@makelab-grid-md: @makelab-grid-md-min;
+@makelab-grid-lg: @makelab-grid-lg-min;
 @makelab-grid-gutter-width: @grid-gutter-width;
 
+// Responsive
+@makelab-layout-breakpoint: md;
+@makelab-menu-breakpoint: md;
+@makelab-column-breakpoint: md;
+
 // Spacing 
+@makelab-paragraph-spacing: @paragraph-spacing;
 @makelab-column-spacing:	(@makelab-grid-gutter-width * 3);
+@makelab-item-spacing: @makelab-grid-gutter-width / 3;
+@makelab-icon-spacing: 0.25em;
 @makelab-hr-size: (@grid-gutter-width / 2);
-@makelab-item-spacing: @makelab-grid-gutter-width / 5;
 
 // Baseline
 @makelab-grid-base-width: (@makelab-grid-gutter-width / 3 * 2);
@@ -46,11 +75,22 @@
 
 // Layout
 @makelab-header-bar-height: 50px;
+@makelab-menu-item-height: 2.25em;
 @makelab-grid-baseline-width: 10px;
 
 //-----------------------------------------------------------------------------
-//	Sections
+//	Components
 //-----------------------------------------------------------------------------
+
+// Menu
+@makelab-menu-inline-item-background-color: transparent;
+@makelab-menu-inline-item-border-color: transparent;
+@makelab-menu-inline-item-active-background-color: #FFFFFF;
+@makelab-menu-inline-item-active-border-color: #CCCCCC;
+@makelab-menu-inline-item-background: @makelab-menu-inline-item-background-color none;
+@makelab-menu-inline-item-border: 1px solid @makelab-menu-inline-item-border-color;
+@makelab-menu-inline-item-active-background: @makelab-menu-inline-item-active-background-color none;
+@makelab-menu-inline-item-active-border: 1px solid @makelab-menu-inline-item-active-border-color;
 
 // Banner
 @makelab-section-banner-slider-cycle-pager-height: 40px;

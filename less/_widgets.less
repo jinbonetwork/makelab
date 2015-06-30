@@ -65,9 +65,15 @@
 .widget_calendar table {
 	margin-top: 0; //reset
 }
-.widget_search .search-submit {
-	&:extend(.visuallyhidden);
-	&:extend(.focusable);
+.widget_search {
+	.search-form {
+		float: none;
+		margin: 0;
+	}
+	.search-submit {
+		&:extend(.visuallyhidden);
+		&:extend(.focusable);
+	}
 }
 .widget_rss {
 	.widget-title a {
