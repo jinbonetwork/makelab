@@ -30,6 +30,18 @@
 .btn-group-vertical > .btn-group:after,
 .row:before,
 .row:after,
+body #site #site-content #site-main .wrap:before,
+body #site #site-content #site-main .wrap:after,
+body #site #site-content #site-main .wrap:before,
+body #site #site-content #site-main .wrap:after,
+body #site #site-content #sidebar-left .wrap:before,
+body #site #site-content #sidebar-left .wrap:after,
+body #site #site-content #sidebar-left .wrap:before,
+body #site #site-content #sidebar-left .wrap:after,
+body #site #site-content #sidebar-right .wrap:before,
+body #site #site-content #sidebar-right .wrap:after,
+body #site #site-content #sidebar-right .wrap:before,
+body #site #site-content #sidebar-right .wrap:after,
 body.blog #site #site-content > .wrap:before,
 body.blog #site #site-content > .wrap:after,
 body.blog #site #site-content > .wrap:before,
@@ -84,6 +96,12 @@ body.page-template-template-builder .builder-section .builder-section-content:af
 .btn-toolbar:after,
 .btn-group-vertical > .btn-group:after,
 .row:after,
+body #site #site-content #site-main .wrap:after,
+body #site #site-content #site-main .wrap:after,
+body #site #site-content #sidebar-left .wrap:after,
+body #site #site-content #sidebar-left .wrap:after,
+body #site #site-content #sidebar-right .wrap:after,
+body #site #site-content #sidebar-right .wrap:after,
 body.blog #site #site-content > .wrap:after,
 body.blog #site #site-content > .wrap:after,
 body.archive #site #site-content > .wrap:after,
@@ -577,6 +595,61 @@ body #site #site-content:after {
   content: "";
   clear: both;
 }
+body #site #site-content #site-main,
+body #site #site-content #sidebar-left,
+body #site #site-content #sidebar-right {
+  width: 100%;
+}
+body #site #site-content #site-main .wrap,
+body #site #site-content #sidebar-left .wrap,
+body #site #site-content #sidebar-right .wrap {
+  margin-left: -15px;
+  margin-right: -15px;
+  width: auto;
+  max-width: none;
+}
+body #site #site-content #site-main .wrap .widget,
+body #site #site-content #sidebar-left .wrap .widget,
+body #site #site-content #sidebar-right .wrap .widget {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+body #site #site-content #site-main .wrap .widget:nth-child(n+2),
+body #site #site-content #sidebar-left .wrap .widget:nth-child(n+2),
+body #site #site-content #sidebar-right .wrap .widget:nth-child(n+2) {
+  margin-top: 30px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  body #site #site-content #site-main .wrap .widget,
+  body #site #site-content #sidebar-left .wrap .widget,
+  body #site #site-content #sidebar-right .wrap .widget {
+    width: 50%;
+  }
+  body #site #site-content #site-main .wrap .widget:nth-child(2),
+  body #site #site-content #sidebar-left .wrap .widget:nth-child(2),
+  body #site #site-content #sidebar-right .wrap .widget:nth-child(2) {
+    margin-top: 0;
+  }
+  body #site #site-content #site-main .wrap .widget:nth-child(n+3),
+  body #site #site-content #sidebar-left .wrap .widget:nth-child(n+3),
+  body #site #site-content #sidebar-right .wrap .widget:nth-child(n+3) {
+    margin-top: 30px;
+  }
+  body #site #site-content #site-main .wrap .widget:nth-child(2n+1),
+  body #site #site-content #sidebar-left .wrap .widget:nth-child(2n+1),
+  body #site #site-content #sidebar-right .wrap .widget:nth-child(2n+1) {
+    clear: both;
+  }
+}
+body #site #site-content #sidebar-left + #site-main,
+body #site #site-content #site-main + #sidebar-right {
+  margin-top: 30px;
+}
 body #site #site-footer {
   position: relative;
   z-index: 100;
@@ -717,15 +790,6 @@ body.page-template-default #site #site-content > .wrap #sidebar-right {
   margin: 0;
   padding-left: 15px;
   padding-right: 15px;
-}
-body #site #site-content #site-main,
-body #site #site-content #sidebar-left,
-body #site #site-content #sidebar-right {
-  width: 100%;
-}
-body #site #site-content #sidebar-left + #site-main,
-body #site #site-content #site-main + #sidebar-right {
-  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   body.has-left-sidebar #site #site-content #site-main,

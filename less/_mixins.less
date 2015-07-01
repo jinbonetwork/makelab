@@ -1,6 +1,17 @@
 //-----------------------------------------------------------------------------
 //	Responsive utilities
 //-----------------------------------------------------------------------------
+// minmax
+.minmax(@screen,@content) when (iskeyword(@screen)) {
+	@min: ~"makelab-grid-@{screen}-min";
+	@max: ~"makelab-grid-@{screen}-max";
+	@media screen and (min-width: @@min) and (max-width: @@max) {
+		@content();
+	}
+}
+.minmax(@screenmin,@screenmax,@content) when (isnumber(@screenmin)) {
+	@media screen and (min-width: @screenmin) and (max-width: @screenmax) { @content(); }
+}
 // min
 .min(@screen,@content) when (@screen = xs) {
 	@media screen and (min-width: @makelab-grid-xs-min) { @content(); }
