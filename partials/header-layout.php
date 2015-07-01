@@ -16,7 +16,7 @@ $menu_toggle			= '<span class="menu-toggle">'.esc_html($menu_label).'</span>';
 $header_bar_menu = wp_nav_menu( array(
 	'theme_location'  => 'header-bar',
 	'container_class' => 'header-bar-menu',
-	'items_wrap' => $menu_toggle.'<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 	'depth'           => 1,
 	'fallback_cb'     => false,
 	'echo'            => false,
@@ -29,6 +29,8 @@ $header_bar_menu = wp_nav_menu( array(
 	<div class="header-bar<?php echo esc_attr( $subheader_class ); ?>">
 		<div class="container">
 			<a class="skip-link screen-reader-text" href="#site-content"><?php _e( 'Skip to content', 'make' ); ?></a>
+			<?php echo $menu_toggle; ?>
+			<div class="menu-wrap">
 			<?php // Search form
 			if ( 1 === $show_search ) :
 				get_search_form();
@@ -42,7 +44,8 @@ $header_bar_menu = wp_nav_menu( array(
 				</span>
 			<?php endif; ?>
 			<?php echo $header_bar_menu; ?>
-		</div>
+			</div><!--/.menu-wrap-->
+		</div><!--/.container-->
 	</div>
 	<?php endif; ?>
 	<div class="site-header-main">

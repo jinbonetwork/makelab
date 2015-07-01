@@ -276,14 +276,16 @@
 		text-align: left;
 		font-family: FontAwesome;
 	}
+	& + .menu-wrap,
 	& + .menu,
 	& + .nav-menu {
 		display: none;
 	}
-	.toggled > & {
+	.toggled & {
 		&:before {
 			content: '\F00D';
 		}
+		& + .menu-wrap,
 		& + .menu,
 		& + .nav-menu {
 			display: block;
@@ -291,6 +293,7 @@
 	}
 	.min(@makelab-menu-breakpoint,{
 		display: none;
+		& + .menu-wrap,
 		& + .menu,
 		& + .nav-menu {
 			display: block;
@@ -574,10 +577,14 @@
 	position: relative;
 	float: left;
 	width: 100%;
-	min-height: @makelab-header-bar-height;
+	height: auto;
+	min-height: 0;
 	color: @makelab-color-document;
 	background-color: @makelab-color-text;
 	.clear;
+	.min(@makelab-menu-breakpoint,{
+		min-height: @makelab-header-bar-height;
+	});
 
 	// elements
 	a {

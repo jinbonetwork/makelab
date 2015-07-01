@@ -12,6 +12,7 @@ $subheader_class = ( 1 === $show_social ) ? ' right-content' : '';
 $hide_site_title = (int) get_theme_mod( 'hide-site-title', ttfmake_get_default( 'hide-site-title' ) );
 $hide_tagline    = (int) get_theme_mod( 'hide-tagline', ttfmake_get_default( 'hide-tagline' ) );
 $menu_label      = get_theme_mod( 'navigation-mobile-label', ttfmake_get_default( 'navigation-mobile-label' ) );
+$menu_toggle			= '<span class="menu-toggle">'.esc_html($menu_label).'</span>';
 $header_bar_menu = wp_nav_menu( array(
 	'theme_location'  => 'header-bar',
 	'container_class' => 'header-bar-menu',
@@ -27,6 +28,8 @@ $header_bar_menu = wp_nav_menu( array(
 	<div class="header-bar<?php echo esc_attr( $subheader_class ); ?>">
 		<div class="container">
 			<a class="skip-link screen-reader-text" href="#site-content"><?php _e( 'Skip to content', 'make' ); ?></a>
+			<?php echo $menu_toggle; ?>
+			<div class="menu-wrap">
 			<?php // Social links
 			ttfmake_maybe_show_social_links( 'header' ); ?>
 			<?php // Header text; shown only if there is no header menu
@@ -36,7 +39,8 @@ $header_bar_menu = wp_nav_menu( array(
 				</span>
 			<?php endif; ?>
 			<?php echo $header_bar_menu; ?>
-		</div>
+			</div><!--/.menu-wrap-->
+		</div><!--/.container-->
 	</div>
 	<?php endif; ?>
 	<div class="site-header-main">

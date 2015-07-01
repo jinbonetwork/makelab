@@ -8,9 +8,9 @@ jQuery(document).on('lazydo',function(e){
 });
 
 jQuery(document).ready(function(e){
-	jQuery('.header-bar-menu .menu-toggle').on('click',function(e){
+	jQuery('.header-bar .menu-toggle').on('click',function(e){
 		var $trigger = jQuery(this);
-		var $container = $trigger.closest('.header-bar-menu');
+		var $container = $trigger.closest('.header-bar');
 		$container.toggleClass('toggled');
 	});
 });

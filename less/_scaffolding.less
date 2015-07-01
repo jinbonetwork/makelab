@@ -278,7 +278,11 @@ a {
 	// global-footer
 	.jframework-global-footer {
 		.clearblock;
-		padding: (@makelab-grid-gutter-width / 2) 0 @makelab-grid-gutter-width 0;
+		padding: 0 0 @makelab-grid-gutter-width 0;
+		padding-top: (@makelab-grid-gutter-width / 2);
+		* + & {
+			padding-top: 0;
+		}
 		font-size: @makelab-font-size-small;
 		.container {
 			padding: 0;
