@@ -48,6 +48,7 @@ a {
 		.menu-toggle {
 			margin-top: 0;
 			padding: 0;
+			background-color: transparent;
 		}
 		.header-bar-menu {
 			.menu {
@@ -242,14 +243,14 @@ a {
 .site-footer {
 	.menu-box(footer);
 	min-height: 0;
-	color: @makelab-color-detail;
-	background-color: @makelab-color-box-background;
+	color: @makelab-color-document;
+	background-color: @makelab-color-text;
 
 	// footer-widgets
 	.footer-widget-container {
 		.row;
 		.columns-container(columns,widget-area);
-		padding-top: @makelab-grid-gutter-width;
+		padding-top: (@makelab-grid-gutter-width / 2);
 		// widget
 		.widget-area {
 		}
@@ -272,151 +273,6 @@ a {
 			text-transform: lowercase;
 			padding: 0 4px;
 			letter-spacing: 1px;
-		}
-	}
-
-	// global-footer
-	.jframework-global-footer {
-		.clearblock;
-		padding: 0 0 @makelab-grid-gutter-width 0;
-		padding-top: (@makelab-grid-gutter-width / 2);
-		* + & {
-			padding-top: 0;
-		}
-		font-size: @makelab-font-size-small;
-		.container {
-			padding: 0;
-			.jframework-global-sitemap {
-				.jinbonet-sitemap {
-					.row;
-					.columns-container(columns,column);
-					dl {
-						dt {
-							display: none;
-						}
-						dd {
-							ul {
-								list-style: none;
-								li {
-									a {
-										color: @makelab-color-detail;
-									}
-								}
-							}
-						}
-						&.jinbonet-accounts {
-							dt {
-								display: block;
-								font-family: @makelab-font-family-heading;
-								a {
-									font-size: @makelab-font-size-medium;
-									i {
-										display: inline-block;
-										vertical-align: baseline;
-										margin-right: @makelab-icon-spacing;
-									}
-								}
-							}
-							dd {
-								ul {
-									.clear;
-									li {
-										float: left;
-										a {
-											.link-with-icon;
-											&:after {
-												text-align: center;
-											}
-											span {
-												.visuallyhidden;
-											}
-										}
-										&.twitter a{
-											&:before {
-												content: '\F099';
-											}
-											&:hover {
-												color: @makelab-color-twitter;
-											}
-										}
-										&.facebook a{
-											&:before {
-												content: '\F082';
-											}
-											&:hover {
-												color: @makelab-color-facebook;
-											}
-										}
-										&.github a{
-											&:before {
-												content: '\F09B';
-											}
-											&:hover {
-												color: @makelab-color-github;
-											}
-										}
-										&.support a{
-											&:before {
-												content: '\F004';
-											}
-											&:hover {
-												color: @makelab-color-support;
-											}
-											span {
-												.visuallyvisible;
-											}
-										}
-									}
-								}
-							}
-						}
-						&.jinbonet-teams {
-						}
-						&.jinbonet-sites {
-						}
-						&.jinbonet-services {
-						}
-					}
-				}
-			}
-			.jframework-global-contact {
-				.row;
-				float: left;
-				margin-top: @makelab-hr-size;
-				.contact {
-					.col;
-					a {
-						.link-with-icon;
-					}
-					address {
-						font-style: normal;
-					}
-					dl {
-						dt {
-							display: none;
-						}
-						dd {
-							&.contact-address a:before {
-								content: '\F041';
-							}
-							&.contact-phone a:before {
-								content: '\F095';
-							}
-							&.contact-email a:before {
-								content: '\F0E0';
-							}
-						}
-					}
-				}
-			}
-			.jframework-global-license {
-				.row;
-				float: right;
-				margin-top: @makelab-hr-size;
-				.license {
-					.col;
-				}
-			}
 		}
 	}
 

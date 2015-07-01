@@ -629,14 +629,14 @@
 //	Component bundle
 //-----------------------------------------------------------------------------
 
-.menu-box(@context:header){
+.menu-box(@menu-box-context:header,@menu-box-text-color:@makelab-header-bar-text-color,@menu-box-background-color:@makelab-header-bar-background-color){
 	position: relative;
 	float: left;
 	width: 100%;
 	height: auto;
 	min-height: 0;
-	color: @makelab-color-document;
-	background-color: @makelab-color-text;
+	color: @menu-box-text-color;
+	background-color: @menu-box-background-color;
 	.clear;
 	.min(@makelab-menu-breakpoint,{
 		min-height: @makelab-header-bar-height;
@@ -653,15 +653,16 @@
 	}
 	textarea,
 	input {
-		background-color: @makelab-color-document;
+		background-color: @menu-box-text-color;
+		color: @menu-box-background-color;
 		font-size: @makelab-menu-font-size;
 	}
 
 	// components
 	.search-form,
-	.@{context}-social-links,
-	.@{context}-text,
-	.@{context}-bar-menu {
+	.@{menu-box-context}-social-links,
+	.@{menu-box-context}-text,
+	.@{menu-box-context}-bar-menu {
 		height: auto;
 		min-height: @makelab-header-bar-height;
 	}
@@ -669,18 +670,18 @@
 		.search-form-inline();
 		float: left;
 	}
-	.@{context}-social-links {
+	.@{menu-box-context}-social-links {
 		.social-links-inline();
 		float: left;
 	}
-	.search-form + .@{context}-social-links {
+	* + .@{menu-box-context}-social-links {
 		margin-left: @makelab-item-spacing;
 	}
-	.@{context}-text {
+	.@{menu-box-context}-text {
 		.clear;
 		.text-inline();
 	}
-	.@{context}-bar-menu {
+	.@{menu-box-context}-bar-menu {
 		.clear;
 		.menu {
 			.menu-inline-responsive();
@@ -690,28 +691,28 @@
 	// responsive
 	.min(@makelab-menu-breakpoint,{
 		.search-form,
-		.@{context}-social-links {
+		.@{menu-box-context}-social-links {
 			float: right;
 			margin-left: @makelab-item-spacing;
 			margin-right: 0;
 		}
-		.@{context}-bar-menu {
+		.@{menu-box-context}-bar-menu {
 			float: left;
 		}
-		.@{context}-text {
+		.@{menu-box-context}-text {
 			text-align: left;
 		}
-		.@{context}-bar-flipped & {
+		.@{menu-box-context}-bar-flipped & {
 			.search-form,
 			.header-social-links {
 				float: left;
 				margin-left: 0;
 				margin-right: (@makelab-grid-gutter-width / 2);
 			}
-			.@{context}-bar-menu {
+			.@{menu-box-context}-bar-menu {
 				float: right;
 			}
-			.@{context}-text {
+			.@{menu-box-context}-text {
 				text-align: right;
 			}
 		}

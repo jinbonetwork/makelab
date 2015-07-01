@@ -42,6 +42,8 @@ if ( $sidebar_count > 0 ) {
 
 		<?php ttfmake_maybe_show_social_links( 'footer' ); ?>
 
+	</div><!--/.container-->
+</footer>
 <?php
 if(strpos(get_theme_mod('footer-text',ttfmake_get_default('footer-text')),JF_FOOTER_KEYWORD)!==false){
 	$pattern = array(
@@ -50,5 +52,4 @@ if(strpos(get_theme_mod('footer-text',ttfmake_get_default('footer-text')),JF_FOO
 	echo str_replace(array_keys($pattern),array_values($pattern),JFTemplates::getFooter());
 }
 ?>
-	</div>
-</footer>
+
