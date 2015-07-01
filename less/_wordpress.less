@@ -98,6 +98,9 @@ div.wp-video-shortcode {
 			.entry-thumbnail-caption;
 			margin: (@makelab-grid-base-width / 2) 0;
 		}
+		.max(@makelab-smallest-breakpoint,{
+			width: 100% !important;
+		});
 		.min(@makelab-column-breakpoint,{
 			&.alignleft,
 			&.alignright {
@@ -115,7 +118,7 @@ div.wp-video-shortcode {
 	.gallery {
 		.columns-container(gallery-columns,gallery-item,12);
 		.clear;
-		margin-top: 0;
+		margin-top: @makelab-grid-gutter-width;
 		margin-left: (0 - (@makelab-grid-gutter-width / 2));
 		margin-right: (0 - (@makelab-grid-gutter-width / 2));
 		& + * {
@@ -123,7 +126,6 @@ div.wp-video-shortcode {
 		}
 		.gallery-item {
 			position: relative;
-			margin-top: @makelab-grid-gutter-width;
 			overflow: hidden;
 			text-align: center;
 		}

@@ -36,21 +36,25 @@ body.page-template-template-builder {
 		// columns
 		&.builder-section-text {
 			.columns-container(builder-text-columns,builder-text-column);
+			/*
 			.builder-text-column + .builder-text-column {
 				margin-top: @makelab-grid-gutter-width;
 				.min(@makelab-column-breakpoint,{
 					margin-top: 0;
 				});
 			}
+			*/
 		}
 		&.builder-section-gallery {
 			.columns-container(builder-gallery-columns,builder-gallery-item);
+			/*
 			.builder-gallery-item + .builder-gallery-item {
 				margin-top: @makelab-grid-gutter-width;
 				.min(@makelab-column-breakpoint,{
 					margin-top: 0;
 				});
 			}
+			*/
 			&.builder-gallery-columns-1 .builder-gallery-item:nth-child(n+2),
 			&.builder-gallery-columns-2 .builder-gallery-item:nth-child(n+3),
 			&.builder-gallery-columns-3 .builder-gallery-item:nth-child(n+4),
