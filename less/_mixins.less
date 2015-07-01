@@ -357,9 +357,13 @@
 		li {
 			a {
 				&:before {
-					content: "\2013  ";
+					content: "\2013";
 				}
 			}
+		}
+		.sub-menu,
+		.children {
+			margin-left: @makelab-element-indent-width;
 		}
 	}
 }
@@ -461,6 +465,7 @@
 				left: auto;
 				right: 100%;
 				margin-top: 0;
+				margin-left: 0;
 			}
 			li {
 				margin: 0;

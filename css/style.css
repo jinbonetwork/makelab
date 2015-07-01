@@ -385,7 +385,13 @@ img.banner,
 }
 .social-links .sub-menu li a:before,
 .social-links .children li a:before {
-  content: "\2013  ";
+  content: "\2013";
+}
+.social-links .sub-menu .sub-menu,
+.social-links .children .sub-menu,
+.social-links .sub-menu .children,
+.social-links .children .children {
+  margin-left: 20px;
 }
 .social-links li a {
   padding: 0 !important;
@@ -911,7 +917,13 @@ a {
 }
 .site-header .header-bar .header-social-links .sub-menu li a:before,
 .site-header .header-bar .header-social-links .children li a:before {
-  content: "\2013  ";
+  content: "\2013";
+}
+.site-header .header-bar .header-social-links .sub-menu .sub-menu,
+.site-header .header-bar .header-social-links .children .sub-menu,
+.site-header .header-bar .header-social-links .sub-menu .children,
+.site-header .header-bar .header-social-links .children .children {
+  margin-left: 20px;
 }
 .site-header .header-bar .header-social-links li {
   position: relative;
@@ -1009,6 +1021,7 @@ a {
   left: auto;
   right: 100%;
   margin-top: 0;
+  margin-left: 0;
 }
 .site-header .header-bar .header-social-links li .sub-menu li,
 .site-header .header-bar .header-social-links li .children li {
@@ -1154,7 +1167,13 @@ a {
 }
 .site-header .header-bar .header-bar-menu .menu .sub-menu li a:before,
 .site-header .header-bar .header-bar-menu .menu .children li a:before {
-  content: "\2013  ";
+  content: "\2013";
+}
+.site-header .header-bar .header-bar-menu .menu .sub-menu .sub-menu,
+.site-header .header-bar .header-bar-menu .menu .children .sub-menu,
+.site-header .header-bar .header-bar-menu .menu .sub-menu .children,
+.site-header .header-bar .header-bar-menu .menu .children .children {
+  margin-left: 20px;
 }
 @media screen and (min-width: 768px) {
   .site-header .header-bar .header-bar-menu .menu {
@@ -1211,7 +1230,13 @@ a {
   }
   .site-header .header-bar .header-bar-menu .menu .sub-menu li a:before,
   .site-header .header-bar .header-bar-menu .menu .children li a:before {
-    content: "\2013  ";
+    content: "\2013";
+  }
+  .site-header .header-bar .header-bar-menu .menu .sub-menu .sub-menu,
+  .site-header .header-bar .header-bar-menu .menu .children .sub-menu,
+  .site-header .header-bar .header-bar-menu .menu .sub-menu .children,
+  .site-header .header-bar .header-bar-menu .menu .children .children {
+    margin-left: 20px;
   }
   .site-header .header-bar .header-bar-menu .menu li {
     position: relative;
@@ -1309,6 +1334,7 @@ a {
     left: auto;
     right: 100%;
     margin-top: 0;
+    margin-left: 0;
   }
   .site-header .header-bar .header-bar-menu .menu li .sub-menu li,
   .site-header .header-bar .header-bar-menu .menu li .children li {
@@ -1500,7 +1526,17 @@ a {
 .site-header .site-navigation .menu .sub-menu li a:before,
 .site-header .site-navigation .nav-menu .children li a:before,
 .site-header .site-navigation .menu .children li a:before {
-  content: "\2013  ";
+  content: "\2013";
+}
+.site-header .site-navigation .nav-menu .sub-menu .sub-menu,
+.site-header .site-navigation .menu .sub-menu .sub-menu,
+.site-header .site-navigation .nav-menu .children .sub-menu,
+.site-header .site-navigation .menu .children .sub-menu,
+.site-header .site-navigation .nav-menu .sub-menu .children,
+.site-header .site-navigation .menu .sub-menu .children,
+.site-header .site-navigation .nav-menu .children .children,
+.site-header .site-navigation .menu .children .children {
+  margin-left: 20px;
 }
 @media screen and (min-width: 768px) {
   .site-header .site-navigation .nav-menu,
@@ -1570,7 +1606,17 @@ a {
   .site-header .site-navigation .menu .sub-menu li a:before,
   .site-header .site-navigation .nav-menu .children li a:before,
   .site-header .site-navigation .menu .children li a:before {
-    content: "\2013  ";
+    content: "\2013";
+  }
+  .site-header .site-navigation .nav-menu .sub-menu .sub-menu,
+  .site-header .site-navigation .menu .sub-menu .sub-menu,
+  .site-header .site-navigation .nav-menu .children .sub-menu,
+  .site-header .site-navigation .menu .children .sub-menu,
+  .site-header .site-navigation .nav-menu .sub-menu .children,
+  .site-header .site-navigation .menu .sub-menu .children,
+  .site-header .site-navigation .nav-menu .children .children,
+  .site-header .site-navigation .menu .children .children {
+    margin-left: 20px;
   }
   .site-header .site-navigation .nav-menu li,
   .site-header .site-navigation .menu li {
@@ -1701,6 +1747,7 @@ a {
     left: auto;
     right: 100%;
     margin-top: 0;
+    margin-left: 0;
   }
   .site-header .site-navigation .nav-menu li .sub-menu li,
   .site-header .site-navigation .menu li .sub-menu li,
@@ -2031,7 +2078,13 @@ a {
 }
 .site-footer .footer-social-links .sub-menu li a:before,
 .site-footer .footer-social-links .children li a:before {
-  content: "\2013  ";
+  content: "\2013";
+}
+.site-footer .footer-social-links .sub-menu .sub-menu,
+.site-footer .footer-social-links .children .sub-menu,
+.site-footer .footer-social-links .sub-menu .children,
+.site-footer .footer-social-links .children .children {
+  margin-left: 20px;
 }
 .site-footer .footer-social-links li {
   position: relative;
@@ -2129,6 +2182,7 @@ a {
   left: auto;
   right: 100%;
   margin-top: 0;
+  margin-left: 0;
 }
 .site-footer .footer-social-links li .sub-menu li,
 .site-footer .footer-social-links li .children li {
@@ -2274,7 +2328,13 @@ a {
 }
 .site-footer .footer-bar-menu .menu .sub-menu li a:before,
 .site-footer .footer-bar-menu .menu .children li a:before {
-  content: "\2013  ";
+  content: "\2013";
+}
+.site-footer .footer-bar-menu .menu .sub-menu .sub-menu,
+.site-footer .footer-bar-menu .menu .children .sub-menu,
+.site-footer .footer-bar-menu .menu .sub-menu .children,
+.site-footer .footer-bar-menu .menu .children .children {
+  margin-left: 20px;
 }
 @media screen and (min-width: 768px) {
   .site-footer .footer-bar-menu .menu {
@@ -2331,7 +2391,13 @@ a {
   }
   .site-footer .footer-bar-menu .menu .sub-menu li a:before,
   .site-footer .footer-bar-menu .menu .children li a:before {
-    content: "\2013  ";
+    content: "\2013";
+  }
+  .site-footer .footer-bar-menu .menu .sub-menu .sub-menu,
+  .site-footer .footer-bar-menu .menu .children .sub-menu,
+  .site-footer .footer-bar-menu .menu .sub-menu .children,
+  .site-footer .footer-bar-menu .menu .children .children {
+    margin-left: 20px;
   }
   .site-footer .footer-bar-menu .menu li {
     position: relative;
@@ -2429,6 +2495,7 @@ a {
     left: auto;
     right: 100%;
     margin-top: 0;
+    margin-left: 0;
   }
   .site-footer .footer-bar-menu .menu li .sub-menu li,
   .site-footer .footer-bar-menu .menu li .children li {
