@@ -5,17 +5,22 @@
 	.clearblock;
 	padding: 0 0 @makelab-grid-gutter-width 0;
 	padding-top: (@makelab-grid-gutter-width / 2);
+	background-color: @makelab-color-secondary;
+	color: @makelab-color-text;
 	font-size: @makelab-font-size-small;
 	.container {
 		.container-boxed;
-		.wrap {
-			background-color: @makelab-header-bar-background-color;
-			color: @makelab-header-bar-text-color;
-		}
 		.jframework-global-sitemap {
 			.jinbonet-sitemap {
 				.row;
 				.columns-container(columns,column);
+				a {
+					color: inherit;
+					text-decoration: none;
+					&:hover {
+						text-decoration: none;
+					}
+				}
 				dl {
 					dt {
 						display: none;

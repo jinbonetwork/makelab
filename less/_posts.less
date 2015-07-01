@@ -13,7 +13,19 @@
 	}
 }
 .entry-thumbnail {
-	.featured-figure;
+	&.thumbnail {
+		float: left;
+		margin: @makelab-floated-image-vspacing @makelab-grid-gutter-width @makelab-grid-gutter-width 0;
+		img {
+			.bordered;
+		}
+		& + * {
+			margin-top: 0;
+		}
+	}
+	&.post-header {
+		.featured-figure;
+	}
 }
 .entry-thumbnail-caption {
 	text-align: left; //reset
