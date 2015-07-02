@@ -4,6 +4,8 @@
  */
 
 // Footer Options
+$footer_text   = get_theme_mod( 'footer-text', false );
+$footer_credit = apply_filters( 'make_show_footer_credit', true );
 $footer_layout = (int) get_theme_mod( 'footer-layout', ttfmake_get_default( 'footer-layout' ) );
 $sidebar_count = (int) get_theme_mod( 'footer-widget-areas', ttfmake_get_default( 'footer-widget-areas' ) );
 $social_links  = ttfmake_get_social_links();
@@ -45,7 +47,7 @@ if ( $sidebar_count > 0 ) {
 	</div><!--/.container-->
 </footer>
 <?php
-if(strpos(get_theme_mod('footer-text',ttfmake_get_default('footer-text')),JF_FOOTER_KEYWORD)!==false){
+if(class_exists('TTFMP_App')&&$footer_credit){
 	$pattern = array(
 		'columns-container' => 'columns-container columns-4',
 	);
