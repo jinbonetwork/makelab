@@ -928,6 +928,10 @@ a {
   line-height: 1;
 }
 .site-header .header-bar .header-social-links {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   float: none;
   list-style: none;
   margin: 0;
@@ -1184,6 +1188,10 @@ a {
   clear: both;
 }
 .site-header .header-bar .header-bar-menu .menu {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   float: none;
   list-style: none;
   margin: 0;
@@ -1242,6 +1250,10 @@ a {
 }
 @media screen and (min-width: 768px) {
   .site-header .header-bar .header-bar-menu .menu {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     float: none;
     list-style: none;
     margin: 0;
@@ -1531,6 +1543,10 @@ a {
 }
 .site-header .site-navigation .nav-menu,
 .site-header .site-navigation .menu {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   float: none;
   list-style: none;
   margin: 0;
@@ -1607,6 +1623,10 @@ a {
 @media screen and (min-width: 768px) {
   .site-header .site-navigation .nav-menu,
   .site-header .site-navigation .menu {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     float: none;
     list-style: none;
     margin: 0;
@@ -2090,6 +2110,10 @@ a {
   line-height: 1;
 }
 .site-footer .footer-social-links {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   float: none;
   list-style: none;
   margin: 0;
@@ -2346,6 +2370,10 @@ a {
   clear: both;
 }
 .site-footer .footer-bar-menu .menu {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   float: none;
   list-style: none;
   margin: 0;
@@ -2404,6 +2432,10 @@ a {
 }
 @media screen and (min-width: 768px) {
   .site-footer .footer-bar-menu .menu {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     float: none;
     list-style: none;
     margin: 0;

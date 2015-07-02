@@ -189,6 +189,17 @@ class ML_App {
 		wp_register_style('makelab',"{$url_base}/css/style.css",$this->deps_frontend,$this->version);
 		wp_register_script('makelab',"{$url_base}/js/script.js",$this->deps_frontend,$this->version,true);
 		//makelab_test_resources();
+
+	}
+
+	public function enqueue_custom_resources(){
+		$url_base = $this->url_base;
+		if(file_exists("{$this->root_dir}/custom/style.css")){
+			wp_enqueue_style('makelab-custom',"{$url_base}/custom/style.css",$this->deps_frontend,$this->version);
+		}
+		if(file_exists("{$this->root_dir}/custom/script.js")){
+			wp_enqueue_script('makelab-custom',"{$url_base}/custom/script.js",$this->deps_frontend,$this->version,true);
+		}
 	}
 
 	public function enqueue_scripts(){
@@ -202,6 +213,9 @@ class ML_App {
 		wp_enqueue_style('makelab');
 		wp_enqueue_script('makelab');
 		//makelab_test_resources();
+
+		// custom
+		$this->enqueue_custom_resources();
 	}
 
 	public function admin_enqueue_scripts(){
