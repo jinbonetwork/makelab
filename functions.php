@@ -1,4 +1,5 @@
 <?php
+
 require_once dirname(__FILE__).'/jframework/jframework.php';
 
 if(!class_exists('ML_App')):
@@ -122,7 +123,13 @@ class ML_App {
 	}
 
 	public function get_resource_map(){
-		$map = json_decode(file_get_contents($this->shared_base.'/data/resources.map.json'),true);
+		$map_path = defined(ML_MAP_PATH)? ML_MAP_PATH : $this->shared_base.'/data/resources.map.json';
+		$map = file_exists($map_path)? json_decode(file_get_contents($map_path),true) : array();
+
+		$map_patch_path = defined(ML_MAP_PATCH_PATH)? ML_MAP_PATCH_PATH : null;
+		$map_patch = file_exists($map_patch_path)? json_decode(file_get_contents($map_patch_path),true) : array();
+
+		$map = array_merge($map,$map_patch);
 		//unset($map['jquery']); // WordPress already has jquery.
 		//makelab_test_resources();
 		return $map;
@@ -266,5 +273,13 @@ function ml_get_app(){
 	return ML_App::instance();
 }
 endif;
+
+//-----------------------------------------------------------------------------
+//	Initiation
+//-----------------------------------------------------------------------------
+$custom_functions = ml_get_app()->root_dir.'/custom/functions.php';
+if(file_exists($custom_functions)){
+	require_once $custom_functions;
+}
 ml_get_app()->init();
 ?>
