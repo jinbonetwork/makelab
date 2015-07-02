@@ -47,11 +47,16 @@ if ( $sidebar_count > 0 ) {
 	</div><!--/.container-->
 </footer>
 <?php
-if(class_exists('TTFMP_App')&&$footer_credit){
+
+$custom_footer = ml_get_app()->root_dir.'/custom/footer.html';
+if(file_exists($custom_footer)){
+	echo file_get_contents($custom_footer);
+}else{
 	$pattern = array(
 		'columns-container' => 'columns-container columns-4',
 	);
 	echo str_replace(array_keys($pattern),array_values($pattern),JFTemplates::getFooter());
 }
+
 ?>
 

@@ -25,7 +25,7 @@ if($footer_text || ttfmake_is_preview()):
 endif;
 ?>
 
-<?php if(!class_exists('TTFMP_App')&&$footer_credit): ?>
+<?php if($footer_credit): ?>
 <div class="site-info">
 	<span class="theme-name">Make: A WordPress template</span>
 	<span class="theme-by"><?php _ex( 'by', 'attribution', 'make' ); ?></span>
