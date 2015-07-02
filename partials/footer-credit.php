@@ -3,7 +3,6 @@
  * @package Make
  */
 
-$footer_text   = get_theme_mod( 'footer-text', false );
 
 /**
  * Allow toggling of the footer credit.
@@ -12,11 +11,11 @@ $footer_text   = get_theme_mod( 'footer-text', false );
  *
  * @param bool    $show    Whether or not to show the footer credit.
  */
+$footer_text   = get_theme_mod( 'footer-text', false );
 $footer_credit = apply_filters( 'make_show_footer_credit', true );
 ?>
 
 <?php
-$footer_text = trim(str_replace(JF_FOOTER_KEYWORD,'',$footer_text));
 if($footer_text || ttfmake_is_preview()):
 	echo implode(PHP_EOL,array(
 		'<div class="footer-text">',
@@ -26,7 +25,7 @@ if($footer_text || ttfmake_is_preview()):
 endif;
 ?>
 
-<?php if ( true === $footer_credit ) : ?>
+<?php if(!class_exists('TTFMP_App')&&$footer_credit): ?>
 <div class="site-info">
 	<span class="theme-name">Make: A WordPress template</span>
 	<span class="theme-by"><?php _ex( 'by', 'attribution', 'make' ); ?></span>
