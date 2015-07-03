@@ -117,6 +117,11 @@ a {
 		.menu {
 			.menu-inline-responsive(@makelab-menu-item-height);
 			color: @makelab-color-text;
+			a {
+				&:hover {
+					background-color: @makelab-color-box-background !important;
+				}
+			}
 		}
 	}
 
@@ -130,7 +135,12 @@ a {
 				.nav-menu,
 				.menu {
 					float: right;
-					text-align: right;
+					.sub-menu,
+					.children {
+						a {
+							text-align: right;
+						}
+					}
 				}
 			}
 			.branding-right & {
@@ -141,7 +151,12 @@ a {
 					.nav-menu,
 					.menu {
 						float: left;
-						text-align: left;
+						.sub-menu,
+						.children {
+							a {
+								text-align: left;
+							}
+						}
 					}
 				}
 			}
