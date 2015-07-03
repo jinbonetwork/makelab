@@ -392,6 +392,8 @@ img.banner,
   display: inline;
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
   font-weight: normal;
   font-size: inherit;
   color: inherit;
@@ -975,6 +977,8 @@ a {
   display: inline;
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
   font-weight: normal;
   font-size: inherit;
   color: inherit;
@@ -1269,6 +1273,8 @@ a {
   display: inline;
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
   font-weight: normal;
   font-size: inherit;
   color: inherit;
@@ -1336,6 +1342,8 @@ a {
     display: inline;
     margin: 0;
     padding: 0;
+    border: none;
+    outline: none;
     font-weight: normal;
     font-size: inherit;
     color: inherit;
@@ -1668,6 +1676,8 @@ a {
   display: inline;
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
   font-weight: normal;
   font-size: inherit;
   color: inherit;
@@ -1752,6 +1762,8 @@ a {
     display: inline;
     margin: 0;
     padding: 0;
+    border: none;
+    outline: none;
     font-weight: normal;
     font-size: inherit;
     color: inherit;
@@ -2311,6 +2323,8 @@ a {
   display: inline;
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
   font-weight: normal;
   font-size: inherit;
   color: inherit;
@@ -2605,6 +2619,8 @@ a {
   display: inline;
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
   font-weight: normal;
   font-size: inherit;
   color: inherit;
@@ -2672,6 +2688,8 @@ a {
     display: inline;
     margin: 0;
     padding: 0;
+    border: none;
+    outline: none;
     font-weight: normal;
     font-size: inherit;
     color: inherit;
