@@ -6222,7 +6222,7 @@ img#site .gallery .gallery-icon,
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
   .jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl dd,
   .jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl dd {
     float: none;
