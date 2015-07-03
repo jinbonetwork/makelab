@@ -123,42 +123,51 @@
 				}
 			}
 		}
-		.jframework-global-contact {
+		.jframework-global-contact,
+		.jframework-global-license {
 			.row;
-			float: left;
 			margin-top: @makelab-hr-size;
-			.contact {
-				.col;
-				a {
-					.link-with-icon;
-				}
-				address {
-					font-style: normal;
-				}
-				dl {
-					dt {
-						display: none;
+			&.jframework-global-contact {
+				float: left;
+				.contact {
+					.col;
+					a {
+						.link-with-icon;
 					}
-					dd {
-						&.contact-address a:before {
-							content: '\F041';
+					address {
+						font-style: normal;
+					}
+					dl {
+						.row;
+						dt {
+							display: none;
 						}
-						&.contact-phone a:before {
-							content: '\F095';
-						}
-						&.contact-email a:before {
-							content: '\F0E0';
+						dd {
+							.col;
+							.max(800px,{
+								float: none;
+							});
+							&.contact-address a:before {
+								content: '\F041';
+							}
+							&.contact-phone a:before {
+								content: '\F095';
+							}
+							&.contact-email a:before {
+								content: '\F0E0';
+							}
 						}
 					}
 				}
 			}
-		}
-		.jframework-global-license {
-			.row;
-			float: right;
-			margin-top: @makelab-hr-size;
-			.license {
-				.col;
+			&.jframework-global-license {
+				float: right;
+				.max(550px,{
+					clear: both;
+				});
+				.license {
+					.col;
+				}
 			}
 		}
 	}

@@ -85,7 +85,15 @@ body.page-template-template-builder .builder-section .builder-section-content:af
 .jframework-global-footer .container .jframework-global-license:before,
 .jframework-global-footer .container .jframework-global-license:after,
 .jframework-global-footer .container .jframework-global-license:before,
-.jframework-global-footer .container .jframework-global-license:after {
+.jframework-global-footer .container .jframework-global-license:after,
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl:before,
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl:after,
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl:before,
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl:after,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl:before,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl:after,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl:before,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl:after {
   content: " ";
   display: table;
 }
@@ -123,7 +131,11 @@ body.page-template-template-builder .builder-section .builder-section-content:af
 .jframework-global-footer .container .jframework-global-contact:after,
 .jframework-global-footer .container .jframework-global-contact:after,
 .jframework-global-footer .container .jframework-global-license:after,
-.jframework-global-footer .container .jframework-global-license:after {
+.jframework-global-footer .container .jframework-global-license:after,
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl:after,
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl:after,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl:after,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl:after {
   clear: both;
 }
 .container {
@@ -6146,15 +6158,20 @@ img#site .gallery .gallery-icon,
     width: 100% !important;
   }
 }
-.jframework-global-footer .container .jframework-global-contact {
+.jframework-global-footer .container .jframework-global-contact,
+.jframework-global-footer .container .jframework-global-license {
   margin-left: -15px;
   margin-right: -15px;
   width: auto;
   max-width: none;
-  float: left;
   margin-top: 15px;
 }
-.jframework-global-footer .container .jframework-global-contact .contact {
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact {
+  float: left;
+}
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact {
   float: left;
   position: relative;
   min-height: 1px;
@@ -6162,12 +6179,15 @@ img#site .gallery .gallery-icon,
   padding-left: 15px;
   padding-right: 15px;
 }
-.jframework-global-footer .container .jframework-global-contact .contact a {
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact a,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact a {
   color: inherit;
   text-decoration: none;
 }
-.jframework-global-footer .container .jframework-global-contact .contact a:before,
-.jframework-global-footer .container .jframework-global-contact .contact a:after {
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact a:before,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact a:before,
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact a:after,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact a:after {
   color: inherit;
   display: inline-block;
   vertical-align: baseline;
@@ -6178,30 +6198,60 @@ img#site .gallery .gallery-icon,
   font-family: FontAwesome;
   font-weight: normal;
 }
-.jframework-global-footer .container .jframework-global-contact .contact address {
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact address,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact address {
   font-style: normal;
 }
-.jframework-global-footer .container .jframework-global-contact .contact dl dt {
-  display: none;
-}
-.jframework-global-footer .container .jframework-global-contact .contact dl dd.contact-address a:before {
-  content: '\F041';
-}
-.jframework-global-footer .container .jframework-global-contact .contact dl dd.contact-phone a:before {
-  content: '\F095';
-}
-.jframework-global-footer .container .jframework-global-contact .contact dl dd.contact-email a:before {
-  content: '\F0E0';
-}
-.jframework-global-footer .container .jframework-global-license {
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl {
   margin-left: -15px;
   margin-right: -15px;
   width: auto;
   max-width: none;
-  float: right;
-  margin-top: 15px;
 }
-.jframework-global-footer .container .jframework-global-license .license {
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl dt,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl dt {
+  display: none;
+}
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl dd,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl dd {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 800px) {
+  .jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl dd,
+  .jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl dd {
+    float: none;
+  }
+}
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl dd.contact-address a:before,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl dd.contact-address a:before {
+  content: '\F041';
+}
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl dd.contact-phone a:before,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl dd.contact-phone a:before {
+  content: '\F095';
+}
+.jframework-global-footer .container .jframework-global-contact.jframework-global-contact .contact dl dd.contact-email a:before,
+.jframework-global-footer .container .jframework-global-license.jframework-global-contact .contact dl dd.contact-email a:before {
+  content: '\F0E0';
+}
+.jframework-global-footer .container .jframework-global-contact.jframework-global-license,
+.jframework-global-footer .container .jframework-global-license.jframework-global-license {
+  float: right;
+}
+@media screen and (max-width: 550px) {
+  .jframework-global-footer .container .jframework-global-contact.jframework-global-license,
+  .jframework-global-footer .container .jframework-global-license.jframework-global-license {
+    clear: both;
+  }
+}
+.jframework-global-footer .container .jframework-global-contact.jframework-global-license .license,
+.jframework-global-footer .container .jframework-global-license.jframework-global-license .license {
   float: left;
   position: relative;
   min-height: 1px;
