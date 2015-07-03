@@ -93,6 +93,7 @@ class ML_App {
 		add_filter('style_loader_tag',array($this,'filter_resource_tag'),0,2);
 		add_filter('make_css_add',array($this,'make_css_add'));
 
+		add_filter('make_setting_defaults',array($this,'make_setting_defaults'));
 		add_filter('make_customizer_general_sections',array($this,'make_customizer_general_sections'));
 	}
 
@@ -119,10 +120,35 @@ class ML_App {
 	//---------------------------------------------------------------------------
 	//	Customizer
 	//---------------------------------------------------------------------------
+	public function make_setting_defaults($defaults){
+		return array_merge($defaults,array(
+			'header-bar-menu-mobile-label' => __('Quicklinks','makelab'),
+			'footer-jframework-footer' => true,
+		));
+	}
+	
 	public function make_customizer_general_sections($general_sections){
 		$theme_prefix = 'ml_';
 		$panel = 'ttfmake_general';
-		return array_merge($general_sections,array(
+
+		// header bar menu mobile label
+		$general_sections['labels']['options'] = array_merge(array(
+			'header-bar-menu-mobile-label' => array(
+				'setting' => array(
+					'sanitize_callback' => 'esc_html',
+					'theme_supports' => 'menus',
+					'transport' => 'postMessage',
+				),
+				'control' => array(
+					'label' => __('Header Bar Menu Label','makelab'),
+					'description' => __('Resize your browser window to preview the mobile menu label.','make'),
+					'type' => 'text',
+				),
+			),
+		),$general_sections['labels']['options']);
+
+		// jframework footer switch
+		$general_sections = array_merge($general_sections,array(
 			'footer-jframework-footer' => array(
 				'panel' => $panel,
 				'title' => __('JFramework Footer','makelab'),
@@ -151,6 +177,7 @@ class ML_App {
 				),
 			),
 		));
+		return $general_sections;
 	}
 
 	//---------------------------------------------------------------------------
