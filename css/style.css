@@ -42,6 +42,10 @@ body #site #site-content #sidebar-right .wrap:before,
 body #site #site-content #sidebar-right .wrap:after,
 body #site #site-content #sidebar-right .wrap:before,
 body #site #site-content #sidebar-right .wrap:after,
+body.error404 #site #site-content > .wrap:before,
+body.error404 #site #site-content > .wrap:after,
+body.error404 #site #site-content > .wrap:before,
+body.error404 #site #site-content > .wrap:after,
 body.blog #site #site-content > .wrap:before,
 body.blog #site #site-content > .wrap:after,
 body.blog #site #site-content > .wrap:before,
@@ -110,6 +114,8 @@ body #site #site-content #sidebar-left .wrap:after,
 body #site #site-content #sidebar-left .wrap:after,
 body #site #site-content #sidebar-right .wrap:after,
 body #site #site-content #sidebar-right .wrap:after,
+body.error404 #site #site-content > .wrap:after,
+body.error404 #site #site-content > .wrap:after,
 body.blog #site #site-content > .wrap:after,
 body.blog #site #site-content > .wrap:after,
 body.archive #site #site-content > .wrap:after,
@@ -750,6 +756,7 @@ body.boxed #site #site-content .builder-section:after {
   display: block;
   clear: both;
 }
+body.error404 #site #site-content,
 body.blog #site #site-content,
 body.archive #site #site-content,
 body.search #site #site-content,
@@ -764,6 +771,7 @@ body.page-template-default #site #site-content {
   margin-left: auto;
   margin-right: auto;
 }
+body.error404 #site #site-content:after,
 body.blog #site #site-content:after,
 body.archive #site #site-content:after,
 body.search #site #site-content:after,
@@ -773,6 +781,7 @@ body.page-template-default #site #site-content:after {
   display: block;
   clear: both;
 }
+body.error404 #site #site-content > .wrap,
 body.blog #site #site-content > .wrap,
 body.archive #site #site-content > .wrap,
 body.search #site #site-content > .wrap,
@@ -783,16 +792,19 @@ body.page-template-default #site #site-content > .wrap {
   width: auto;
   max-width: none;
 }
+body.error404 #site #site-content > .wrap #site-main,
 body.blog #site #site-content > .wrap #site-main,
 body.archive #site #site-content > .wrap #site-main,
 body.search #site #site-content > .wrap #site-main,
 body.single #site #site-content > .wrap #site-main,
 body.page-template-default #site #site-content > .wrap #site-main,
+body.error404 #site #site-content > .wrap #sidebar-left,
 body.blog #site #site-content > .wrap #sidebar-left,
 body.archive #site #site-content > .wrap #sidebar-left,
 body.search #site #site-content > .wrap #sidebar-left,
 body.single #site #site-content > .wrap #sidebar-left,
 body.page-template-default #site #site-content > .wrap #sidebar-left,
+body.error404 #site #site-content > .wrap #sidebar-right,
 body.blog #site #site-content > .wrap #sidebar-right,
 body.archive #site #site-content > .wrap #sidebar-right,
 body.search #site #site-content > .wrap #sidebar-right,
