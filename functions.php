@@ -92,6 +92,8 @@ class ML_App {
 		add_filter('script_loader_tag',array($this,'filter_resource_tag'),0,2);
 		add_filter('style_loader_tag',array($this,'filter_resource_tag'),0,2);
 		add_filter('make_css_add',array($this,'make_css_add'));
+
+		add_filter('make_customizer_general_sections',array($this,'make_customizer_general_sections'));
 	}
 
 	public function load_components(){
@@ -112,6 +114,43 @@ class ML_App {
 				}
 			}
 		}
+	}
+
+	//---------------------------------------------------------------------------
+	//	Customizer
+	//---------------------------------------------------------------------------
+	public function make_customizer_general_sections($general_sections){
+		$theme_prefix = 'ml_';
+		$panel = 'ttfmake_general';
+		return array_merge($general_sections,array(
+			'footer-jframework-footer' => array(
+				'panel' => $panel,
+				'title' => __('JFramework Footer','makelab'),
+				'description' => __('On/off embeded global footer','makelab'),
+				'options' => array(
+					'footer-jframework-footer' => array(
+						'setting' => array(
+							'sanitize_callback' => 'absint',
+						),
+						'control' => array(
+							'type' => 'checkbox',
+							'label' => sprintf(
+								__('Use %1$s','makelab'),
+								__('JFramework footer','makelab')
+							),
+							'description' => sprintf(
+								'<a href="%1$s" target="_blank">%2$s</a>',
+								'https://github.com/jinbonetwork/jframework',
+								sprintf(
+									__('Read %1$s','makelab'),
+									__('Github repository','makelab')
+								)
+							)
+						),
+					),
+				),
+			),
+		));
 	}
 
 	//---------------------------------------------------------------------------

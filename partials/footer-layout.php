@@ -4,6 +4,7 @@
  */
 
 // Footer Options
+$jframework_footer = get_theme_mod('footer-jframework-footer',false);
 $footer_text   = get_theme_mod( 'footer-text', false );
 $footer_credit = apply_filters( 'make_show_footer_credit', true );
 $footer_layout = (int) get_theme_mod( 'footer-layout', ttfmake_get_default( 'footer-layout' ) );
@@ -51,7 +52,9 @@ if ( $sidebar_count > 0 ) {
 $custom_footer = ml_get_app()->root_dir.'/custom/footer.html';
 if(file_exists($custom_footer)){
 	echo file_get_contents($custom_footer);
-}else{
+}
+
+if($jframework_footer){
 	$pattern = array(
 		'columns-container' => 'columns-container columns-4',
 	);
