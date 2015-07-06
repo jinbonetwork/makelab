@@ -26,6 +26,9 @@ if ( $sidebar_count > 0 ) {
 }
 ?>
 
+<?php
+if($sidebar_count||$footer_text||$footer_credit||$show_social):
+?>
 <footer id="site-footer" class="site-footer footer-layout-<?php echo esc_attr( $footer_layout ); ?>" role="contentinfo">
 	<div class="container">
 		<?php // Footer widget areas
@@ -48,18 +51,21 @@ if ( $sidebar_count > 0 ) {
 	</div><!--/.container-->
 </footer>
 <?php
+endif;
+?>
 
+<?php
 $custom_footer = ml_get_app()->root_dir.'/custom/footer.html';
 if(file_exists($custom_footer)){
 	echo file_get_contents($custom_footer);
 }
+?>
 
+<?php
 if($jframework_footer){
 	$pattern = array(
 		'columns-container' => 'columns-container columns-4',
 	);
 	echo str_replace(array_keys($pattern),array_values($pattern),JFTemplates::getFooter());
 }
-
 ?>
-
