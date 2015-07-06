@@ -27,10 +27,10 @@ class ML_Section_Classifier {
 		}
 		$structure = file_get_contents(dirname(__FILE__).'/overlay.html');
 		$pattern = array(
-			'%overlay_title%' => __('Classify section','makelab'),
-			'%label_input_classes%' => __('Classes','makelab'),
-			'%label_input_attributes%' => __('Attributes','makelab'),
-			'%label_input_data%' => __('Data','makelab'),
+			'%overlay_title%' => __('Classify Section',TEXTDOMAIN),
+			'%label_input_classes%' => __('CSS Classes',TEXTDOMAIN),
+			'%label_input_attributes%' => __('HTML Attributes',TEXTDOMAIN),
+			'%label_input_data%' => __('Selector-Attribute Data (JSON format)',TEXTDOMAIN),
 		);
 		echo str_replace(array_keys($pattern),array_values($pattern),$structure);
 	}
@@ -57,7 +57,7 @@ class ML_Section_Classifier {
 
 		wp_localize_script('ml-classify-section','ml_classify_section',array(
 			'nonce' => wp_create_nonce('ml-classify-section'),
-			'defaultError' => __('An unexpected error occurred.','makelab'),
+			'defaultError' => __('An unexpected error occurred.',TEXTDOMAIN),
 		));
 
 		//makelab_test_resources();
@@ -71,8 +71,8 @@ class ML_Section_Classifier {
 		$links[0] = array(
 			'class' => 'ml-classify-section',
 			'href'  => '#',
-			'label' => __('Classify','makelab'),
-			'title' => __('Classify section','makelab'),
+			'label' => __('Classify',TEXTDOMAIN),
+			'title' => __('Classify section',TEXTDOMAIN),
 		);
 		return $links;
 	}
@@ -84,9 +84,9 @@ class ML_Section_Classifier {
 
 		if(wp_verify_nonce($nonce,'ml-classify-section')&&$post_ID&&!empty($metadata)){
 			ml_get_app()->update_post_meta_json($post_ID,'ml_classifier_metadata',$metadata);
-			wp_send_json_success(__('Data saving success.','makelab'));
+			wp_send_json_success(__('Data saving success.',TEXTDOMAIN));
 		}else{
-			wp_send_json_error(__('Invalid data submitted.','makelab'));
+			wp_send_json_error(__('Invalid data submitted.',TEXTDOMAIN));
 		}
 	}
 

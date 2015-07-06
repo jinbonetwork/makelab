@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: makelab\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: 진보네트워크센터 <jinbonetwork@gmail.com>\n"
+"Language-Team: jinbonet <jinbonetwork@gmail.com>\n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "Classify Section"
+msgstr "섹션 분류하기"
+
+msgid "CSS Classes"
+msgstr "CSS 클래스"
+
+msgid "HTML Attributes"
+msgstr "HTML 속성"
+
+msgid "Selector-Attribute Data (JSON format)"
+msgstr "선택자-속성 데이터 (JSON 형식)"
+
+msgid "An unexpected error occurred."
+msgstr "알 수 없는 오류가 발생했습니다."
+
+msgid "Classify"
+msgstr "분류하기"
+
+msgid "Data saving success."
+msgstr "데이터를 성공적으로 저장했습니다."
+
+msgid "Invalid data submitted."
+msgstr "잘못된 데이터가 제출되었습니다."
+
+msgid "Quicklinks"
+msgstr "바로가기"
+
+msgid "Header Bar Menu Label"
+msgstr "상단 메뉴 막대 레이블"
+
+msgid "jFramework Footer"
+msgstr "jFramework 풋터"
+
+msgid "On/off embeded global footer"
+msgstr "내장된 전역 풋터를 켜기/끄기"
+
+msgid "Use %1$s"
+msgstr "%1$s 사용"
+
+msgid "jFramework footer"
+msgstr "jFramework 풋터"
+
+msgid "Refer %1$s"
+msgstr "%1$s 참조하기"
+
+msgid "Github repository"
+msgstr "깃허브 저장소"

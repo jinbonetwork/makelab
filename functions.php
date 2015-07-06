@@ -1,7 +1,6 @@
 <?php
-
+define('TEXTDOMAIN','makelab');
 require_once dirname(__FILE__).'/jframework/jframework.php';
-
 if(!class_exists('ML_App')):
 class ML_App {
 
@@ -84,7 +83,7 @@ class ML_App {
 		if('make'===get_template()){
 			$this->passive = false;
 		}
-		load_plugin_textdomain('makelab',null,$this->root_dir.'/languages/');
+		load_child_theme_textdomain(TEXTDOMAIN,$this->root_dir.'/languages/');
 		add_action('after_setup_theme',array($this,'register_resources'));
 		add_action('after_setup_theme',array($this,'load_components'));
 		add_action('wp_enqueue_scripts',array($this,'enqueue_scripts'));
@@ -122,7 +121,7 @@ class ML_App {
 	//---------------------------------------------------------------------------
 	public function make_setting_defaults($defaults){
 		return array_merge($defaults,array(
-			'header-bar-menu-mobile-label' => __('Quicklinks','makelab'),
+			'header-bar-menu-mobile-label' => __('Quicklinks',TEXTDOMAIN),
 			'footer-jframework-footer' => true,
 		));
 	}
@@ -140,7 +139,7 @@ class ML_App {
 					'transport' => 'postMessage',
 				),
 				'control' => array(
-					'label' => __('Header Bar Menu Label','makelab'),
+					'label' => __('Header Bar Menu Label',TEXTDOMAIN),
 					'description' => __('Resize your browser window to preview the mobile menu label.','make'),
 					'type' => 'text',
 				),
@@ -151,8 +150,8 @@ class ML_App {
 		$general_sections = array_merge($general_sections,array(
 			'footer-jframework-footer' => array(
 				'panel' => $panel,
-				'title' => __('JFramework Footer','makelab'),
-				'description' => __('On/off embeded global footer','makelab'),
+				'title' => __('jFramework Footer',TEXTDOMAIN),
+				'description' => __('On/off embeded global footer',TEXTDOMAIN),
 				'options' => array(
 					'footer-jframework-footer' => array(
 						'setting' => array(
@@ -161,15 +160,15 @@ class ML_App {
 						'control' => array(
 							'type' => 'checkbox',
 							'label' => sprintf(
-								__('Use %1$s','makelab'),
-								__('JFramework footer','makelab')
+								__('Use %1$s',TEXTDOMAIN),
+								__('jFramework footer',TEXTDOMAIN)
 							),
 							'description' => sprintf(
 								'<a href="%1$s" target="_blank">%2$s</a>',
 								'https://github.com/jinbonetwork/jframework',
 								sprintf(
-									__('Read %1$s','makelab'),
-									__('Github repository','makelab')
+									__('Refer %1$s',TEXTDOMAIN),
+									__('Github repository',TEXTDOMAIN)
 								)
 							)
 						),

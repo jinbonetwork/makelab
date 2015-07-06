@@ -431,6 +431,9 @@ img.banner,
 .social-links .children .children {
   margin-left: 20px;
 }
+.social-links li.external-link-square.wiki a .fa:before {
+  content: '\F02D';
+}
 .social-links li a {
   padding: 0 !important;
 }
@@ -3263,6 +3266,7 @@ img.entry-thumbnail.post-header,
   margin-top: 5px;
 }
 .entry-title {
+  clear: both;
   font-weight: bold;
   word-spacing: -1px;
 }
