@@ -606,11 +606,11 @@ body #site #site-header .site-header-main > .container:after {
   clear: both;
 }
 body #site #site-content {
-  position: relative;
-  z-index: 1;
   float: left;
   width: 100%;
   zoom: 1;
+  position: relative;
+  z-index: 1;
 }
 body #site #site-content:before,
 body #site #site-content:after {
