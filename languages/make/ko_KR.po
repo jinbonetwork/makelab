@@ -1,0 +1,2116 @@
+# Copyright (C) 2015 The Theme Foundry
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Make 1.6.1\n"
+"Report-Msgid-Bugs-To: https://thethemefoundry.com/support/\n"
+"POT-Creation-Date: 2015-06-20 03:40:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-07-07 18:05+0900\n"
+"Last-Translator: The Theme Foundry\n"
+"Language-Team: The Theme Foundry\n"
+"X-Generator: Poedit 1.8.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko_KR\n"
+
+#: 404.php:12
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "페이지를 찾을 수 없습니다."
+
+#: 404.php:18
+msgid "Maybe try searching this website:"
+msgstr "이 사이트의 내용을 검색할 수 있습니다:"
+
+#: comments.php:24 comments.php:40
+msgid "Comment navigation"
+msgstr "댓글 탐색"
+
+#: comments.php:49
+msgid "Comments are closed."
+msgstr "댓글을 작성할 수 없습니다."
+
+#: functions.php:179
+msgid "Primary Menu"
+msgstr "주 메뉴"
+
+#: functions.php:180
+msgid "Social Profile Links"
+msgstr "SNS 링크"
+
+#: functions.php:181
+msgid "Header Bar Menu"
+msgstr "헤더 막대 메뉴"
+
+#: functions.php:211
+msgid "Left Sidebar"
+msgstr "왼쪽 사이드바"
+
+#: functions.php:220
+msgid "Right Sidebar"
+msgstr "오른쪽 사이드바"
+
+#: functions.php:229
+msgid "Footer 1"
+msgstr "풋터 1"
+
+#: functions.php:238
+msgid "Footer 2"
+msgstr "풋터 2"
+
+#: functions.php:247
+msgid "Footer 3"
+msgstr "풋터 3"
+
+#: functions.php:256
+msgid "Footer 4"
+msgstr "풋터 4"
+
+#: inc/activation.php:34
+msgid ""
+"Make requires at least WordPress version %1$s. You are running version %2$s. "
+"Please upgrade and try again."
+msgstr ""
+"Make는 워드프레스 버전 %1$s 이상을 요구합니다. 현재 버전은 %2$s입니다. 업그레이"
+"드 후에 다시 시도해 보세요."
+
+#: inc/admin-notice/template.php:8
+msgid "Hide"
+msgstr "감추기"
+
+#: inc/builder/core/base.php:97
+msgid "Page Builder"
+msgstr "페이지 빌더"
+
+#: inc/builder/core/base.php:128
+msgid "Use Page Builder"
+msgstr "페이지 빌더 사용하기"
+
+#: inc/builder/core/base.php:334
+msgid "Delete the section?"
+msgstr "섹션을 삭제할까요?"
+
+#: inc/builder/core/base.php:431 inc/builder/core/configuration-helpers.php:96
+#: inc/builder/sections/builder-templates/text.php:142
+msgid "Set image"
+msgstr "그림 설정"
+
+#: inc/builder/core/base.php:464 inc/builder/core/templates/overlay-tinymce.php:4
+#: inc/builder/sections/builder-templates/banner-slide.php:42
+#: inc/builder/sections/builder-templates/banner-slide.php:44
+#: inc/builder/sections/builder-templates/gallery-item.php:40
+#: inc/builder/sections/builder-templates/gallery-item.php:42
+#: inc/builder/sections/builder-templates/text.php:91
+msgid "Edit content"
+msgstr "내용 편집"
+
+#: inc/builder/core/base.php:550
+msgid "Current image"
+msgstr "현재 그림"
+
+#: inc/builder/core/base.php:552
+msgid "Remove Current Image"
+msgstr "현재 그림 삭제"
+
+#: inc/builder/core/base.php:656
+msgid "Duplicate this page with %s."
+msgstr "이 페이지를 %s로 복제."
+
+#: inc/builder/core/base.php:1047
+msgid "Want some ideas?"
+msgstr "아이디어가 필요한가요?"
+
+#: inc/builder/core/base.php:1050
+msgid "%s and get a quick start with pre-made designer builder templates."
+msgstr "%s하고 미리 준비된 빌더 템플릿으로 빠르게 시작하기."
+
+#: inc/builder/core/base.php:1055
+#: inc/builder/sections/builder-templates/text.php:27 inc/edit-page.php:96
+msgid "Upgrade to %s"
+msgstr "%s 위해 업그레이드"
+
+#: inc/builder/core/templates/menu.php:39
+msgid "Get more."
+msgstr "추가 기능을 얻기."
+
+#: inc/builder/core/templates/menu.php:43
+msgid "Looking for more sections and options? %s."
+msgstr "더 많은 섹션과 옵션이 필요하세요? %s."
+
+#: inc/builder/core/templates/menu.php:47 inc/customizer/bootstrap.php:428
+#: inc/customizer/sections/stylekit.php:29
+msgid "Upgrade to Make Plus"
+msgstr "Make Plus로 업그레이드하세요."
+
+#: inc/builder/core/templates/overlay-configuration.php:4
+#: inc/builder/core/templates/section-header.php:21
+#: inc/builder/core/templates/section-header.php:22
+msgid "Configure section"
+msgstr "섹션 설정"
+
+#: inc/builder/core/templates/overlay-header.php:6
+msgid "Configuration"
+msgstr "설정"
+
+#: inc/builder/core/templates/overlay-header.php:7
+msgid "Done"
+msgstr "완료"
+
+#: inc/builder/core/templates/section-header.php:12
+#: inc/builder/core/templates/section-header.php:13
+msgid "Delete section"
+msgstr "섹션 삭제"
+
+#: inc/builder/core/templates/section-header.php:84
+msgid "Click to toggle"
+msgstr "켜기/끄기"
+
+#: inc/builder/sections/builder-templates/banner-slide.php:31
+msgid "Drag-and-drop this slide into place"
+msgstr "이 슬라이드를 원하는 위치에 끌어다 놓기"
+
+#: inc/builder/sections/builder-templates/banner-slide.php:35
+msgid "Set banner image"
+msgstr "배너 그림 설정"
+
+#: inc/builder/sections/builder-templates/banner-slide.php:37
+#: inc/builder/sections/builder-templates/banner-slide.php:39
+#: inc/builder/sections/builder-templates/banner-slide.php:59
+msgid "Configure slide"
+msgstr "슬라이드 설정"
+
+#: inc/builder/sections/builder-templates/banner-slide.php:47
+#: inc/builder/sections/builder-templates/banner-slide.php:49
+msgid "Delete slide"
+msgstr "슬라이드 삭제"
+
+#: inc/builder/sections/builder-templates/banner-slide.php:74
+msgid "Content position"
+msgstr "내용 위치"
+
+#: inc/builder/sections/builder-templates/banner-slide.php:77
+#: inc/builder/sections/section-definitions.php:257
+#: inc/builder/sections/section-definitions.php:441
+#: inc/builder/sections/section-definitions.php:452 inc/customizer/choices.php:87
+#: inc/customizer/choices.php:209 inc/customizer/choices.php:232
+#: inc/customizer/choices.php:243 inc/customizer/choices.php:254
+#: inc/gallery-slider/gallery-slider.php:118
+msgid "None"
+msgstr "없음"
+
+#: inc/builder/sections/builder-templates/banner-slide.php:78
+#: inc/customizer/choices.php:134 inc/customizer/choices.php:176
+#: inc/customizer/choices.php:218
+msgid "Left"
+msgstr "왼쪽"
+
+#: inc/builder/sections/builder-templates/banner-slide.php:79
+#: inc/customizer/choices.php:136 inc/customizer/choices.php:177
+#: inc/customizer/choices.php:220
+msgid "Right"
+msgstr "오른쪽"
+
+#: inc/builder/sections/builder-templates/banner-slide.php:84
+#: inc/builder/sections/section-definitions.php:109
+#: inc/builder/sections/section-definitions.php:285
+#: inc/builder/sections/section-definitions.php:473
+msgid "Darken background to improve readability"
+msgstr "가독성을 높이기 위해 배경을 어둡게 처리"
+
+#: inc/builder/sections/builder-templates/banner-slide.php:90
+#: inc/builder/sections/section-definitions.php:125
+#: inc/builder/sections/section-definitions.php:301
+#: inc/builder/sections/section-definitions.php:489
+msgid "Background color"
+msgstr "배경색"
+
+#: inc/builder/sections/builder-templates/banner.php:29
+msgid "Add new slide"
+msgstr "새 슬라이드 추가"
+
+#: inc/builder/sections/builder-templates/banner.php:32
+#: inc/builder/sections/builder-templates/gallery.php:34
+msgid "Add Item"
+msgstr "아이템 추가"
+
+#: inc/builder/sections/builder-templates/gallery-item.php:29
+msgid "Drag-and-drop this item into place"
+msgstr "이 아이템을 원하는 위치에 끌어다 놓기"
+
+#: inc/builder/sections/builder-templates/gallery-item.php:33
+msgid "Set gallery image"
+msgstr "갤러리 그림 설정"
+
+#: inc/builder/sections/builder-templates/gallery-item.php:35
+#: inc/builder/sections/builder-templates/gallery-item.php:37
+#: inc/builder/sections/builder-templates/gallery-item.php:57
+msgid "Configure item"
+msgstr "아이템 설정"
+
+#: inc/builder/sections/builder-templates/gallery-item.php:45
+#: inc/builder/sections/builder-templates/gallery-item.php:47
+msgid "Delete item"
+msgstr "아이템 삭제"
+
+#: inc/builder/sections/builder-templates/gallery-item.php:72
+msgid "Enter item title"
+msgstr "아이템 제목 입력"
+
+#: inc/builder/sections/builder-templates/gallery-item.php:79
+msgid "Item link URL"
+msgstr "아이템 링크 주소"
+
+#: inc/builder/sections/builder-templates/gallery.php:31
+msgid "Add new item"
+msgstr "새 아이템 추가"
+
+#: inc/builder/sections/builder-templates/text.php:22
+msgid "%s and convert any column into an area for widgets."
+msgstr "%s 또는 위젯 영역으로 바꾸기."
+
+#: inc/builder/sections/builder-templates/text.php:81
+#: inc/builder/sections/builder-templates/text.php:84
+#: inc/builder/sections/builder-templates/text.php:160
+msgid "Configure column"
+msgstr "컬럼 설정"
+
+#: inc/builder/sections/builder-templates/text.php:88
+msgid "Edit text column"
+msgstr "컬럼 편집"
+
+#: inc/builder/sections/builder-templates/text.php:119
+msgid "Drag-and-drop this column into place"
+msgstr "이 컬럼을 원하는 위치에 끌어다 놓기"
+
+#: inc/builder/sections/builder-templates/text.php:175
+msgid "Enter column title"
+msgstr "컬럼 제목 입력"
+
+#: inc/builder/sections/builder-templates/text.php:182
+msgid "Image link URL"
+msgstr "그림 링크 주소"
+
+#: inc/builder/sections/section-definitions.php:75
+msgid "Create rearrangeable columns of content and images."
+msgstr "그림과 내용을 포함한, 재배열할 수 있는 컬럼 만들기"
+
+#: inc/builder/sections/section-definitions.php:85
+#: inc/builder/sections/section-definitions.php:222
+#: inc/builder/sections/section-definitions.php:416
+msgid "Enter section title"
+msgstr "섹션 제목 입력"
+
+#: inc/builder/sections/section-definitions.php:92
+#: inc/builder/sections/section-definitions.php:422
+msgid "Columns"
+msgstr "컬럼"
+
+#: inc/builder/sections/section-definitions.php:104
+#: inc/builder/sections/section-definitions.php:280
+#: inc/builder/sections/section-definitions.php:468
+msgid "Background image"
+msgstr "배경 그림"
+
+#: inc/builder/sections/section-definitions.php:116
+#: inc/builder/sections/section-definitions.php:292
+#: inc/builder/sections/section-definitions.php:480
+msgid "Background style"
+msgstr "배경 스타일"
+
+#: inc/builder/sections/section-definitions.php:119
+#: inc/builder/sections/section-definitions.php:295
+#: inc/builder/sections/section-definitions.php:483 inc/customizer/choices.php:121
+msgid "Tile"
+msgstr "반복"
+
+#: inc/builder/sections/section-definitions.php:120
+#: inc/builder/sections/section-definitions.php:296
+#: inc/builder/sections/section-definitions.php:484 inc/customizer/choices.php:157
+msgid "Cover"
+msgstr "꽉차게"
+
+#: inc/builder/sections/section-definitions.php:212
+msgid "Display multiple types of content in a banner or a slider."
+msgstr "배너 또는 슬라이드 본문의 다양한 종류 표시하기"
+
+#: inc/builder/sections/section-definitions.php:227
+#: inc/gallery-slider/gallery-slider.php:98
+msgid "Hide navigation arrows"
+msgstr "탐색 화살표 감추기"
+
+#: inc/builder/sections/section-definitions.php:233
+#: inc/gallery-slider/gallery-slider.php:102
+msgid "Hide navigation dots"
+msgstr "탐색 메뉴 감추기"
+
+#: inc/builder/sections/section-definitions.php:239
+msgid "Autoplay slideshow"
+msgstr "슬라이드쇼 자동 재생"
+
+#: inc/builder/sections/section-definitions.php:245
+#: inc/gallery-slider/gallery-slider.php:110
+msgid "Time between slides (ms)"
+msgstr "슬라이드 시간 간격 (ms)"
+
+#: inc/builder/sections/section-definitions.php:251
+msgid "Transition effect"
+msgstr "슬라이드 넘김 효과"
+
+#: inc/builder/sections/section-definitions.php:255
+#: inc/gallery-slider/gallery-slider.php:116
+msgid "Slide horizontal"
+msgstr "수평 방향으로 미끄러지기"
+
+#: inc/builder/sections/section-definitions.php:256
+#: inc/gallery-slider/gallery-slider.php:117
+msgid "Fade"
+msgstr "서서히 사라지고 나타나기"
+
+#: inc/builder/sections/section-definitions.php:262
+msgid "Section height (px)"
+msgstr "섹션 높이 (px)"
+
+#: inc/builder/sections/section-definitions.php:268
+msgid "Responsive behavior"
+msgstr "반응형 처리"
+
+#: inc/builder/sections/section-definitions.php:271
+msgid ""
+"Choose how the Banner will respond to varying screen widths. Default is ideal "
+"for large amounts of written content, while Aspect is better for showing your "
+"images."
+msgstr "배너가 화면 폭에 따라 어떻게 반응할 지 선택하기"
+
+#: inc/builder/sections/section-definitions.php:273 inc/customizer/choices.php:182
+#: inc/customizer/sections/stylekit.php:48
+#: inc/customizer/sections/typography.php:26
+msgid "Default"
+msgstr "기본"
+
+#: inc/builder/sections/section-definitions.php:274
+msgid "Aspect"
+msgstr "비율"
+
+#: inc/builder/sections/section-definitions.php:406
+msgid "Display your images in various grid combinations."
+msgstr "여러 그리드 조합에서 이미지 표시"
+
+#: inc/builder/sections/section-definitions.php:435
+msgid "Aspect ratio"
+msgstr "비율"
+
+#: inc/builder/sections/section-definitions.php:438
+msgid "Square"
+msgstr "정사각형"
+
+#: inc/builder/sections/section-definitions.php:439
+msgid "Landscape"
+msgstr "가로로 넓은 사각형"
+
+#: inc/builder/sections/section-definitions.php:440
+msgid "Portrait"
+msgstr "세로로 높은 사각형"
+
+#: inc/builder/sections/section-definitions.php:447
+msgid "Caption style"
+msgstr "자막 스타일"
+
+#: inc/builder/sections/section-definitions.php:450
+msgid "Reveal"
+msgstr "드러내기"
+
+#: inc/builder/sections/section-definitions.php:451
+msgid "Overlay"
+msgstr "덮어쓰기"
+
+#: inc/builder/sections/section-definitions.php:458
+msgid "Caption color"
+msgstr "자막 글자색"
+
+#: inc/builder/sections/section-definitions.php:461
+#: inc/customizer/sections/stylekit.php:50
+msgid "Light"
+msgstr "밝은 색"
+
+#: inc/builder/sections/section-definitions.php:462
+#: inc/customizer/sections/stylekit.php:51
+msgid "Dark"
+msgstr "어두운 색"
+
+#: inc/compatibility.php:35
+msgid "The uploaded package appears to be a plugin. PLEASE INSTALL AS A PLUGIN."
+msgstr "업로드한 패키지는 플러그인입니다. 플러그인으로 설치해주세요."
+
+#: inc/compatibility.php:331
+msgid ""
+"Make requires version %1$s of WordPress or higher. Please %2$s to ensure full "
+"compatibility."
+msgstr ""
+"Make Plus는 워드프레스 버전 %1$s 이상을 요구합니다. 호환성을 위해 %2$s를 실행하세"
+"요."
+
+#: inc/compatibility.php:336
+msgid "update WordPress"
+msgstr "워드프레스 업데이트"
+
+#: inc/compatibility.php:366
+msgid ""
+"A new version of Make Plus is available. If you encounter problems updating "
+"through %1$s, please %2$s to update manually."
+msgstr ""
+"Make Plus의 새 버전이 있습니다. %1$s을 통해서 업데이트하는데 문제가 있다면 %2$s"
+"를 따라서 수동으로 업데이트하세요."
+
+#: inc/compatibility.php:370
+msgid "the WordPress interface"
+msgstr "워드프레스 화면"
+
+#: inc/compatibility.php:375
+msgid "follow these steps"
+msgstr "다음 단계"
+
+#: inc/customizer/bootstrap.php:54
+msgid "General"
+msgstr "일반"
+
+#: inc/customizer/bootstrap.php:55
+msgid "Typography"
+msgstr "타이포그래피"
+
+#: inc/customizer/bootstrap.php:56
+msgid "Color"
+msgstr "색상"
+
+#: inc/customizer/bootstrap.php:57
+msgid "Background Images"
+msgstr "배경 그림"
+
+#: inc/customizer/bootstrap.php:58 inc/customizer/sections/content-layout.php:52
+#: inc/customizer/sections/content-layout.php:196
+msgid "Layout"
+msgstr "레이아웃"
+
+#: inc/customizer/bootstrap.php:59
+#: inc/customizer/sections/background-images.php:24
+#: inc/customizer/sections/content-layout.php:47
+msgid "Header"
+msgstr "헤더"
+
+#: inc/customizer/bootstrap.php:60
+#: inc/customizer/sections/background-images.php:42
+#: inc/customizer/sections/color-scheme.php:584
+#: inc/customizer/sections/content-layout.php:172
+#: inc/customizer/sections/typography.php:158
+msgid "Footer"
+msgstr "풋터"
+
+#: inc/customizer/bootstrap.php:106
+msgid "Sidebars & Widgets"
+msgstr "사이드바 & 위젯"
+
+#: inc/customizer/bootstrap.php:425
+msgid "No results match"
+msgstr "검색 결과가 없습니다"
+
+#: inc/customizer/bootstrap.php:426
+msgid "No matching fonts"
+msgstr "맞는 글꼴이 없습니다"
+
+#: inc/customizer/choices.php:43 inc/customizer/choices.php:65
+msgid "Normal"
+msgstr "보통"
+
+#: inc/customizer/choices.php:44
+msgid "Bold"
+msgstr "굵게"
+
+#: inc/customizer/choices.php:66
+msgid "Italic"
+msgstr "기울이기"
+
+#: inc/customizer/choices.php:88
+msgid "Uppercase"
+msgstr "대문자로"
+
+#: inc/customizer/choices.php:89
+msgid "Lowercase"
+msgstr "소문자로"
+
+#: inc/customizer/choices.php:110
+msgid "Always"
+msgstr "항상 사용함"
+
+#: inc/customizer/choices.php:111
+msgid "On hover/focus"
+msgstr "마우스를 올리거나 활성 상태일 때"
+
+#: inc/customizer/choices.php:112
+msgid "Never"
+msgstr "사용하지 않음"
+
+#: inc/customizer/choices.php:120
+msgid "No Repeat"
+msgstr "반복하지 않음"
+
+#: inc/customizer/choices.php:122
+msgid "Tile Horizontally"
+msgstr "수평 방향으로 반복"
+
+#: inc/customizer/choices.php:123
+msgid "Tile Vertically"
+msgstr "수직 방향으로 반복"
+
+#: inc/customizer/choices.php:131
+msgid "Top Left"
+msgstr "왼쪽 위"
+
+#: inc/customizer/choices.php:132 inc/customizer/choices.php:273
+msgid "Top"
+msgstr "위"
+
+#: inc/customizer/choices.php:133
+msgid "Top Right"
+msgstr "오른쪽 위"
+
+#: inc/customizer/choices.php:135 inc/customizer/choices.php:219
+msgid "Center"
+msgstr "가운데"
+
+#: inc/customizer/choices.php:137
+msgid "Bottom Left"
+msgstr "왼쪽 아래"
+
+#: inc/customizer/choices.php:138
+msgid "Bottom"
+msgstr "아래"
+
+#: inc/customizer/choices.php:139
+msgid "Bottom Right"
+msgstr "오른쪽 아래"
+
+#: inc/customizer/choices.php:147
+msgid "Scroll"
+msgstr "화면과 함께 스크롤"
+
+#: inc/customizer/choices.php:148
+msgid "Fixed"
+msgstr "고정"
+
+#: inc/customizer/choices.php:156
+msgid "Auto"
+msgstr "자동"
+
+#: inc/customizer/choices.php:158
+msgid "Contain"
+msgstr "전체 보이기"
+
+#: inc/customizer/choices.php:163
+msgid "Full-width"
+msgstr "폭에 맞추기"
+
+#: inc/customizer/choices.php:164
+msgid "Boxed"
+msgstr "고정폭"
+
+#: inc/customizer/choices.php:169 inc/customizer/choices.php:197
+msgid "Traditional"
+msgstr "일반"
+
+#: inc/customizer/choices.php:170 inc/customizer/choices.php:198
+msgid "Centered"
+msgstr "가운데 정렬"
+
+#: inc/customizer/choices.php:171
+msgid "Navigation Below"
+msgstr "메뉴를 아래쪽에 출력"
+
+#: inc/customizer/choices.php:183
+msgid "Flipped"
+msgstr "뒤집기"
+
+#: inc/customizer/choices.php:207
+msgid "Post header"
+msgstr "게시물 헤더"
+
+#: inc/customizer/choices.php:208
+msgid "Thumbnail"
+msgstr "미리보기 그림"
+
+#: inc/customizer/choices.php:230
+msgid "Absolute (%s)"
+msgstr "정확한 날짜 (예: %s)"
+
+#: inc/customizer/choices.php:231
+msgid "Relative (1 week ago)"
+msgstr "상대적인 날짜 (예: 1주일 전)"
+
+#: inc/customizer/choices.php:241
+msgid "With avatar"
+msgstr "초상화를 표시함"
+
+#: inc/customizer/choices.php:242
+msgid "Without avatar"
+msgstr "초상화를 표시하지 않음"
+
+#: inc/customizer/choices.php:252
+msgid "With icon"
+msgstr "아이콘 표시"
+
+#: inc/customizer/choices.php:253
+msgid "With text"
+msgstr "글자만 표시"
+
+#: inc/customizer/choices.php:274
+msgid "Before content"
+msgstr "본문 앞"
+
+#: inc/customizer/choices.php:275
+msgid "Post footer"
+msgstr "게시물 풋터"
+
+#: inc/customizer/defaults.php:28
+msgid "Menu"
+msgstr "메뉴"
+
+#: inc/customizer/defaults.php:29
+msgid "Featured"
+msgstr "추천"
+
+#: inc/customizer/defaults.php:30
+msgid "Read more"
+msgstr "더 읽기"
+
+#: inc/customizer/fonts.php:219
+msgid "All"
+msgstr "모두"
+
+#: inc/customizer/fonts.php:220
+msgid "Arabic"
+msgstr "Arabic"
+
+#: inc/customizer/fonts.php:221
+msgid "Cyrillic"
+msgstr "Cyrillic"
+
+#: inc/customizer/fonts.php:222
+msgid "Cyrillic Extended"
+msgstr "Cyrillic Extended"
+
+#: inc/customizer/fonts.php:223
+msgid "Devanagari"
+msgstr "Devanagari"
+
+#: inc/customizer/fonts.php:224
+msgid "Greek"
+msgstr "Greek"
+
+#: inc/customizer/fonts.php:225
+msgid "Greek Extended"
+msgstr "Greek Extended"
+
+#: inc/customizer/fonts.php:226
+msgid "Hebrew"
+msgstr "Hebrew"
+
+#: inc/customizer/fonts.php:227
+msgid "Khmer"
+msgstr "Khmer"
+
+#: inc/customizer/fonts.php:228
+msgid "Latin"
+msgstr "Latin"
+
+#: inc/customizer/fonts.php:229
+msgid "Latin Extended"
+msgstr "Latin Extended"
+
+#: inc/customizer/fonts.php:230
+msgid "Telugu"
+msgstr "Telugu"
+
+#: inc/customizer/fonts.php:231
+msgid "Vietnamese"
+msgstr "Vietnamese"
+
+#: inc/customizer/fonts.php:349
+msgid "Standard Fonts"
+msgstr "기본 글꼴"
+
+#: inc/customizer/fonts.php:351
+msgid "Google Fonts"
+msgstr "구글 폰트"
+
+#: inc/customizer/sections/background-images.php:33
+msgid "Main Column"
+msgstr "주 컬럼"
+
+#: inc/customizer/sections/background-images.php:77
+#: inc/customizer/sections/background.php:37
+msgid "Background Image"
+msgstr "배경 그림"
+
+#: inc/customizer/sections/background-images.php:86
+#: inc/customizer/sections/background.php:39
+msgid "Repeat"
+msgstr "반복"
+
+#: inc/customizer/sections/background-images.php:97
+#: inc/customizer/sections/background.php:54
+msgid "Position"
+msgstr "위치"
+
+#: inc/customizer/sections/background-images.php:108
+#: inc/customizer/sections/background.php:65
+msgid "Attachment"
+msgstr "부착"
+
+#: inc/customizer/sections/background-images.php:120
+#: inc/customizer/sections/background.php:77
+msgid "Size"
+msgstr "크기"
+
+#: inc/customizer/sections/background.php:23
+msgid "Site Background Color"
+msgstr "사이트 배경색"
+
+#: inc/customizer/sections/background.php:30
+msgid "Site"
+msgstr "사이트"
+
+#: inc/customizer/sections/color-scheme.php:24
+#: inc/customizer/sections/color-scheme.php:313
+#: inc/customizer/sections/color-scheme.php:327
+#: inc/customizer/sections/color-scheme.php:356
+#: inc/customizer/sections/color-scheme.php:444
+#: inc/customizer/sections/color-scheme.php:514
+#: inc/customizer/sections/color-scheme.php:528
+#: inc/customizer/sections/color-scheme.php:542
+#: inc/customizer/sections/color-scheme.php:563
+#: inc/customizer/sections/color-scheme.php:605
+#: inc/customizer/sections/color-scheme.php:619
+#: inc/customizer/sections/content-layout.php:25
+#: inc/customizer/sections/typography.php:24
+msgid "Global"
+msgstr "사이트 전체"
+
+#: inc/customizer/sections/color-scheme.php:29
+msgid "Color Scheme"
+msgstr "컬러셋"
+
+#: inc/customizer/sections/color-scheme.php:39
+#: inc/customizer/sections/color-scheme.php:355
+#: inc/customizer/sections/color-scheme.php:562
+#: inc/customizer/sections/color-scheme.php:604
+msgid "Primary Color"
+msgstr "주 색상"
+
+#: inc/customizer/sections/color-scheme.php:41
+#: inc/customizer/sections/color-scheme.php:54
+#: inc/customizer/sections/color-scheme.php:67
+#: inc/customizer/sections/color-scheme.php:80
+msgid "Used for: %s"
+msgstr "다음 항목에서 사용 중: %s"
+
+#: inc/customizer/sections/color-scheme.php:42
+msgid "links"
+msgstr "링크"
+
+#: inc/customizer/sections/color-scheme.php:52
+#: inc/customizer/sections/color-scheme.php:326
+#: inc/customizer/sections/color-scheme.php:541
+msgid "Secondary Color"
+msgstr "보조 색상"
+
+#: inc/customizer/sections/color-scheme.php:55
+msgid "form inputs, table borders, ruled lines, slider buttons"
+msgstr "입력 필드, 표 외곽선, 평행선, 슬라이더 버튼"
+
+#: inc/customizer/sections/color-scheme.php:65
+#: inc/customizer/sections/color-scheme.php:167
+#: inc/customizer/sections/color-scheme.php:211
+#: inc/customizer/sections/color-scheme.php:256
+#: inc/customizer/sections/color-scheme.php:259
+#: inc/customizer/sections/color-scheme.php:286
+#: inc/customizer/sections/color-scheme.php:289
+#: inc/customizer/sections/color-scheme.php:422
+#: inc/customizer/sections/color-scheme.php:513
+#: inc/customizer/sections/color-scheme.php:527 inc/formatting/formatting.php:186
+msgid "Text Color"
+msgstr "글자색"
+
+#: inc/customizer/sections/color-scheme.php:68
+msgid "most text"
+msgstr "대부분의 글씨"
+
+#: inc/customizer/sections/color-scheme.php:78
+#: inc/customizer/sections/color-scheme.php:309
+#: inc/customizer/sections/color-scheme.php:312
+msgid "Detail Color"
+msgstr "보조 색상 2"
+
+#: inc/customizer/sections/color-scheme.php:81
+msgid "UI icons"
+msgstr "아이콘"
+
+#: inc/customizer/sections/color-scheme.php:88
+#: inc/customizer/sections/color-scheme.php:549
+#: inc/customizer/sections/typography.php:31
+msgid "Links"
+msgstr "링크"
+
+#: inc/customizer/sections/color-scheme.php:98
+#: inc/customizer/sections/color-scheme.php:440
+#: inc/customizer/sections/color-scheme.php:443
+#: inc/customizer/sections/color-scheme.php:573
+#: inc/customizer/sections/color-scheme.php:615
+#: inc/customizer/sections/color-scheme.php:618
+msgid "Link Hover/Focus Color"
+msgstr "링크에 마우스를 올리거나 활성 상태일 때"
+
+#: inc/customizer/sections/color-scheme.php:99
+msgid "The default link color is controlled by the \"Primary Color\" option above."
+msgstr "기본 링크 색상은 \"주 색상\" 설정을 따릅니다."
+
+#: inc/customizer/sections/color-scheme.php:105
+#: inc/customizer/sections/color-scheme.php:150
+msgid "Background"
+msgstr "배경"
+
+#: inc/customizer/sections/color-scheme.php:113
+msgid "Main Column Background Color"
+msgstr "주 컬럼 배경색"
+
+#: inc/customizer/sections/color-scheme.php:131
+#: inc/customizer/sections/color-scheme.php:191
+#: inc/customizer/sections/color-scheme.php:337
+#: inc/customizer/sections/color-scheme.php:366
+#: inc/customizer/sections/color-scheme.php:397
+#: inc/customizer/sections/color-scheme.php:478
+#: inc/customizer/sections/color-scheme.php:653
+msgid "Opacity"
+msgstr "불투명토"
+
+#: inc/customizer/sections/color-scheme.php:159
+#: inc/customizer/sections/color-scheme.php:212
+#: inc/customizer/sections/color-scheme.php:260
+#: inc/customizer/sections/color-scheme.php:290
+msgid "Site Header"
+msgstr "사이트 헤더"
+
+#: inc/customizer/sections/color-scheme.php:173
+#: inc/customizer/sections/color-scheme.php:323
+#: inc/customizer/sections/color-scheme.php:388
+#: inc/customizer/sections/color-scheme.php:460
+#: inc/customizer/sections/color-scheme.php:635 inc/formatting/formatting.php:185
+msgid "Background Color"
+msgstr "배경색"
+
+#: inc/customizer/sections/color-scheme.php:208
+#: inc/customizer/sections/typography.php:72
+msgid "Site Title &amp; Tagline"
+msgstr "사이트 제목 & 부제목"
+
+#: inc/customizer/sections/color-scheme.php:210
+msgid "These options override the %s option in the %s section."
+msgstr "이 설정은 %s 설정을 덮어씁니다. (%s 섹션)"
+
+#: inc/customizer/sections/color-scheme.php:221
+msgid "Site Title Color"
+msgstr "사이트 제목 글자색"
+
+#: inc/customizer/sections/color-scheme.php:230
+msgid "Tagline Color"
+msgstr "사이트 부제목 글자색"
+
+#: inc/customizer/sections/color-scheme.php:241
+#: inc/customizer/sections/typography.php:84
+msgid "Main Menu"
+msgstr "주 메뉴"
+
+#: inc/customizer/sections/color-scheme.php:246
+#: inc/customizer/sections/typography.php:86
+msgid "Menu Items"
+msgstr "메뉴 항목"
+
+#: inc/customizer/sections/color-scheme.php:258
+#: inc/customizer/sections/color-scheme.php:288
+#: inc/customizer/sections/color-scheme.php:311
+#: inc/customizer/sections/color-scheme.php:325
+#: inc/customizer/sections/color-scheme.php:354
+#: inc/customizer/sections/color-scheme.php:442
+#: inc/customizer/sections/color-scheme.php:512
+#: inc/customizer/sections/color-scheme.php:526
+#: inc/customizer/sections/color-scheme.php:540
+#: inc/customizer/sections/color-scheme.php:561
+#: inc/customizer/sections/color-scheme.php:603
+#: inc/customizer/sections/color-scheme.php:617
+msgid "This option overrides the %s option in the %s section."
+msgstr "This option overrides the %s option in the %s section."
+
+#: inc/customizer/sections/color-scheme.php:270
+#: inc/customizer/sections/color-scheme.php:300
+msgid "Hover/Focus Text Color"
+msgstr "마우스를 올리거나 활성 상태일 때"
+
+#: inc/customizer/sections/color-scheme.php:276
+#: inc/customizer/sections/typography.php:87
+msgid "Sub-Menu Items"
+msgstr "하위 메뉴 항목"
+
+#: inc/customizer/sections/color-scheme.php:352
+msgid "Hover/Focus Background Color"
+msgstr "마우스를 올리거나 활성 상태일 때"
+
+#: inc/customizer/sections/color-scheme.php:378
+#: inc/customizer/sections/typography.php:109
+msgid "Current Item"
+msgstr "현재 항목"
+
+#: inc/customizer/sections/color-scheme.php:414
+#: inc/customizer/sections/typography.php:133
+msgid "Header Bar"
+msgstr "헤더 막대"
+
+#: inc/customizer/sections/color-scheme.php:431
+#: inc/customizer/sections/color-scheme.php:559
+#: inc/customizer/sections/color-scheme.php:601
+msgid "Link Color"
+msgstr "링크색"
+
+#: inc/customizer/sections/color-scheme.php:454
+#: inc/customizer/sections/color-scheme.php:538
+#: inc/customizer/sections/color-scheme.php:629 inc/formatting/formatting.php:207
+msgid "Border Color"
+msgstr "외곽선 색"
+
+#: inc/customizer/sections/color-scheme.php:495
+#: inc/customizer/sections/typography.php:146
+msgid "Sidebars"
+msgstr "사이드바"
+
+#: inc/customizer/sections/color-scheme.php:500
+#: inc/customizer/sections/content-layout.php:177
+msgid "Widgets"
+msgstr "위젯"
+
+#: inc/customizer/sections/color-scheme.php:510
+msgid "Widget Title Color"
+msgstr "위젯 제목 글자색"
+
+#: inc/customizer/sections/color-scheme.php:524
+msgid "Widget Body Color"
+msgstr "위젯 본문 글자색"
+
+#: inc/customizer/sections/color-scheme.php:592
+msgid "Footer Text Color"
+msgstr "풋터 글자색"
+
+#: inc/customizer/sections/content-layout.php:33
+msgid "Site Layout"
+msgstr "사이트 레이아웃"
+
+#: inc/customizer/sections/content-layout.php:61
+msgid "Header Layout"
+msgstr "헤더 레이아웃"
+
+#: inc/customizer/sections/content-layout.php:72
+msgid "Show Title/Logo On"
+msgstr "사이트 제목과 로고를 표시할 위치"
+
+#: inc/customizer/sections/content-layout.php:84
+msgid "Header Bar Layout"
+msgstr "헤더 막대 레이아웃"
+
+#: inc/customizer/sections/content-layout.php:94
+#: inc/customizer/sections/content-layout.php:214
+msgid "Padding"
+msgstr "안쪽 여백"
+
+#: inc/customizer/sections/content-layout.php:102
+msgid "Remove padding beneath header"
+msgstr "헤더 밑의 여백 제거"
+
+#: inc/customizer/sections/content-layout.php:109
+#: inc/customizer/sections/content-layout.php:229
+msgid "Options"
+msgstr "설정"
+
+#: inc/customizer/sections/content-layout.php:119
+#: inc/customizer/sections/typography.php:136
+msgid "Header Bar Text"
+msgstr "헤더 막대 글자"
+
+#: inc/customizer/sections/content-layout.php:120
+msgid ""
+"This text only appears if a custom menu has not been assigned to the Header Bar "
+"Menu location in the Navigation section."
+msgstr "이 내용은 헤더 막대 메뉴가 지정되지 않았을 경우에만 나타납니다."
+
+#: inc/customizer/sections/content-layout.php:128
+msgid "Optional Header Elements"
+msgstr "그 밖의 헤더 요소"
+
+#: inc/customizer/sections/content-layout.php:136
+msgid "Show search field"
+msgstr "검색 상자 보이기"
+
+#: inc/customizer/sections/content-layout.php:145
+#: inc/customizer/sections/content-layout.php:255
+msgid "Show social icons"
+msgstr "SNS 링크 보이기"
+
+#: inc/customizer/sections/content-layout.php:155
+#: inc/customizer/sections/content-layout.php:265
+#: inc/formatting/formatting.php:189
+msgid "Icon Size (px)"
+msgstr "아이콘 크기 (px)"
+
+#: inc/customizer/sections/content-layout.php:187
+msgid "Number of Widget Areas"
+msgstr "위젯 영역 갯수"
+
+#: inc/customizer/sections/content-layout.php:205
+msgid "Footer Layout"
+msgstr "풋터 레이아웃"
+
+#: inc/customizer/sections/content-layout.php:222
+msgid "Remove padding above footer"
+msgstr "풋터 위의 여백 제거"
+
+#: inc/customizer/sections/content-layout.php:239
+#: inc/customizer/sections/typography.php:162
+msgid "Footer Text"
+msgstr "풋터 글자"
+
+#: inc/customizer/sections/content-layout.php:247
+msgid "Optional Footer Elements"
+msgstr "그 밖의 풋터 요소"
+
+#: inc/customizer/sections/content-layout.php:284
+msgid "Blog (Posts Page)"
+msgstr "블로그 (게시물 페이지)"
+
+#: inc/customizer/sections/content-layout.php:303 inc/extras.php:398
+msgid "Archives"
+msgstr "아카이브"
+
+#: inc/customizer/sections/content-layout.php:322 inc/extras.php:399
+msgid "Search Results"
+msgstr "검색 결과"
+
+#: inc/customizer/sections/content-layout.php:341 inc/extras.php:400
+msgid "Posts"
+msgstr "게시물"
+
+#: inc/customizer/sections/content-layout.php:359 inc/extras.php:401
+msgid "Pages"
+msgstr "페이지"
+
+#: inc/customizer/sections/content-layout.php:367
+msgid "Sidebars are not available on pages using the Builder Template."
+msgstr "빌더 템플릿을 사용하는 페이지에서는 사이드바를 쓸 수 없습니다."
+
+#: inc/customizer/sections/content-layout.php:380
+msgid "Page Title"
+msgstr "페이지 제목"
+
+#: inc/customizer/sections/content-layout.php:388
+msgid "Hide title"
+msgstr "제목 감추기"
+
+#: inc/customizer/sections/content-layout.php:456
+msgid "Header, Footer, Sidebars"
+msgstr "헤더, 풋터, 사이드바"
+
+#: inc/customizer/sections/content-layout.php:464
+msgid "Hide site header"
+msgstr "사이트 헤더 감추기"
+
+#: inc/customizer/sections/content-layout.php:473
+msgid "Hide site footer"
+msgstr "사이트 풋터 감추기"
+
+#: inc/customizer/sections/content-layout.php:482
+msgid "Show left sidebar"
+msgstr "왼쪽 사이드바 보이기"
+
+#: inc/customizer/sections/content-layout.php:491
+msgid "Show right sidebar"
+msgstr "오른쪽 사이드바 보이기"
+
+#: inc/customizer/sections/content-layout.php:515
+msgid "Featured Images"
+msgstr "표지 그림"
+
+#: inc/customizer/sections/content-layout.php:524
+#: inc/customizer/sections/content-layout.php:581
+#: inc/customizer/sections/content-layout.php:627
+#: inc/customizer/sections/content-layout.php:673
+msgid "Location"
+msgstr "위치"
+
+#: inc/customizer/sections/content-layout.php:535
+msgid "Alignment"
+msgstr "정렬"
+
+#: inc/customizer/sections/content-layout.php:561
+msgid "Post Date"
+msgstr "게시 날짜 정보"
+
+#: inc/customizer/sections/content-layout.php:570
+#: inc/customizer/sections/content-layout.php:616
+#: inc/customizer/sections/content-layout.php:662
+msgid "Style"
+msgstr "스타일"
+
+#: inc/customizer/sections/content-layout.php:607
+msgid "Post Author"
+msgstr "게시자 정보"
+
+#: inc/customizer/sections/content-layout.php:653
+msgid "Comment Count"
+msgstr "댓글 갯수 정보"
+
+#: inc/customizer/sections/content-layout.php:699
+msgid "Post Meta"
+msgstr "게시물 정보"
+
+#: inc/customizer/sections/content-layout.php:708
+msgid "Show categories"
+msgstr "분류 보이기"
+
+#: inc/customizer/sections/content-layout.php:717
+msgid "Show tags"
+msgstr "태그 보이기"
+
+#: inc/customizer/sections/content-layout.php:741
+msgid "Content"
+msgstr "내용"
+
+#: inc/customizer/sections/content-layout.php:750
+msgid "Generate excerpts automatically"
+msgstr "자동으로 요약문 생성"
+
+#: inc/customizer/sections/general.php:31
+msgid "Logo"
+msgstr "로고"
+
+#: inc/customizer/sections/general.php:39
+msgid "Regular Logo"
+msgstr "일반 로고"
+
+#: inc/customizer/sections/general.php:49
+msgid "Retina Logo (2x)"
+msgstr "고해상도 로고"
+
+#: inc/customizer/sections/general.php:50
+msgid "The Retina Logo should be twice the size of the Regular Logo."
+msgstr "고해상도 로고의 사이즈는 일반 로고보다 2배 커야 합니다."
+
+#: inc/customizer/sections/general.php:60
+msgid "Favicon"
+msgstr "주소표시줄 아이콘"
+
+#: inc/customizer/sections/general.php:61
+msgid ""
+"File must be <strong>.png</strong> or <strong>.ico</strong> format. Optimal "
+"dimensions: <strong>32px x 32px</strong>."
+msgstr ""
+"<strong>.png</strong> 또는 <strong>.ico</strong> 형식이어야 합니다. 최적 해상도: "
+"<strong>32px x 32px</strong>."
+
+#: inc/customizer/sections/general.php:72
+msgid "Apple Touch Icon"
+msgstr "고해상도 주소표시줄 아이콘"
+
+#: inc/customizer/sections/general.php:73
+msgid ""
+"File must be <strong>.png</strong> format. Optimal dimensions: <strong>152px x "
+"152px</strong>."
+msgstr ""
+"<strong>.png</strong> 형식이어야 합니다. 최적 해상도: <strong>152px x 152px</"
+"strong>."
+
+#: inc/customizer/sections/general.php:92
+msgid "Labels"
+msgstr "레이블"
+
+#: inc/customizer/sections/general.php:102
+msgid "Mobile Menu Label"
+msgstr "모바일 기기에서 사용할 레이블"
+
+#: inc/customizer/sections/general.php:103
+msgid "Resize your browser window to preview the mobile menu label."
+msgstr "모바일 환경에서 사용할 레이블을 확인하려면 브라우저 크기를 조절해보세요."
+
+#: inc/customizer/sections/general.php:113
+msgid "Sticky Label"
+msgstr "'붙박이' 레이블"
+
+#: inc/customizer/sections/general.php:129
+msgid "Read More Label"
+msgstr "'더 읽기' 레이블"
+
+#: inc/customizer/sections/general.php:141
+msgid "Social Profiles"
+msgstr "SNS 링크"
+
+#: inc/customizer/sections/general.php:142
+msgid ""
+"Enter the complete URL to your profile for each service below that you would "
+"like to share."
+msgstr "공개하려는 서비스 프로필의 전체 주소를 입력하세요."
+
+#: inc/customizer/sections/general.php:230
+msgid ""
+"If you would like to add a social profile that is not listed above, or change "
+"the order of the icons, create a custom menu %s."
+msgstr ""
+"여기 없는 SNS 링크를 추가하거나 아이콘의 순서를 바꾸려면 %s 사용자 메뉴를 만드세"
+"요."
+
+#: inc/customizer/sections/general.php:233
+msgid "as described here"
+msgstr "여기서 설명하는"
+
+#: inc/customizer/sections/general.php:246 inc/extras.php:471
+msgid "Email"
+msgstr "전자편지 주소"
+
+#: inc/customizer/sections/general.php:247
+msgid ""
+"Enter an email address to add an email icon link to your social profile icons."
+msgstr "SNS 링크와 함께 전자편지 아이콘을 표시하려면 전자편지 주소를 입력하세요."
+
+#: inc/customizer/sections/general.php:266 inc/extras.php:475
+msgid "RSS"
+msgstr "RSS"
+
+#: inc/customizer/sections/general.php:267
+msgid "If configured, an RSS icon will appear with your social profile icons."
+msgstr "입력하면 RSS 아이콘을 SNS 링크와 함께 출력합니다."
+
+#: inc/customizer/sections/general.php:273
+msgid "Default RSS"
+msgstr "기본 RSS"
+
+#: inc/customizer/sections/general.php:281
+msgid "Hide default RSS feed link"
+msgstr "기본 RSS 주소를 사용하지 않기"
+
+#: inc/customizer/sections/general.php:290
+msgid "Custom RSS URL (replaces default)"
+msgstr "사용자 RSS 주소 (기본 RSS 주소를 대체함)"
+
+#: inc/customizer/sections/general.php:309
+msgid "White Label"
+msgstr "화이트 레이블"
+
+#: inc/customizer/sections/general.php:310
+msgid "Want to remove the theme byline from your website&#8217;s footer?"
+msgstr "사이트 풋터에서 테마 제작자 정보를 제거하고 싶으세요?"
+
+#: inc/customizer/sections/general.php:320
+#: inc/customizer/sections/typography.php:217
+msgid "Upgrade to %1$s"
+msgstr "%1$s로 업그레이드"
+
+#: inc/customizer/sections/navigation.php:36
+msgid ""
+"After you have created your custom menu for social profile links, select it here."
+msgstr "SNS 링크로 사용할 사용자 메뉴를 선택하세요."
+
+#: inc/customizer/sections/navigation.php:51
+msgid ""
+"Select which menu appears in each location. You can edit your menu content on "
+"the Menus screen in the Appearance section."
+msgstr ""
+"각 위치에 어느 메뉴를 표시할 지 선택하세요. 메뉴 구성은 모양 &rarr; 메뉴 섹션에"
+"서 편집할 수 있습니다."
+
+#: inc/customizer/sections/site-title-tagline.php:38
+msgid "Hide Site Title"
+msgstr "사이트 제목 감추기"
+
+#: inc/customizer/sections/site-title-tagline.php:56
+msgid "Hide Tagline"
+msgstr "사이트 부제목 감추기"
+
+#: inc/customizer/sections/stylekit.php:23
+msgid "Style Kits"
+msgstr "스타일 키트"
+
+#: inc/customizer/sections/stylekit.php:25
+msgid ""
+"%s to quickly apply designer-picked style choices (fonts, layout, colors) to "
+"your website."
+msgstr ""
+"스타일 키트를 사용해서 디자이너가 고른 스타일(글꼴, 레이아웃, 색상 등)을 빠르게 "
+"적용하세요."
+
+#: inc/customizer/sections/stylekit.php:37
+msgid "Kits"
+msgstr "키트"
+
+#: inc/customizer/sections/stylekit.php:47
+msgid "Choose a kit"
+msgstr "키트 선택"
+
+#: inc/customizer/sections/stylekit.php:49
+msgid "Hello"
+msgstr "안녕"
+
+#: inc/customizer/sections/stylekit.php:52
+msgid "Modern"
+msgstr "모던"
+
+#: inc/customizer/sections/stylekit.php:53
+msgid "Creative"
+msgstr "창의성"
+
+#: inc/customizer/sections/stylekit.php:54
+msgid "Vintage"
+msgstr "빈티지"
+
+#: inc/customizer/sections/typography.php:41
+#: inc/customizer/sections/typography.php:118
+#: inc/customizer/sections/typography.php:294 inc/formatting/formatting.php:211
+msgid "Font Weight"
+msgstr "글자 굵기"
+
+#: inc/customizer/sections/typography.php:56
+msgid "Text Headers"
+msgstr "본문 헤더"
+
+#: inc/customizer/sections/typography.php:58
+msgid "H1"
+msgstr "H1"
+
+#: inc/customizer/sections/typography.php:59
+msgid "H2"
+msgstr "H2"
+
+#: inc/customizer/sections/typography.php:60
+msgid "H3"
+msgstr "H3"
+
+#: inc/customizer/sections/typography.php:61
+msgid "H4"
+msgstr "H4"
+
+#: inc/customizer/sections/typography.php:62
+msgid "H5"
+msgstr "H5"
+
+#: inc/customizer/sections/typography.php:63
+msgid "H6"
+msgstr "H6"
+
+#: inc/customizer/sections/typography.php:74
+msgid "Site Title"
+msgstr "사이트 제목"
+
+#: inc/customizer/sections/typography.php:75
+msgid "Tagline"
+msgstr "사이트 부제목"
+
+#: inc/customizer/sections/typography.php:93
+msgid "Mobile"
+msgstr "모바일"
+
+#: inc/customizer/sections/typography.php:101
+msgid "Use Menu Item styles in mobile view"
+msgstr "모바일 환경에서 메뉴 항목 스타일 사용"
+
+#: inc/customizer/sections/typography.php:137
+msgid "Includes Header Text, Header Bar Menu items, and the search field."
+msgstr "헤더 텍스트, 헤더 막대 메뉴 아이템, 검색 상자를 포함합니다."
+
+#: inc/customizer/sections/typography.php:148
+#: inc/customizer/sections/typography.php:160
+msgid "Widget Title"
+msgstr "위젯 제목"
+
+#: inc/customizer/sections/typography.php:149
+#: inc/customizer/sections/typography.php:161
+msgid "Widget Body"
+msgstr "위젯 본문"
+
+#: inc/customizer/sections/typography.php:171
+msgid "Google Font Subsets"
+msgstr "구글 폰트 서브셋"
+
+#: inc/customizer/sections/typography.php:178
+msgid "Character Subset"
+msgstr "캐릭터 서브셋"
+
+#: inc/customizer/sections/typography.php:188
+msgid ""
+"Not all fonts provide each of these subsets. Please visit the %s to see which "
+"subsets are available for each font."
+msgstr ""
+"모든 글꼴이 서브셋을 지원하지는 않습니다. 각 글꼴에서 사용할 수 있는 서브셋은 %s"
+"에서 확인하세요."
+
+#: inc/customizer/sections/typography.php:192
+msgid "Google Fonts website"
+msgstr "구글 폰트 웹사이트"
+
+#: inc/customizer/sections/typography.php:206
+msgid "Typekit"
+msgstr "타입킷"
+
+#: inc/customizer/sections/typography.php:207
+msgid "Looking to add premium fonts from Typekit to your website?"
+msgstr "웹사이트에서 사용할 타입킷 프리미엄 글꼴을 추가하고 싶으세요?"
+
+#: inc/customizer/sections/typography.php:268
+msgid "Font Family"
+msgstr "글꼴 이름"
+
+#: inc/customizer/sections/typography.php:279 inc/formatting/formatting.php:187
+msgid "Font Size (px)"
+msgstr "글꼴 크기 (px)"
+
+#: inc/customizer/sections/typography.php:306
+msgid "Font Style"
+msgstr "글꼴 스타일"
+
+#: inc/customizer/sections/typography.php:318
+msgid "Text Transform"
+msgstr "글꼴 변형"
+
+#: inc/customizer/sections/typography.php:330
+msgid "Line Height (em)"
+msgstr "줄간격 (em)"
+
+#: inc/customizer/sections/typography.php:345
+msgid "Letter Spacing (px)"
+msgstr "자간 (px)"
+
+#: inc/customizer/sections/typography.php:360
+msgid "Word Spacing (px)"
+msgstr "띄어쓰기 크기 (px)"
+
+#: inc/customizer/sections/typography.php:375
+msgid "Link Underline"
+msgstr "링크 밑줄"
+
+#: inc/customizer/sections/typography.php:404
+msgid "Loading&hellip;"
+msgstr "로딩 중&hellip;"
+
+#: inc/edit-page.php:29
+msgid ""
+"Featured images are not available for this page while using the current page "
+"template."
+msgstr "현재 페이지 템플릿을 사용하면 페이지 대표 그림을 지정할 수 없습니다."
+
+#: inc/edit-page.php:64
+msgid "Layout Settings"
+msgstr "레이아웃 설정"
+
+#: inc/edit-page.php:86
+msgid "Post"
+msgstr "게시물"
+
+#: inc/edit-page.php:90
+msgid "Looking to configure a unique layout for this %1$s? %2$s."
+msgstr "이 %1$s의 레이아웃을 설정하고 싶으세요? %2$s."
+
+#: inc/extras.php:91
+msgid "Page %s"
+msgstr "페이지 %s"
+
+#: inc/extras.php:358
+msgid ""
+"This widget area is currently disabled. Enable it in the \"Footer\" panel of the "
+"Customizer."
+msgstr ""
+"이 위젯 영역은 비활성 상태입니다. 사용자 설정 화면의 \"풋터\" 섹션에서 활성화시"
+"킬 수 있습니다."
+
+#: inc/extras.php:369
+msgid ""
+"This widget area is currently disabled. Enable it in the \"Content & Layout\" "
+"panel of the Customizer."
+msgstr ""
+"이 위젯 영역은 비활성 상태입니다. 사용자 설정 화면의 \"내용 & 레이아웃\" 섹션에"
+"서 활성화시킬 수 있습니다."
+
+#: inc/extras.php:374
+msgid ""
+"This widget area is currently enabled for the following views: %s. Change this "
+"in the \"Content & Layout\" panel of the Customizer."
+msgstr ""
+"이 위젯 영역은 활성 상태입니다. 사용자 설정 화면의 \"내용 & 레이아웃\" 섹션에서 "
+"비활성화할 수 있습니다."
+
+#: inc/extras.php:397
+msgid "Blog (Post Page)"
+msgstr "블로그 (게시물 페이지)"
+
+#: inc/formatting/formatting.php:178
+msgid "Format Builder"
+msgstr "페이지 빌더"
+
+#: inc/formatting/formatting.php:179
+msgid "Choose a format"
+msgstr "형식 선택"
+
+#: inc/formatting/formatting.php:180
+msgid "Insert"
+msgstr "삽입"
+
+#: inc/formatting/formatting.php:181
+msgid "Update"
+msgstr "갱신"
+
+#: inc/formatting/formatting.php:182
+msgid "Remove"
+msgstr "삭제"
+
+#: inc/formatting/formatting.php:183
+msgid "Add icon"
+msgstr "아이콘 추가"
+
+#: inc/formatting/formatting.php:184
+msgid "Notice"
+msgstr "알림"
+
+#: inc/formatting/formatting.php:188
+msgid "Icon"
+msgstr "아이콘"
+
+#: inc/formatting/formatting.php:190
+msgid "Icon Color"
+msgstr "아이콘 색상"
+
+#: inc/formatting/formatting.php:191
+msgid "Icon Position"
+msgstr "아이콘 위치"
+
+#: inc/formatting/formatting.php:192
+msgid "left"
+msgstr "왼쪽"
+
+#: inc/formatting/formatting.php:193
+msgid "right"
+msgstr "오른쪽"
+
+#: inc/formatting/formatting.php:194
+msgid "Horizontal Padding (px)"
+msgstr "좌우 여백 (px)"
+
+#: inc/formatting/formatting.php:195
+msgid "Vertical Padding (px)"
+msgstr "상하 여백 (px)"
+
+#: inc/formatting/formatting.php:196
+msgid "Border Style"
+msgstr "외곽선 스타일"
+
+#: inc/formatting/formatting.php:197
+msgid "none"
+msgstr "없음"
+
+#: inc/formatting/formatting.php:206
+msgid "Border Width (px)"
+msgstr "외곽선 굵기 (px)"
+
+#: inc/formatting/formatting.php:208
+msgid "Button"
+msgstr "찬추"
+
+#: inc/formatting/formatting.php:209
+msgid "URL"
+msgstr "주소"
+
+#: inc/formatting/formatting.php:210
+msgid "Open link in a new window/tab"
+msgstr "링크를 새 창/탭에서 열기"
+
+#: inc/formatting/formatting.php:214
+msgid "Background Color (hover)"
+msgstr "배경색 (마우스를 올렸을 때)"
+
+#: inc/formatting/formatting.php:215
+msgid "Text Color (hover)"
+msgstr "글자색 (마우스를 올렸을 때)"
+
+#: inc/formatting/formatting.php:216
+msgid "Border Radius (px)"
+msgstr "외곽선 둥글리기 (px)"
+
+#: inc/formatting/formatting.php:217
+msgid "List"
+msgstr "목록"
+
+#: inc/formatting/formatting.php:219
+msgid "Insert Icon"
+msgstr "아이콘 넣기"
+
+#: inc/formatting/formatting.php:220
+msgid "Choose an icon"
+msgstr "아이콘 선택"
+
+#: inc/formatting/formatting.php:221
+msgid "Web Application Icons"
+msgstr "웹 어플리케이션 아이콘"
+
+#: inc/formatting/formatting.php:222
+msgid "Text Editor Icons"
+msgstr "편집기 아이콘"
+
+#: inc/formatting/formatting.php:223
+msgid "Spinner Icons"
+msgstr "회전 아이콘"
+
+#: inc/formatting/formatting.php:224
+msgid "File Type Icons"
+msgstr "파일 형식 아이콘"
+
+#: inc/formatting/formatting.php:225
+msgid "Directional Icons"
+msgstr "방향 아이콘"
+
+#: inc/formatting/formatting.php:226
+msgid "Video Player Icons"
+msgstr "동영상 아이콘"
+
+#: inc/formatting/formatting.php:227
+msgid "Form Control Icons"
+msgstr "폼 컨트롤 아이콘"
+
+#: inc/formatting/formatting.php:228
+msgid "Chart Icons"
+msgstr "차트 아이콘"
+
+#: inc/formatting/formatting.php:229
+msgid "Brand Icons"
+msgstr "브랜드 아이콘"
+
+#: inc/formatting/formatting.php:230
+msgid "Payment Icons"
+msgstr "지불 아이콘"
+
+#: inc/formatting/formatting.php:231
+msgid "Currency Icons"
+msgstr "통화 아이콘"
+
+#: inc/formatting/formatting.php:232
+msgid "Medical Icons"
+msgstr "의학 아이콘"
+
+#: inc/formatting/formatting.php:233
+msgid "Choose"
+msgstr "선택"
+
+#: inc/formatting/formatting.php:235
+msgid "Insert Horizontal Line"
+msgstr "수평선 삽입"
+
+#: inc/formatting/formatting.php:236
+msgid "Choose a line style"
+msgstr "선 스타일 선택"
+
+#: inc/formatting/formatting.php:399
+msgid "Big"
+msgstr "크게"
+
+#: inc/formatting/formatting.php:404
+msgid "Small"
+msgstr "작게"
+
+#: inc/formatting/formatting.php:409
+msgid "Citation"
+msgstr "인용"
+
+#: inc/formatting/formatting.php:414
+msgid "Testimonial"
+msgstr "평가"
+
+#: inc/gallery-slider/gallery-slider.php:91
+msgid "Slider Settings"
+msgstr "슬라이더 설정"
+
+#: inc/gallery-slider/gallery-slider.php:93
+msgid "Show gallery as slider"
+msgstr "갤러리를 슬라이더로 출력"
+
+#: inc/gallery-slider/gallery-slider.php:106
+msgid "Autoplay"
+msgstr "자동 재생"
+
+#: inc/gallery-slider/gallery-slider.php:114
+msgid "Effect"
+msgstr "효과"
+
+#: inc/template-tags.php:26
+msgid "Pingback:"
+msgstr "핑백:"
+
+#: inc/template-tags.php:26
+msgid "Edit"
+msgstr "편집"
+
+#: inc/template-tags.php:66
+msgid "Your comment is awaiting moderation."
+msgstr "승인 대기 중인 댓글입니다."
+
+#: partials/content-attachment.php:11
+msgid "Download this file:"
+msgstr "파일 내려받기:"
+
+#: partials/content-image.php:23
+msgid "Technical Details"
+msgstr "기술적인 사항"
+
+#: partials/content-none.php:10
+msgid "Nothing found"
+msgstr "아무 것도 찾지 못함"
+
+#: partials/content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "첫 글을 쓸 준비가 되셨나요? <a href=\"%1$s\">여기서 시작하세요</a>."
+
+#: partials/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"죄송합니다, 입력된 검색어와 일치하는 내용이 없습니다. 다른 검색어를 사용해보세요."
+
+#: partials/content-none.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
+"can help."
+msgstr "찾으시는 내용이 없습니다. 검색을 해보면 도움이 될 수 있습니다."
+
+#: partials/entry-pagination.php:12
+msgid "Pages:"
+msgstr "페이지:"
+
+#: partials/entry-taxonomy.php:21
+msgid "<i class=\"fa fa-file\"></i> "
+msgstr "<i class=\"fa fa-file\"></i> "
+
+#: partials/entry-taxonomy.php:26
+msgid "<i class=\"fa fa-tag\"></i> "
+msgstr "<i class=\"fa fa-tag\"></i> "
+
+#: partials/footer-credit.php:29
+msgid "homepage"
+msgstr "첫 페이지"
+
+#: partials/header-layout-3.php:29 partials/header-layout-3.php:73
+#: partials/header-layout.php:29 partials/header-layout.php:72
+msgid "Skip to content"
+msgstr "내용으로 건너뛰기"
+
+#: partials/nav-paging.php:9
+msgid "Posts navigation"
+msgstr "게시물 탐색"
+
+#: partials/nav-paging.php:18
+msgid "Newer posts"
+msgstr "최신 게시물"
+
+#: partials/nav-paging.php:26
+msgid "Older posts"
+msgstr "옛 게시물"
+
+#: partials/nav-post.php:20
+msgid "Post navigation"
+msgstr "게시물 탐색"
+
+#: partials/section-title.php:12 partials/section-title.php:24
+#: partials/section-title.php:30 partials/section-title.php:36
+msgid "From %s"
+msgstr "%s 부터"
+
+#: partials/section-title.php:18
+msgid "Tagged %s"
+msgstr "태그: %s"
+
+#: partials/section-title.php:42
+msgid "By %s"
+msgstr "%s 작성"
+
+#: partials/section-title.php:47
+msgid "Archive"
+msgstr "아카이브"
+
+#: partials/section-title.php:53
+msgid "Search for %s"
+msgstr "'%s'으로 찾기"
+
+#: partials/section-title.php:59
+msgid "%s result found"
+msgid_plural "%s results found"
+msgstr[0] "%s개의 검색 결과"
+
+#: searchform.php:10
+msgid "Press Enter to submit your search"
+msgstr "검색어를 제출하려면 엔터 키를 누르세요"
+
+#. Theme Name of the plugin/theme
+msgid "Make"
+msgstr "Make"
+
+#. Theme URI of the plugin/theme
+msgid "https://thethemefoundry.com/make/"
+msgstr "https://thethemefoundry.com/make/"
+
+#. Description of the plugin/theme
+msgid ""
+"Create your website without touching a line of code. Make's flexible "
+"customization features and a powerful drag and drop page builder make designing "
+"your site fun and easy. Build almost anything: a simple portfolio or photography "
+"site, an ecommerce business site, a minimalist blog, or even a professional "
+"magazine. You'll start by customizing your background, layouts, fonts, colors, "
+"and logo. Next, add and organize your content using the drag and drop page "
+"builder. Add a photo, a video, a gallery, or even a slider to any page on your "
+"website. Make is responsive, so your website will naturally look great on "
+"phones, tablets, and desktop screens. It's also fully compatible with popular "
+"plugins like WooCommerce, Gravity Forms, Contact Form 7, Jetpack, and WP "
+"PageNavi."
+msgstr ""
+"코드를 건드리지 않고 웹사이트를 만드세요. Make의 유연한 사용자 설정 기능과 강력"
+"한 끌어다 놓기 기능은 사이트 디자인을 쉽고 즐겁게 만듭니다. 거의 모든 것들을 만"
+"들 수 있습니다: 간단한 포트폴리오나 사진 사이트, 쇼핑몰, 단순한 블로그, 전문적인 "
+"웹진까지. 배경, 레이아웃, 글꼴, 색상, 로고를 바꾸는 것부터 시작할 수 있습니다. 그"
+"런 다음, 페이지 빌더를 이용해서 내용을 삽입하고 배치하세요. 어느 페이지에나 끌어"
+"다 놓기 기능으로 사진, 비디오, 갤러리, 슬라이더를 추가하세요. Make는 반응형 처리"
+"가 되어 있어 스마트폰, 태블릿, 데스크톱에서 자연스럽게 보입니다. WooCommerse, "
+"Gravity Forms, Contact Form 7, Jetpack, WP PageNavi 등의 유명 플러그인들과도 완벽"
+"하게 호환됩니다."
+
+#. Author of the plugin/theme
+msgid "The Theme Foundry"
+msgstr "The Theme Foundry"
+
+#. Author URI of the plugin/theme
+msgid "https://thethemefoundry.com"
+msgstr "https://thethemefoundry.com"
+
+#. Template Name of the plugin/theme
+msgid "Builder Template"
+msgstr "빌더 템플릿"
+
+#: comments.php:16
+msgctxt "comments title"
+msgid "One comment"
+msgid_plural "%1$s comments"
+msgstr[0] "1개의 댓글"
+
+#: inc/builder/sections/section-definitions.php:73
+msgctxt "section name"
+msgid "Columns"
+msgstr "컬럼"
+
+#: inc/builder/sections/section-definitions.php:210
+msgctxt "section name"
+msgid "Banner"
+msgstr "배너"
+
+#: inc/builder/sections/section-definitions.php:404
+msgctxt "section name"
+msgid "Gallery"
+msgstr "갤러리"
+
+#: inc/customizer/choices.php:188
+msgctxt "footer widget area number"
+msgid "0"
+msgstr "0"
+
+#: inc/customizer/choices.php:189
+msgctxt "footer widget area number"
+msgid "1"
+msgstr "1"
+
+#: inc/customizer/choices.php:190
+msgctxt "footer widget area number"
+msgid "2"
+msgstr "2"
+
+#: inc/customizer/choices.php:191
+msgctxt "footer widget area number"
+msgid "3"
+msgstr "3"
+
+#: inc/customizer/choices.php:192
+msgctxt "footer widget area number"
+msgid "4"
+msgstr "4"
+
+#: inc/customizer/fonts.php:47
+msgctxt "font style"
+msgid "Serif"
+msgstr "세리프"
+
+#: inc/customizer/fonts.php:51
+msgctxt "font style"
+msgid "Sans Serif"
+msgstr "산세리프"
+
+#: inc/customizer/fonts.php:55
+msgctxt "font style"
+msgid "Monospaced"
+msgstr "모노스페이스"
+
+#: inc/extras.php:375
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#: inc/formatting/formatting.php:198
+msgctxt "border style"
+msgid "solid"
+msgstr "실선"
+
+#: inc/formatting/formatting.php:199
+msgctxt "border style"
+msgid "dotted"
+msgstr "점선"
+
+#: inc/formatting/formatting.php:200
+msgctxt "border style"
+msgid "dashed"
+msgstr "파선"
+
+#: inc/formatting/formatting.php:201
+msgctxt "border style"
+msgid "double"
+msgstr "겹선"
+
+#: inc/formatting/formatting.php:202
+msgctxt "border style"
+msgid "groove"
+msgstr "파인 선"
+
+#: inc/formatting/formatting.php:203
+msgctxt "border style"
+msgid "ridge"
+msgstr "돋은 선"
+
+#: inc/formatting/formatting.php:204
+msgctxt "border style"
+msgid "inset"
+msgstr "들어간 면"
+
+#: inc/formatting/formatting.php:205
+msgctxt "border style"
+msgid "outset"
+msgstr "튀어나온 면"
+
+#: inc/formatting/formatting.php:212
+msgctxt "font weight"
+msgid "normal"
+msgstr "기본"
+
+#: inc/formatting/formatting.php:213
+msgctxt "font weight"
+msgid "bold"
+msgstr "굵게"
+
+#: inc/template-tags.php:44
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s"
+
+#: inc/template-tags.php:60
+msgctxt "e.g. Bob says hello."
+msgid "says:"
+msgstr "말하길:"
+
+#: inc/template-tags.php:358
+msgctxt "time"
+msgid "second"
+msgstr "초"
+
+#: inc/template-tags.php:364
+msgctxt "time"
+msgid "seconds"
+msgstr "초"
+
+#: inc/template-tags.php:383
+msgctxt "camera f-stop"
+msgid "f/"
+msgstr "f/"
+
+#: inc/template-tags.php:402
+msgctxt "camera setting"
+msgid "Camera:"
+msgstr "카메라:"
+
+#: inc/template-tags.php:408
+msgctxt "camera setting"
+msgid "Taken:"
+msgstr "촬영장소:"
+
+#: inc/template-tags.php:415
+msgctxt "camera setting"
+msgid "Focal length:"
+msgstr "초점 거리:"
+
+#: inc/template-tags.php:421
+msgctxt "camera setting"
+msgid "Aperture:"
+msgstr "조리개:"
+
+#: inc/template-tags.php:427
+msgctxt "camera setting"
+msgid "Exposure:"
+msgstr "노출"
+
+#: inc/template-tags.php:433
+msgctxt "camera setting"
+msgid "ISO:"
+msgstr "ISO:"
+
+#: inc/template-tags.php:416
+msgctxt "millimeters"
+msgid "mm"
+msgstr "mm"
+
+#: partials/entry-author.php:26
+msgctxt "author byline"
+msgid "by %s"
+msgstr "%s"
+
+#: partials/entry-date.php:13
+msgctxt "time period"
+msgid "%s ago"
+msgstr "%s 전"
+
+#: partials/footer-credit.php:27
+msgctxt "attribution"
+msgid "by"
+msgstr "by"
+
+#: partials/section-title.php:31
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: partials/section-title.php:37
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: searchform.php:9
+msgctxt "label"
+msgid "Search for:"
+msgstr "찾아보기:"
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "검색 중&hellip;"
+
+#: searchform.php:12
+msgctxt "submit button"
+msgid "Search"
+msgstr "찾아보기"

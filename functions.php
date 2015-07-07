@@ -1,6 +1,32 @@
 <?php
+//-----------------------------------------------------------------------------
+//	Load Core Library
+//-----------------------------------------------------------------------------
 define('TEXTDOMAIN','makelab');
 require_once dirname(__FILE__).'/jframework/jframework.php';
+
+//-----------------------------------------------------------------------------
+//	Override Parent Textdomains
+//-----------------------------------------------------------------------------
+function ml_load_textdomain_mofile($mofile,$domain){
+	$locale = get_locale();
+	switch($domain){
+		case 'make':
+		case 'make-plus':
+			$alt_mofile = dirname(__FILE__)."/languages/{$domain}/{$locale}.mo";
+			if(false) echo implode(PHP_EOL,array($domain,$mofile,$alt_mofile)).PHP_EOL.PHP_EOL;
+		break;
+		default:
+			$alt_mofile = null;
+		break;
+	}
+	return file_exists($alt_mofile)?$alt_mofile:$mofile;
+}
+add_filter('load_textdomain_mofile','ml_load_textdomain_mofile',999999999,2);
+
+//-----------------------------------------------------------------------------
+//	Build Main Object
+//-----------------------------------------------------------------------------
 if(!class_exists('ML_App')):
 class ML_App {
 
@@ -83,7 +109,8 @@ class ML_App {
 		if('make'===get_template()){
 			$this->passive = false;
 		}
-		load_child_theme_textdomain(TEXTDOMAIN,$this->root_dir.'/languages/');
+		load_child_theme_textdomain(TEXTDOMAIN,$this->root_dir.'/languages/makelab');
+
 		add_action('after_setup_theme',array($this,'register_resources'));
 		add_action('after_setup_theme',array($this,'load_components'));
 		add_action('wp_enqueue_scripts',array($this,'enqueue_scripts'));

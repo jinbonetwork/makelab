@@ -1,0 +1,1155 @@
+# Copyright (C) 2015 The Theme Foundry
+# This file is distributed under the same license as the Make Plus package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Make Plus 1.6.1.1\n"
+"Report-Msgid-Bugs-To: https://thethemefoundry.com/support/\n"
+"POT-Creation-Date: 2015-07-03 17:11:01+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-07-07 15:41+0900\n"
+"Last-Translator: The Theme Foundry\n"
+"Language-Team: The Theme Foundry\n"
+"X-Generator: Poedit 1.8.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko_KR\n"
+
+#: components/edd/class-section-definitions.php:254
+#: components/post-list/class-section-definitions.php:269
+#: components/woocommerce/class-section-definitions.php:259
+msgid "1"
+msgstr "1"
+
+#: components/edd/class-section-definitions.php:255
+#: components/post-list/class-section-definitions.php:270
+#: components/woocommerce/class-section-definitions.php:260
+msgid "2"
+msgstr "2"
+
+#: components/edd/class-section-definitions.php:256
+#: components/post-list/class-section-definitions.php:271
+#: components/woocommerce/class-section-definitions.php:261
+msgid "3"
+msgstr "3"
+
+#: components/edd/class-section-definitions.php:257
+#: components/post-list/class-section-definitions.php:272
+#: components/woocommerce/class-section-definitions.php:262
+msgid "4"
+msgstr "4"
+
+#: components/builder-tweaks/builder-tweaks.php:186
+msgid "Section HTML id"
+msgstr "섹션 HTML 아이디"
+
+#: components/builder-tweaks/builder-tweaks.php:229
+msgid "Section HTML classes"
+msgstr "섹션 HTML 클래스"
+
+#: components/builder-tweaks/builder-tweaks.php:272
+msgid "Remove space below section"
+msgstr "섹션 밑의 공백 제거"
+
+#: components/duplicator/page.php:79 components/duplicator/page.php:252
+msgid "Duplicate Page"
+msgstr "페이지 복제"
+
+#: components/duplicator/page.php:79 components/duplicator/section.php:122
+msgid "Duplicate"
+msgstr "복제"
+
+#: components/duplicator/page.php:111
+msgid "Your page was successfully copied."
+msgstr "페이지를 복제했습니다."
+
+#: components/duplicator/page.php:128
+msgid "Error occurred while trying to create a page copy. Please try again."
+msgstr "페이지의 복사본을 만드는 도중에 문제가 생겼습니다. 다시 시도해 보세요."
+
+#: components/duplicator/page.php:133
+msgid ""
+"An unexpected error occurred while trying to create a page copy. Please try again."
+msgstr ""
+"페이지의 복사본을 만드는 도중에 알 수 없는 문제가 생겼습니다. 다시 시도해 보세요."
+
+#: components/duplicator/section.php:97 components/duplicator/section.php:254
+#: components/duplicator/section.php:261
+msgid "An unexpected error occurred."
+msgstr "알 수 없는 문제가 생겼습니다."
+
+#: components/duplicator/section.php:123
+msgid "Duplicate section"
+msgstr "섹션 복제"
+
+#: components/duplicator/section.php:233 components/duplicator/section.php:240
+msgid " (Copy)"
+msgstr " (복사)"
+
+#: components/edd/class-section-definitions.php:72
+msgid "Downloads"
+msgstr "내려받기"
+
+#: components/edd/class-section-definitions.php:74
+msgid "Display your Easy Digital Downloads products in a grid layout."
+msgstr "그리드 레이아웃을 이용해서 디지털 다운로드 항목들을 전시하세요."
+
+#: components/edd/class-section-definitions.php:84
+#: components/panels/definitions.php:107
+#: components/post-list/class-section-definitions.php:80
+#: components/woocommerce/class-section-definitions.php:80
+msgid "Enter section title"
+msgstr "섹션 제목 입력"
+
+#: components/edd/class-section-definitions.php:91
+#: components/panels/definitions.php:130
+#: components/post-list/class-section-definitions.php:86
+#: components/woocommerce/class-section-definitions.php:86
+msgid "Background image"
+msgstr "배경 그림"
+
+#: components/edd/class-section-definitions.php:97
+#: components/panels/definitions.php:136
+#: components/post-list/class-section-definitions.php:92
+#: components/woocommerce/class-section-definitions.php:92
+msgid "Darken background to improve readability"
+msgstr "가독성을 높이기 위해 배경을 더 어둡게 처리"
+
+#: components/edd/class-section-definitions.php:104
+#: components/post-list/class-section-definitions.php:99
+#: components/woocommerce/class-section-definitions.php:99
+msgid "Background style"
+msgstr "배경 스타일"
+
+#: components/edd/class-section-definitions.php:110
+#: components/panels/definitions.php:150
+#: components/post-list/class-section-definitions.php:105
+#: components/woocommerce/class-section-definitions.php:105
+msgid "Background color"
+msgstr "배경색"
+
+#: components/edd/class-section-definitions.php:248
+#: components/panels/definitions.php:204
+#: components/post-list/class-section-definitions.php:263
+#: components/woocommerce/class-section-definitions.php:253
+msgid "Tile"
+msgstr "반복"
+
+#: components/edd/class-section-definitions.php:249
+#: components/panels/definitions.php:205
+#: components/post-list/class-section-definitions.php:264
+#: components/woocommerce/class-section-definitions.php:254
+msgid "Cover"
+msgstr "꽉차게"
+
+#: components/edd/class-section-definitions.php:262
+msgid "All download categories/tags"
+msgstr "모든 내려받기 분류 및 태그"
+
+#: components/edd/class-section-definitions.php:271
+msgid "Download categories"
+msgstr "내려받기 분류"
+
+#: components/edd/class-section-definitions.php:283
+msgid "Download tags"
+msgstr "내려받기 태그"
+
+#: components/edd/class-section-definitions.php:290
+#: components/post-list/class-section-definitions.php:295
+msgid "Date: newest first"
+msgstr "날짜: 최근 것부터"
+
+#: components/edd/class-section-definitions.php:291
+#: components/post-list/class-section-definitions.php:296
+msgid "Date: oldest first"
+msgstr "날짜: 오래된 것부터"
+
+#: components/edd/class-section-definitions.php:292
+msgid "Name: A to Z"
+msgstr "이름: 가나다 순으로"
+
+#: components/edd/class-section-definitions.php:293
+msgid "Name: Z to A"
+msgstr "이름: 다나가 순으로"
+
+#: components/edd/class-section-definitions.php:294
+#: components/woocommerce/class-section-definitions.php:278
+msgid "Price: low to high"
+msgstr "가격: 싼 것부터"
+
+#: components/edd/class-section-definitions.php:295
+#: components/woocommerce/class-section-definitions.php:279
+msgid "Price: high to low"
+msgstr "가격: 비싼 것부터"
+
+#: components/edd/class-section-definitions.php:296
+#: components/post-list/class-section-definitions.php:301
+msgid "Random"
+msgstr "무작위"
+
+#: components/edd/class-section-definitions.php:301
+msgid "Full content"
+msgstr "전체 내용"
+
+#: components/edd/class-section-definitions.php:302
+msgid "Excerpt"
+msgstr "요약"
+
+#: components/edd/class-section-definitions.php:303
+#: components/post-list/class-section-definitions.php:337
+msgid "None"
+msgstr "없음"
+
+#: components/edd/edd.php:239
+msgid ""
+"For Easy Digital Downloads, this view consists of download archives and related "
+"category and tag archives."
+msgstr ""
+"이 디지털 다운로드 화면은 내려받기 목록과 연관 분류, 연관 태그로 구성됩니다."
+
+#: components/edd/edd.php:257
+msgid "For Easy Digital Downloads, this view consists of single downloads."
+msgstr "이 디지털 다운로드 화면은 하나의 내려받기 링크로 구성됩니다."
+
+#: components/edd/edd.php:324
+msgid "For Easy Digital Downloads, used for prices and alerts."
+msgstr "이 디지털 다운로드 화면은 가격과 주의사항을 명시하세요."
+
+#: components/edd/sections/builder-templates/downloads.php:26
+#: components/post-list/sections/builder-templates/post-list.php:44
+#: components/woocommerce/sections/builder-templates/product-grid.php:38
+msgid "From"
+msgstr "부터"
+
+#: components/edd/sections/builder-templates/downloads.php:37
+#: components/post-list/sections/builder-templates/post-list.php:55
+#: components/woocommerce/sections/builder-templates/product-grid.php:49
+msgid "Sort"
+msgstr "정렬"
+
+#: components/edd/sections/builder-templates/downloads.php:50
+#: components/post-list/sections/builder-templates/post-list.php:73
+#: components/woocommerce/sections/builder-templates/product-grid.php:62
+msgid "Columns"
+msgstr "항목"
+
+#: components/edd/sections/builder-templates/downloads.php:61
+#: components/post-list/sections/builder-templates/post-list.php:84
+#: components/woocommerce/sections/builder-templates/product-grid.php:73
+msgid "Number to show"
+msgstr "보여줄 갯수"
+
+#: components/edd/sections/builder-templates/downloads.php:64
+#: components/post-list/sections/builder-templates/post-list.php:87
+#: components/woocommerce/sections/builder-templates/product-grid.php:76
+msgid "To show all, set to <code>-1</code>."
+msgstr "전부 보려면 <code>-1</code>로 설정"
+
+#: components/edd/sections/builder-templates/downloads.php:68
+#: components/post-list/sections/builder-templates/post-list.php:105
+#: components/woocommerce/sections/builder-templates/product-grid.php:81
+msgid "Display"
+msgstr "출력"
+
+#: components/edd/sections/builder-templates/downloads.php:72
+msgid "Show thumbnail image"
+msgstr "미리보기 보이기"
+
+#: components/edd/sections/builder-templates/downloads.php:78
+#: components/woocommerce/sections/builder-templates/product-grid.php:100
+msgid "Show price"
+msgstr "가격 보이기"
+
+#: components/edd/sections/builder-templates/downloads.php:84
+msgid "Show purchase button"
+msgstr "구매 단추 보이기"
+
+#: components/edd/sections/builder-templates/downloads.php:89
+msgid "Details"
+msgstr "상세정보"
+
+#: components/panels/definitions.php:95
+msgid "Panels"
+msgstr "패널"
+
+#: components/panels/definitions.php:97
+msgid "Display content with a series of accordion- or tab-styled panels."
+msgstr "아코디언 또는 탭 패널의 내용 보이기"
+
+#: components/panels/definitions.php:114
+msgid "Mode"
+msgstr "모드"
+
+#: components/panels/definitions.php:122
+msgid "Section height"
+msgstr "섹션 높이"
+
+#: components/panels/definitions.php:143
+msgid "Background image style"
+msgstr "배경 그림 스타일"
+
+#: components/panels/definitions.php:198
+msgid "Accordion"
+msgstr "아코디언"
+
+#: components/panels/definitions.php:199
+msgid "Tabs"
+msgstr "탭"
+
+#: components/panels/definitions.php:210
+msgid "Set to largest panel"
+msgstr "가장 큰 패널에 맞춤"
+
+#: components/panels/definitions.php:211
+msgid "Scale to current panel"
+msgstr "현재 패널에 맞춤"
+
+#: components/panels/panels.php:262
+msgid ""
+"Panels sections in Tabs mode won't work correctly in the Customizer because of a "
+"bug in WordPress (%s). However, they'll still work on the front end."
+msgstr ""
+"패널 섹션이 탭 모드일 경우, 워드프레스 버그 (%s)로 인해 사용자 정의 화면에서 제대"
+"로 보이지 않을 수 있습니다. 앞단에서는 잘 동작할 것입니다."
+
+#: components/panels/sections/builder-templates/section-item.php:168
+msgid "Drag-and-drop this panel into place"
+msgstr "이 패널을 원하는 위치에 끌어다 놓기"
+
+#: components/panels/sections/builder-templates/section-item.php:173
+#: components/panels/sections/builder-templates/section-item.php:175
+#: components/panels/sections/builder-templates/section-item.php:219
+msgid "Configure panel"
+msgstr "패널 설정"
+
+#: components/panels/sections/builder-templates/section-item.php:178
+#: components/panels/sections/builder-templates/section-item.php:180
+msgid "Edit content"
+msgstr "본문 편집"
+
+#: components/panels/sections/builder-templates/section-item.php:183
+#: components/panels/sections/builder-templates/section-item.php:185
+msgid "Delete panel"
+msgstr "패널 삭제"
+
+#: components/panels/sections/builder-templates/section-item.php:258
+msgid "Enter panel title"
+msgstr "패널 제목 입력"
+
+#: components/panels/sections/builder-templates/section.php:135
+msgid "Add new panel"
+msgstr "새 패널 추가"
+
+#: components/panels/sections/builder-templates/section.php:138
+msgid "Add panel"
+msgstr "패널 추가"
+
+#: components/parallax/parallax.php:115
+msgid "Enable parallax background effect"
+msgstr "패럴랙스 배경 효과 적용"
+
+#: components/per-page/class-metabox.php:111
+msgid "Layout Settings"
+msgstr "레이아웃 설정"
+
+#: components/per-page/class-metabox.php:137
+msgid "Check the box next to a global setting to override it."
+msgstr "덮어쓰려면 전역 설정 옆에 있는 상자를 확인"
+
+#: components/per-page/class-metabox.php:166
+#: components/per-page/class-metabox.php:224
+#: components/per-page/class-metabox.php:282
+#: components/per-page/class-metabox.php:316
+#: shared/shop-settings/shop-settings.php:165
+#: shared/shop-settings/shop-settings.php:222
+msgid "Header, Footer, Sidebars"
+msgstr "헤더, 풋터, 사이드바"
+
+#: components/per-page/class-metabox.php:167
+#: components/per-page/class-metabox.php:226
+#: components/per-page/class-metabox.php:283
+#: components/per-page/class-metabox.php:317
+#: shared/shop-settings/shop-settings.php:173
+#: shared/shop-settings/shop-settings.php:230
+msgid "Hide site header"
+msgstr "사이트 헤더 감추기"
+
+#: components/per-page/class-metabox.php:168
+#: components/per-page/class-metabox.php:227
+#: components/per-page/class-metabox.php:284
+#: components/per-page/class-metabox.php:318
+#: shared/shop-settings/shop-settings.php:182
+#: shared/shop-settings/shop-settings.php:239
+msgid "Hide site footer"
+msgstr "사이트 풋터 감추기"
+
+#: components/per-page/class-metabox.php:169
+#: components/per-page/class-metabox.php:228
+#: components/per-page/class-metabox.php:285
+#: components/per-page/class-metabox.php:319
+#: shared/shop-settings/shop-settings.php:191
+#: shared/shop-settings/shop-settings.php:248
+msgid "Show left sidebar"
+msgstr "왼쪽 사이드바 보이기"
+
+#: components/per-page/class-metabox.php:170
+#: components/per-page/class-metabox.php:229
+#: components/per-page/class-metabox.php:286
+#: components/per-page/class-metabox.php:320
+#: shared/shop-settings/shop-settings.php:200
+#: shared/shop-settings/shop-settings.php:257
+msgid "Show right sidebar"
+msgstr "오른쪽 사이드바 보이기"
+
+#: components/per-page/class-metabox.php:173
+#: components/per-page/class-metabox.php:232
+#: components/per-page/class-metabox.php:289
+#: components/per-page/class-metabox.php:323
+#: shared/shop-settings/class-shop-sidebar.php:201
+msgid "Shop Sidebar Location"
+msgstr "매장 사이드바 위치"
+
+#: components/per-page/class-metabox.php:178
+#: components/per-page/class-metabox.php:237
+#: components/per-page/class-metabox.php:294
+#: components/per-page/class-metabox.php:328
+msgid "Padding"
+msgstr "안쪽 여백"
+
+#: components/per-page/class-metabox.php:179
+#: components/per-page/class-metabox.php:238
+#: components/per-page/class-metabox.php:295
+#: components/per-page/class-metabox.php:329
+msgid "Remove padding beneath header"
+msgstr "헤더 밑의 여백 제거"
+
+#: components/per-page/class-metabox.php:180
+#: components/per-page/class-metabox.php:239
+#: components/per-page/class-metabox.php:296
+#: components/per-page/class-metabox.php:330
+msgid "Remove padding above footer"
+msgstr "풋터 위의 여백 제거"
+
+#: components/per-page/class-metabox.php:183
+#: components/per-page/class-metabox.php:245
+msgid "Featured Images"
+msgstr "표지 그림"
+
+#: components/per-page/class-metabox.php:185
+#: components/per-page/class-metabox.php:247
+msgid "Featured Images Alignment"
+msgstr "표지 그림 정렬 "
+
+#: components/per-page/class-metabox.php:188
+#: components/per-page/class-metabox.php:250
+msgid "Post Date"
+msgstr "게시 날짜 정보"
+
+#: components/per-page/class-metabox.php:190
+#: components/per-page/class-metabox.php:252
+msgid "Post Date Location"
+msgstr "게시 날짜 정보 위치"
+
+#: components/per-page/class-metabox.php:193
+#: components/per-page/class-metabox.php:255
+msgid "Post Author"
+msgstr "게시자 정보"
+
+#: components/per-page/class-metabox.php:195
+#: components/per-page/class-metabox.php:257
+msgid "Post Author Location"
+msgstr "게시자 정보 위치"
+
+#: components/per-page/class-metabox.php:198
+msgid "Post Meta"
+msgstr "게시물 정보"
+
+#: components/per-page/class-metabox.php:199
+#: components/post-list/sections/builder-templates/post-list.php:134
+msgid "Show categories"
+msgstr "분류 보이기"
+
+#: components/per-page/class-metabox.php:200
+#: components/post-list/sections/builder-templates/post-list.php:140
+msgid "Show tags"
+msgstr "태그 보이기"
+
+#: components/per-page/class-metabox.php:202
+#: components/per-page/class-metabox.php:260
+msgid "Comment Count"
+msgstr "댓글 갯수 정보"
+
+#: components/per-page/class-metabox.php:204
+#: components/per-page/class-metabox.php:262
+msgid "Comment Count Location"
+msgstr "댓글 갯수 정보 위치"
+
+#: components/per-page/class-metabox.php:225
+msgid "Header, Footer"
+msgstr "헤더, 풋터"
+
+#: components/per-page/class-metabox.php:242
+msgid "Page Title"
+msgstr "페이지 제목"
+
+#: components/per-page/class-metabox.php:243
+msgid "Hide title"
+msgstr "제목 감추기"
+
+#: components/post-list/class-section-definitions.php:68
+#: components/post-list/class-widget.php:23
+msgid "Posts List"
+msgstr "게시물 목록"
+
+#: components/post-list/class-section-definitions.php:70
+msgid "Display your posts or pages in a list or grid layout."
+msgstr "게시물을 목록 또는 그리드 레이아웃으로 출력"
+
+#: components/post-list/class-section-definitions.php:297
+msgid "Title: A to Z"
+msgstr "제목: 가나다 순으로"
+
+#: components/post-list/class-section-definitions.php:298
+msgid "Title: Z to A"
+msgstr "제목: 다나가 순으로"
+
+#: components/post-list/class-section-definitions.php:299
+msgid "Most comments"
+msgstr "가장 많은 댓글"
+
+#: components/post-list/class-section-definitions.php:300
+msgid "Page order"
+msgstr "페이지 순서"
+
+#: components/post-list/class-section-definitions.php:306
+msgid "All categories/tags"
+msgstr "모든 분류/태그"
+
+#: components/post-list/class-section-definitions.php:315
+msgid "Categories"
+msgstr "분류"
+
+#: components/post-list/class-section-definitions.php:327
+msgid "Tags"
+msgstr "태그"
+
+#: components/post-list/class-section-definitions.php:334
+msgid "Top"
+msgstr "위"
+
+#: components/post-list/class-section-definitions.php:335
+msgid "Left"
+msgstr "왼쪽"
+
+#: components/post-list/class-section-definitions.php:336
+msgid "Right"
+msgstr "오른쪽"
+
+#: components/post-list/class-widget.php:21
+msgid "List posts or pages based on specific criteria. (%s)"
+msgstr "특정 조건으로 게시물 검색"
+
+#: components/post-list/class-widget.php:116
+msgid "Title:"
+msgstr "제목:"
+
+#: components/post-list/class-widget.php:120
+msgid "Type:"
+msgstr "종류:"
+
+#: components/post-list/class-widget.php:131
+msgid "Sort by:"
+msgstr "정렬:"
+
+#: components/post-list/class-widget.php:142
+msgid "Keyword:"
+msgstr "열쇠말:"
+
+#: components/post-list/class-widget.php:146
+msgid "Number of items to show:"
+msgstr "보여줄 갯수:"
+
+#: components/post-list/class-widget.php:147
+msgid "To show all items, set to <code>-1</code>."
+msgstr "모두 출력하려면 <code>-1</code>로 설정하세요."
+
+#: components/post-list/class-widget.php:151
+msgid "Item offset:"
+msgstr "오프셋:"
+
+#: components/post-list/class-widget.php:155
+msgid "From:"
+msgstr "시작:"
+
+#: components/post-list/class-widget.php:165
+msgid "Item display:"
+msgstr "출력:"
+
+#: components/post-list/class-widget.php:169
+#: components/post-list/sections/builder-templates/post-list.php:110
+msgid "Show item title"
+msgstr "제목 보이기"
+
+#: components/post-list/class-widget.php:173
+#: components/post-list/sections/builder-templates/post-list.php:116
+msgid "Show date"
+msgstr "날짜 정보 보이기"
+
+#: components/post-list/class-widget.php:177
+#: components/post-list/sections/builder-templates/post-list.php:122
+msgid "Show excerpt"
+msgstr "요약문 보이기"
+
+#: components/post-list/class-widget.php:181
+#: components/post-list/sections/builder-templates/post-list.php:128
+msgid "Show author"
+msgstr "게시자 정보 보이기"
+
+#: components/post-list/class-widget.php:185
+#: components/post-list/sections/builder-templates/post-list.php:146
+msgid "Show comment count"
+msgstr "댓글 갯수 정보 보이기"
+
+#: components/post-list/class-widget.php:189
+msgid "Show thumbnail:"
+msgstr "미리보기 그림 보이기:"
+
+#: components/post-list/sections/builder-templates/post-list.php:33
+msgid "Type"
+msgstr "종류"
+
+#: components/post-list/sections/builder-templates/post-list.php:66
+msgid "Keyword"
+msgstr "열쇠말"
+
+#: components/post-list/sections/builder-templates/post-list.php:68
+msgid "e.g. coffee"
+msgstr "예) 커피"
+
+#: components/post-list/sections/builder-templates/post-list.php:89
+msgid "Item offset"
+msgstr "오프셋"
+
+#: components/post-list/sections/builder-templates/post-list.php:93
+msgid "Show thumbnail"
+msgstr "미리보기 그림 보이기"
+
+#: components/post-list/templates/post-list-item.php:84
+msgid "<i class=\"fa fa-file\"></i> "
+msgstr "<i class=\"fa fa-file\"></i> "
+
+#: components/post-list/templates/post-list-item.php:89
+msgid "<i class=\"fa fa-tag\"></i> "
+msgstr "<i class=\"fa fa-tag\"></i> "
+
+#: components/post-list/templates/post-list-item.php:104
+msgid "%d comment"
+msgid_plural "%d comments"
+msgstr[0] "댓글 %d개"
+
+#: components/quick-start/define-templates.php:9
+msgid "800x600 pixel placeholder"
+msgstr "800x600 픽셀 예제"
+
+#: components/quick-start/define-templates.php:16
+msgid "800x800 pixel placeholder"
+msgstr "800x800 픽셀 예제"
+
+#: components/quick-start/define-templates.php:23
+msgid "800x1067 pixel placeholder"
+msgstr "800x1067 픽셀 예제"
+
+#: components/quick-start/define-templates.php:30
+msgid "960x540 pixel placeholder"
+msgstr "960x540 픽셀 예제"
+
+#: components/quick-start/define-templates.php:37
+msgid "1440x750 pixel placeholder"
+msgstr "1440x750 픽셀 예제"
+
+#: components/quick-start/define-templates.php:297
+msgid "About"
+msgstr "소개"
+
+#: components/quick-start/define-templates.php:571
+msgid "Business"
+msgstr "사업"
+
+#: components/quick-start/define-templates.php:886
+msgid "Landing"
+msgstr "첫 화면"
+
+#: components/quick-start/define-templates.php:1112
+#: components/style-kits/definitions.php:216
+msgid "Creative"
+msgstr "창의성"
+
+#: components/quick-start/define-templates.php:1324
+msgid "Photography"
+msgstr "사진"
+
+#: components/quick-start/define-templates.php:1563
+#: shared/shop-settings/shop-settings.php:156
+msgid "Shop"
+msgstr "매장"
+
+#: components/quick-start/quick-start.php:133
+msgid "Quick Start"
+msgstr "빠른 시작"
+
+#: components/quick-start/quick-start.php:134
+msgid "Import content into this page. To begin, select a category&hellip;"
+msgstr "이 페이지에 내용을 불러옵니다. 시작하려면 분류를 선택하세요&hellip;"
+
+#: components/quick-start/quick-start.php:148
+msgid "Import content"
+msgstr "내용 불러오기"
+
+#: components/style-kits/definitions.php:17
+msgid "Light"
+msgstr "밝은 색"
+
+#: components/style-kits/definitions.php:88
+msgid "Dark"
+msgstr "어두운 색"
+
+#: components/style-kits/definitions.php:152
+msgid "Modern"
+msgstr "모던"
+
+#: components/style-kits/definitions.php:280
+msgid "Vintage"
+msgstr "빈티지"
+
+#: components/style-kits/definitions.php:349
+msgid "Hello"
+msgstr "안녕"
+
+#: components/style-kits/style-kits.php:130
+#: components/style-kits/style-kits.php:177
+msgid "Style Kits"
+msgstr "스타일 키트"
+
+#: components/style-kits/style-kits.php:131 components/style-kits/stylekit.php:30
+msgid ""
+"Use a style kit to quickly apply designer-picked style choices (fonts, layout, "
+"colors) to your website."
+msgstr ""
+"스타일 키트를 사용해서 디자이너가 고른 스타일(글꼴, 레이아웃, 색상 등)을 빠르게 적"
+"용하세요."
+
+#: components/style-kits/style-kits.php:137 components/style-kits/stylekit.php:45
+msgid "Kits"
+msgstr "키트"
+
+#: components/style-kits/style-kits.php:155 components/style-kits/stylekit.php:78
+#: components/typekit/customizer.php:110
+msgid "Reset"
+msgstr "재설정"
+
+#: components/style-kits/style-kits.php:155 components/style-kits/stylekit.php:78
+msgid "Load Kit"
+msgstr "키트 적용"
+
+#: components/style-kits/style-kits.php:278
+msgid "Choose a kit"
+msgstr "키트 선택"
+
+#: components/style-kits/style-kits.php:432
+msgid "Default"
+msgstr "기본"
+
+#: components/text-column-layout/text-column-layout.php:145
+msgid "Column layout"
+msgstr "컬럼 레이아웃"
+
+#: components/text-column-layout/text-column-layout.php:166
+msgid ""
+"Looking for the Column Layout option? Now you can simply click and drag the blue "
+"bars between the columns to change their grid layout. (2- and 3-column sections "
+"only.)"
+msgstr ""
+"컬럼 레이아웃 옵션을 찾으세요? 컬럼 사이의 파란 막대를 끌어서 그리드 레이아웃을 변"
+"경할 수 있습니다. (2, 3컬럼 섹션에서만 가능)"
+
+#: components/typekit/customizer.php:93
+msgid "Typekit"
+msgstr "타입킷"
+
+#: components/typekit/customizer.php:94
+msgid ""
+"Enter your Kit ID into the field below and click the \"Load\" button to retrieve "
+"the fonts from your kit."
+msgstr ""
+"아래 입력상자에 타입킷 아이디를 입력하고 \"읽어들이기\" 단추를 누르면 글꼴을 받아"
+"옵니다."
+
+#: components/typekit/customizer.php:102
+msgid "Typekit Kit ID"
+msgstr "타입킷 키트 아이디"
+
+#: components/typekit/customizer.php:110
+msgid "Load Typekit Fonts"
+msgstr "타입킷 글꼴 읽어들이기"
+
+#: components/typekit/customizer.php:118
+msgid "For more information about Typekit integration, please see the %s."
+msgstr "타입킷 연동에 관한 추가 정보는 %s를 참고하세요."
+
+#: components/typekit/customizer.php:122
+msgid "documentation"
+msgstr "문서"
+
+#: components/typekit/customizer.php:248 components/typekit/customizer.php:318
+msgid "Typekit Fonts"
+msgstr "타입킷 글꼴"
+
+#: components/typekit/customizer.php:249
+msgid "Please enter your Typekit Kit ID"
+msgstr "타입킷 키트 아이디를 입력하세요"
+
+#: components/typekit/customizer.php:250
+msgid "Typekit fonts could not be found. Please try again"
+msgstr "타입킷 글꼴을 찾을 수 없습니다. 다시 시도해 보세요"
+
+#: components/typekit/customizer.php:251
+msgid "Fonts loaded successfully."
+msgstr "글꼴을 불러들였습니다."
+
+#: components/typekit/customizer.php:252
+msgid "Fonts reset."
+msgstr "글꼴 재설정."
+
+#: components/white-label/white-label.php:48
+msgid "White Label"
+msgstr "화이트 레이블"
+
+#: components/white-label/white-label.php:55
+msgid "Hide theme credit"
+msgstr "테마 제작자 정보 감추기"
+
+#: components/widget-area/sidebar-management.php:106
+msgid "Sidebar"
+msgstr "사이드바"
+
+#: components/widget-area/widget-area.php:174
+#: components/widget-area/widget-area.php:209
+#: components/widget-area/widget-area.php:233
+msgid "Convert to widget area"
+msgstr "위젯 영역으로 바꾸기"
+
+#: components/widget-area/widget-area.php:175
+#: components/widget-area/widget-area.php:283
+#: components/widget-area/widget-area.php:285
+msgid "Revert to column"
+msgstr "컬럼으로 되돌리기"
+
+#: components/widget-area/widget-area.php:207
+msgid "Revert to regular column"
+msgstr "일반 컬럼으로 되돌리기"
+
+#: components/widget-area/widget-area.php:230
+msgid "Convert text column to widget area"
+msgstr "컬럼을 위젯 영역으로 바꾸기"
+
+#: components/widget-area/widget-area.php:282
+msgid "Enter name here"
+msgstr "여기에 이름 입력"
+
+#: components/widget-area/widget-area.php:297
+msgid "No widgets added yet."
+msgstr "아직 위젯이 없습니다."
+
+#: components/widget-area/widget-area.php:301
+msgid ""
+"To add widgets, save this page, then go to the <a href=\"%s\">Customizer</a>."
+msgstr ""
+"위젯을 추가하려면 이 페이지를 저장한 뒤에 <a href=\"%s\">사용자 정의하기</a> 페이"
+"지로 이동하세요."
+
+#: components/widget-area/widget-area.php:312
+msgid "To add new widgets, please go to the <a href=\"%s\">Customizer</a>."
+msgstr ""
+"새 위젯을 추가하려면 <a href=\"%s\">사용자 정의하기</a> 페이지로 이동하세요."
+
+#: components/widget-area/widget-area.php:322
+msgid "Drag-and-drop this widget into place"
+msgstr "이 위젯을 원하는 위치로 끌어다 놓기"
+
+#: components/widget-area/widget-area.php:329
+#: components/widget-area/widget-area.php:331
+msgid "Configure widget"
+msgstr "위젯 설정"
+
+#: components/widget-area/widget-area.php:334
+#: components/widget-area/widget-area.php:336
+msgid "Delete widget"
+msgstr "위젯 삭제"
+
+#: components/widget-area/widget-area.php:372
+msgid "Configure "
+msgstr "설정"
+
+#: components/woocommerce/class-section-definitions.php:68
+msgid "Products"
+msgstr "제품"
+
+#: components/woocommerce/class-section-definitions.php:70
+msgid "Display your WooCommerce products in a grid layout."
+msgstr "WooCommerce 제품을 그리드 레이아웃으로 출력"
+
+#: components/woocommerce/class-section-definitions.php:267
+msgid "All products"
+msgstr "모든 제품"
+
+#: components/woocommerce/class-section-definitions.php:268
+msgid "Featured products"
+msgstr "대표 제품"
+
+#: components/woocommerce/class-section-definitions.php:269
+msgid "Sale products"
+msgstr "판매 제품"
+
+#: components/woocommerce/class-section-definitions.php:274
+msgid "Default sorting"
+msgstr "기본 정렬"
+
+#: components/woocommerce/class-section-definitions.php:275
+msgid "Popularity"
+msgstr "인기"
+
+#: components/woocommerce/class-section-definitions.php:276
+msgid "Average rating"
+msgstr "평가"
+
+#: components/woocommerce/class-section-definitions.php:277
+msgid "Newness"
+msgstr "출시일"
+
+#: components/woocommerce/class-section-definitions.php:287
+msgid "All product categories/tags"
+msgstr "모든 제품 분류/태그"
+
+#: components/woocommerce/class-section-definitions.php:296
+msgid "Product categories"
+msgstr "제품 분류"
+
+#: components/woocommerce/class-section-definitions.php:308
+msgid "Product tags"
+msgstr "제품 태그"
+
+#: components/woocommerce/legacy/class-legacy-color.php:95
+msgid "Frontend Styles"
+msgstr "앞단 스타일"
+
+#: components/woocommerce/legacy/class-legacy-color.php:111
+msgid ""
+"These styles can be customized in the Color Scheme &rarr; General section of the "
+"%s."
+msgstr "%s &rarr; 색상 설정 &rarr; 일반 섹션에서 이 스타일을 조정할 수 있습니다."
+
+#: components/woocommerce/legacy/class-legacy-color.php:115
+msgid "Customizer"
+msgstr "사용자 정의 도구"
+
+#: components/woocommerce/legacy/class-legacy-color.php:119
+msgid ""
+"To edit colours <code>woocommerce/assets/css/woocommerce-base.less</code> and "
+"<code>woocommerce.css</code> need to be writable. See <a href=\"http://codex."
+"wordpress.org/Changing_File_Permissions\">the Codex</a> for more information."
+msgstr ""
+"색상을 편집하려면 <code>woocommerce/assets/css/woocommerce-base.less</code> 파일"
+"과 <code>woocommerce.css</code> 파일에 쓰기 권한을 부여해야 합니다. 자세한 정보는 "
+"<a href=\"http://codex.wordpress.org/Changing_File_Permissions\">워드프레스 코덱스"
+"</a>를 참조하세요."
+
+#: components/woocommerce/legacy/class-legacy-color.php:261
+msgid "Could not compile woocommerce.less:"
+msgstr "woocommerce.less 파일을 컴파일할 수 없습니다:"
+
+#: components/woocommerce/legacy/class-legacy-color.php:330
+msgid "For WooCommerce, used for prices, in stock labels, and sales flash."
+msgstr "WooCommerce 가격, 재고 여부, '판매 중' 표시."
+
+#: components/woocommerce/sections/builder-templates/product-grid.php:27
+msgid "Show"
+msgstr "보이기"
+
+#: components/woocommerce/sections/builder-templates/product-grid.php:84
+msgid "Show product image"
+msgstr "제품 그림 보이기"
+
+#: components/woocommerce/sections/builder-templates/product-grid.php:92
+msgid "Show rating"
+msgstr "평가 보이기"
+
+#: components/woocommerce/sections/builder-templates/product-grid.php:107
+msgid "Show <em>Add to cart</em> button"
+msgstr "<em>장바구니에 담기</em> 버튼 보이기"
+
+#: components/woocommerce/woocommerce.php:277
+msgid ""
+"For WooCommerce, this view consists of product archives and other shop utility "
+"pages such as Checkout."
+msgstr "이 WooCommerce 화면은 제품 목록과 결제 등의 특수 페이지로 구성됩니다."
+
+#: components/woocommerce/woocommerce.php:295
+msgid "For WooCommerce, this view consists of single products."
+msgstr "이 WooCommerce 화면은 개별 제품으로 구성됩니다."
+
+#: components/woocommerce/woocommerce.php:343
+msgid ""
+"Make's color scheme no longer applies to WooCommerce shop elements. Please "
+"install the %s plugin to customize your shop's colors."
+msgstr ""
+"Make의 색상표는 더 이상 WooCommerce 매장에 적용되지 않습니다. 매장 색상을 변경하려"
+"면 %s 플러그인을 설치하세요."
+
+#: components/woocommerce/woocommerce.php:347
+msgid "WooCommerce Colors"
+msgstr "WooCommerce 색상표"
+
+#: shared/admin-notice/template.php:8
+msgid "Hide"
+msgstr "감추기"
+
+#: shared/compatibility.php:20
+msgid ""
+"Make Plus requires version %1$s of WordPress or higher. Please %2$s to ensure "
+"full compatibility."
+msgstr ""
+"Make Plus는 워드프레스 버전 %1$s 이상을 요구합니다. 호환성을 위해 %2$s를 실행하세"
+"요."
+
+#: shared/compatibility.php:25
+msgid "update WordPress"
+msgstr "워드프레스 업데이트"
+
+#: shared/shop-settings/class-shop-sidebar.php:86
+msgid "Shop Sidebar"
+msgstr "매장 사이드바"
+
+#: shared/shop-settings/class-shop-sidebar.php:159
+msgid "Left Sidebar"
+msgstr "왼쪽 사이드바"
+
+#: shared/shop-settings/class-shop-sidebar.php:160
+msgid "Right Sidebar"
+msgstr "오른쪽 사이드바"
+
+#: shared/shop-settings/class-shop-sidebar.php:161
+msgid "Neither"
+msgstr "/"
+
+#: shared/shop-settings/class-shop-sidebar.php:239
+msgid "the %1$s in the %2$s view"
+msgstr "%2$s 화면 &rarr; %1$s"
+
+#: shared/shop-settings/class-shop-sidebar.php:249
+msgid ""
+"This widget area is currently disabled. Enable it in the \"Layout\" section of "
+"the Theme Customizer."
+msgstr ""
+"이 위젯 영역은 비활성 상태입니다. 활성화하려면 사용자 설정 화면의 \"레이아웃\" 섹"
+"션으로 이동하세요."
+
+#: shared/shop-settings/class-shop-sidebar.php:252
+msgid ""
+"This widget area is currently used in place of: %s. Change this in the \"Layout\" "
+"section of the Theme Customizer."
+msgstr ""
+"이 위젯 영역은 다음 위치에서 쓰이고 있습니다: %s. 변경하려면 사용자 설정 화면의 "
+"\"레이아웃\" 섹션으로 이동하세요."
+
+#: shared/shop-settings/shop-settings.php:213
+msgid "Product"
+msgstr "제품"
+
+#: shared/shop-settings/shop-settings.php:390
+msgid "Highlight Color"
+msgstr "강조색"
+
+#: updater/api-key.php:52 updater/api-key.php:53
+msgid "Updater API Key"
+msgstr "업데이트 API 키"
+
+#: updater/api-key.php:71
+msgid "Updater Authorization"
+msgstr "업데이트 인증"
+
+#: updater/api-key.php:97
+msgid "Authorize Site and Complete Update"
+msgstr "사이트를 인증하고 업데이트를 완료하기"
+
+#: updater/api-key.php:97
+msgid "Authorize Site"
+msgstr "사이트 인증"
+
+#: updater/api-key.php:153
+msgid "E-mail Address"
+msgstr "전자편지 주소"
+
+#: updater/api-key.php:162
+msgid "Password"
+msgstr "암호"
+
+#: updater/api-key.php:182
+msgid "API Key:"
+msgstr "API 키:"
+
+#: updater/api-key.php:187
+msgid "Problems? <a href=\"#\" class=\"updater-re-auth\">Try authorizing again</a>."
+msgstr ""
+"문제가 있을 경우 <a href=\"#\" class=\"updater-re-auth\">다시 인증해 보세요</a>."
+
+#: updater/api-key.php:192
+msgid ""
+"Please authorize your theme for automatic updates with the same credentials you "
+"use to sign into The Theme Foundry website. If you have trouble logging in, "
+"please <a href=\"https://thethemefoundry.com/support/\">contact us in the Help "
+"Center</a>. The authorization process will send your current domain and product "
+"information to authorize this site."
+msgstr ""
+"The Theme Foundry 웹사이트 계정으로 인증해서 자동 업데이트 기능을 사용할 수 있습니"
+"다. 로그인에 문제가 있을 경우 <a href=\"https://thethemefoundry.com/support/\">고"
+"객지원센터</a>로 문의하세요. 인증 과정에서 현재 도메인과 제품 정보를 전송합니다."
+
+#: updater/api-key.php:268
+msgid "Your site is authorized for automatic updates from The Theme Foundry."
+msgstr "The Theme Foundry 자동 업데이트 인증을 받았습니다."
+
+#: updater/api-key.php:285 updater/api-key.php:309
+msgid ""
+"There was an error authorizing your site for automatic updates from The Theme "
+"Foundry."
+msgstr "The Theme Foundry 자동 업데이트 인증에 문제가 생겼습니다."
+
+#. Plugin Name of the plugin/theme
+msgid "Make Plus"
+msgstr "Make Plus"
+
+#. Plugin URI of the plugin/theme
+msgid "https://thethemefoundry.com/make/"
+msgstr "https://thethemefoundry.com/make/"
+
+#. Description of the plugin/theme
+msgid "A powerful paid companion plugin for the Make WordPress theme."
+msgstr "워드프레스 테마 Make에 기능을 추가하는 유료 플러그인입니다."
+
+#. Author of the plugin/theme
+msgid "The Theme Foundry"
+msgstr "The Theme Foundry"
+
+#. Author URI of the plugin/theme
+msgid "https://thethemefoundry.com"
+msgstr "https://thethemefoundry.com"
+
+#: components/duplicator/page.php:151
+msgctxt "label for a duplicated page"
+msgid "Copy"
+msgstr "복사"
+
+#: shared/shop-settings/class-shop-sidebar.php:234
+msgctxt "list item separator"
+msgid ";"
+msgstr ";"
