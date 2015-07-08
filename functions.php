@@ -6,25 +6,6 @@ define('TEXTDOMAIN','makelab');
 require_once dirname(__FILE__).'/jframework/jframework.php';
 
 //-----------------------------------------------------------------------------
-//	Override Parent Textdomains
-//-----------------------------------------------------------------------------
-function ml_load_textdomain_mofile($mofile,$domain){
-	$locale = get_locale();
-	switch($domain){
-		case 'make':
-		case 'make-plus':
-			$alt_mofile = dirname(__FILE__)."/languages/{$domain}/{$locale}.mo";
-			if(false) echo implode(PHP_EOL,array($domain,$mofile,$alt_mofile)).PHP_EOL.PHP_EOL;
-		break;
-		default:
-			$alt_mofile = null;
-		break;
-	}
-	return file_exists($alt_mofile)?$alt_mofile:$mofile;
-}
-add_filter('load_textdomain_mofile','ml_load_textdomain_mofile',999999999,2);
-
-//-----------------------------------------------------------------------------
 //	Build Main Object
 //-----------------------------------------------------------------------------
 if(!class_exists('ML_App')):
@@ -109,7 +90,8 @@ class ML_App {
 		if('make'===get_template()){
 			$this->passive = false;
 		}
-		load_child_theme_textdomain(TEXTDOMAIN,$this->root_dir.'/languages/makelab');
+		add_filter('load_textdomain_mofile',array($this,'load_textdomain_mofile'),999999999,2);
+		load_child_theme_textdomain(TEXTDOMAIN,$this->root_dir.'/languages');
 
 		add_action('after_setup_theme',array($this,'register_resources'));
 		add_action('after_setup_theme',array($this,'load_components'));
@@ -123,6 +105,49 @@ class ML_App {
 		add_filter('make_customizer_general_sections',array($this,'make_customizer_general_sections'));
 	}
 
+	//-----------------------------------------------------------------------------
+	//	Localization
+	//-----------------------------------------------------------------------------
+	public function load_textdomain_mofile($mofile,$domain){
+		$locale = get_locale();
+		switch($domain):
+			case 'make':
+				$alt_mofile = dirname(__FILE__)."/languages/{$domain}-{$locale}.mo";
+				if(defined('TTFMP_VERSION')) call_user_func(array($this,'copy_plugin_mofile'));
+			break;
+			default:
+				$alt_mofile = null;
+			break;
+		endswitch;
+		return file_exists($alt_mofile)?$alt_mofile:$mofile;
+	}
+
+	public function copy_plugin_mofile(){
+		$locale = get_locale();
+		$from = $this->root_dir.'/languages';
+		$to = WP_LANG_DIR;
+		$domains = array(
+			'make-plus' => "{$to}/plugins",
+		);
+		foreach($domains as $domain => $dirname){
+			$mofile = "{$domain}-{$locale}.mo";
+			$source = "{$from}/{$mofile}";
+			$target = "{$dirname}/{$mofile}";
+			if((file_exists($source)&&!file_exists($target))||filemtime($source)>$filemtime($target)){
+				if(!file_exists($dirname)){
+					mkdir($dirname,0777,true);
+				}
+				if(!file_exists($target)||filemtime($source)>filemtime($target)){
+					copy($source,$target);
+					chmod($source,0777);
+				}
+			}
+		}
+	}
+
+	//-----------------------------------------------------------------------------
+	//	Exclusive Functions
+	//-----------------------------------------------------------------------------
 	public function load_components(){
 		$components = array(
 			'classifier' => array(
