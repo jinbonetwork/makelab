@@ -6,10 +6,18 @@ body.page-template-template-builder {
 	.builder-section {
 		.container-boxed;
 
-		// spacing
+		// position -- for overlay
+		position: relative;
+		// spacing -- for customizer
+		margin-bottom: @grid-gutter-width;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		/*
 		& + .builder-section {
 			margin-top: @grid-gutter-width;
 		}
+		*/
 
 		// hide section title
 		.builder-text-section-title,
