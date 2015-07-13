@@ -14,3 +14,7 @@ jQuery(document).ready(function(e){
 		$container.toggleClass('toggled');
 	});
 });
+
+jQuery(document).ready(function(e){
+	jQuery('.turning-sentences').turningSentences();
+});
