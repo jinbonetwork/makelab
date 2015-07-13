@@ -60,6 +60,7 @@ class ML_App {
 			'jframework',
 			'maniprop.js',
 			'lazydo.js',
+			'turning-sentences.js',
 			'ml',
 		);
 	}
