@@ -24,7 +24,9 @@ $header_bar_menu = wp_nav_menu( array(
 
 <header id="site-header" class="<?php echo esc_attr( ttfmake_get_site_header_class() ); ?>" role="banner">
 	<?php // Only show Sub Header if it has content
-	if ( ! empty( $header_text ) || 1 === $show_search || ( ! empty ( $social_links ) && 1 === $show_social ) || ! empty( $header_bar_menu ) ) : ?>
+	//if ( ! empty( $header_text ) || 1 === $show_search || ( ! empty ( $social_links ) && 1 === $show_social ) || ! empty( $header_bar_menu ) ) :
+	if ( ! empty( $header_text ) || ( ! empty ( $social_links ) && 1 === $show_social ) || ! empty( $header_bar_menu ) ) :
+	?>
 	<div class="header-bar<?php echo esc_attr( $subheader_class ); ?>">
 		<div class="container">
 			<a class="skip-link screen-reader-text" href="#site-content"><?php _e( 'Skip to content', 'make' ); ?></a>

@@ -891,6 +891,13 @@ a {
   color: #72bfba;
   text-decoration: none;
 }
+.site-header {
+  /*
+	.header-bar + .site-header-main {
+		margin-top: @makelab-grid-gutter-width;
+	}
+	*/
+}
 .site-header .header-bar {
   position: relative;
   float: left;
@@ -1632,7 +1639,7 @@ a {
     padding-bottom: 0;
   }
 }
-.site-header .header-bar + .site-header-main {
+.site-header .site-header-main {
   margin-top: 30px;
 }
 .site-header .site-header-main .container .site-branding .custom-logo {
