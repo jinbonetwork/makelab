@@ -1239,7 +1239,8 @@ a {
 }
 .site-header .header-bar .header-text {
   zoom: 1;
-  height: 50px;
+  height: auto;
+  min-height: 50px;
   line-height: 50px;
   text-size: inherit;
   color: inherit;
@@ -2585,7 +2586,8 @@ a {
 }
 .site-footer .footer-text {
   zoom: 1;
-  height: 50px;
+  height: auto;
+  min-height: 50px;
   line-height: 50px;
   text-size: inherit;
   color: inherit;
@@ -3121,7 +3123,8 @@ a {
   clear: both;
   float: left;
   font-size: 13px;
-  height: 50px;
+  height: auto;
+  min-height: 50px;
   line-height: 50px;
   text-size: inherit;
   color: inherit;
@@ -3680,11 +3683,6 @@ body.page-template-template-builder .builder-section:after {
 }
 body.page-template-template-builder .builder-section:last-of-type {
   margin-bottom: 0;
-}
-body.page-template-template-builder .builder-section .builder-text-section-title,
-body.page-template-template-builder .builder-section .builder-gallery-section-title,
-body.page-template-template-builder .builder-section .builder-banner-section-title {
-  display: none;
 }
 body.page-template-template-builder .builder-section .builder-section-content {
   margin-left: -15px;
@@ -4430,6 +4428,11 @@ img.builder-text-image,
 }
 .builder-gallery-gutter {
   width: 0.9765625%;
+}
+.builder-text-section-title,
+.builder-gallery-section-title,
+.builder-banner-section-title {
+  display: none !important;
 }
 /*---------------------------------------------------------
  8. Widgets (_widgets.scss)
