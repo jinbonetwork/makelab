@@ -26,18 +26,6 @@ class ML_App {
 	var $deps_backend = array();
 	var $deps_frontend = array();
 
-	//---------------------------------------------------------------------------
-	//	Singleton constructor
-	//---------------------------------------------------------------------------
-	public static $instance;
-
-	public static function instance(){
-		if(is_null(self::$instance)){
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
 	public function __construct(){
 		$this->root_dir = dirname(__FILE__);
 		$this->file_path = $this->root_dir.'/'.basename(__FILE__);
@@ -63,6 +51,18 @@ class ML_App {
 			'turning-sentences.js',
 			'ml',
 		);
+	}
+
+	//---------------------------------------------------------------------------
+	//	Singleton constructor
+	//---------------------------------------------------------------------------
+	public static $instance;
+
+	public static function instance(){
+		if(is_null(self::$instance)){
+			self::$instance = new self();
+		}
+		return self::$instance;
 	}
 
 	//---------------------------------------------------------------------------
@@ -178,7 +178,7 @@ class ML_App {
 			'footer-jframework-footer' => true,
 		));
 	}
-	
+
 	public function make_customizer_general_sections($general_sections){
 		$theme_prefix = 'ml_';
 		$panel = 'ttfmake_general';
