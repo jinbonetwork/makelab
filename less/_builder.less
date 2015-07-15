@@ -1,23 +1,45 @@
 body.page-template-template-builder {
+
+//-----------------------------------------------------------------------------
+//	Layout
+//-----------------------------------------------------------------------------
+	.entry-header,
+	.entry-footer,
+	.comments-area {
+		.container-boxed;
+	}
+
 	.post {
 		margin-bottom: 0;
 		padding-bottom: 0;
 	}
+
+//-----------------------------------------------------------------------------
+//	Builder Generated Contents
+//-----------------------------------------------------------------------------
 	.builder-section {
+		.clear;
 		.container-boxed;
 
 		// position -- for overlay
 		position: relative;
 		// spacing -- for customizer
-		margin-bottom: @grid-gutter-width;
+		margin-bottom: @makelab-grid-gutter-width;
 		&:last-of-type {
 			margin-bottom: 0;
 		}
 		/*
 		& + .builder-section {
-			margin-top: @grid-gutter-width;
+			margin-top: @makelab-grid-gutter-width;
 		}
 		*/
+
+		// general section titles
+		.builder-text-section-title,
+		.builder-gallery-section-title,
+		.builder-banner-section-title {
+			display: none;
+		}
 
 		// general section contents
 		.builder-section-content {
@@ -36,6 +58,9 @@ body.page-template-template-builder {
 		// banner section
 		&.builder-section-banner {
 			.container-full;
+			.builder-banner-section-title {
+				.container-boxed-nospacing;
+			}
 		}
 
 		// text section
@@ -90,63 +115,6 @@ body.page-template-template-builder {
 			}
 		}
 	}
-}
-
-.section-header {
-	margin-bottom: (@makelab-grid-base-width * 2);
-}
-.section-title {
-	font-size: @makelab-font-size-large;
-}
-.section-description {
-	font-size: @makelab-font-size-small;
-}
-.builder-section-content {
-	position: relative;
-	z-index: 2;
-}
-.page-template-template-builder-php {
-	.site-main {
-		width: 100%;
-	}
-	.entry-header,
-	.entry-footer,
-	.builder-section-header,
-	.comments-area {
-		max-width: @makelab-grid-md+(@makelab-grid-gutter-width * 2);
-		margin: 0 auto;
-		padding: 0 @makelab-grid-gutter-width;
-	}
-}
-.builder-section-gallery,
-.builder-section-text,
-.builder-section-blank {
-	.builder-section-content {
-		max-width: @makelab-grid-md+(@makelab-grid-gutter-width * 2);
-		margin: 0 auto;
-	}
-}
-.builder-section {
-	.clear;
-}
-.builder-text-title,
-.builder-text-section-title,
-.builder-section-title,
-.builder-gallery-section-title,
-.builder-banner-section-title {
-	line-height: 1.4;
-	margin: 0 0 (@makelab-grid-base-width / 2);
-}
-.builder-text-section-title,
-.builder-gallery-section-title,
-.builder-banner-section-title {
-	max-width: @makelab-grid-md+(@makelab-grid-gutter-width * 2);
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 @makelab-grid-gutter-width;
-}
-.builder-text-section-title {
-	margin-bottom: @makelab-grid-base-width;
 }
 /*---------------------------------------------------------
  Text section: Columns (_pages.scss)

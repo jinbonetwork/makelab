@@ -81,6 +81,11 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+.container-boxed-nospacing {
+	.container-boxed;
+	max-width: (@makelab-document-width - @grid-gutter-width);
+	padding: 0;
+}
 .container-full {
 	.container-default;
 	width: auto;
