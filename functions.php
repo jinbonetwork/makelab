@@ -54,18 +54,6 @@ class ML_App {
 	}
 
 	//---------------------------------------------------------------------------
-	//	Singleton constructor
-	//---------------------------------------------------------------------------
-	public static $instance;
-
-	public static function instance(){
-		if(is_null(self::$instance)){
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
-	//---------------------------------------------------------------------------
 	//	Utilities
 	//---------------------------------------------------------------------------
 	public function recursive_stripslashes(&$item,$key){
@@ -82,154 +70,6 @@ class ML_App {
 		//$meta = json_encode($value);
 		$meta = base64_encode(json_encode($value));
 		return update_post_meta($id,$key,$meta);
-	}
-
-	//---------------------------------------------------------------------------
-	//	Initiation
-	//---------------------------------------------------------------------------
-	public function init(){
-		if('make'===get_template()){
-			$this->passive = false;
-		}
-		add_filter('load_textdomain_mofile',array($this,'load_textdomain_mofile'),999999999,2);
-		load_child_theme_textdomain(TEXTDOMAIN,$this->root_dir.'/languages');
-
-		add_action('after_setup_theme',array($this,'register_resources'));
-		add_action('after_setup_theme',array($this,'load_components'));
-		add_action('wp_enqueue_scripts',array($this,'enqueue_scripts'));
-		add_action('admin_enqueue_scripts',array($this,'admin_enqueue_scripts'));
-		add_filter('script_loader_tag',array($this,'filter_resource_tag'),0,2);
-		add_filter('style_loader_tag',array($this,'filter_resource_tag'),0,2);
-		add_filter('make_css_add',array($this,'make_css_add'));
-
-		add_filter('make_setting_defaults',array($this,'make_setting_defaults'));
-		add_filter('make_customizer_general_sections',array($this,'make_customizer_general_sections'));
-	}
-
-	//-----------------------------------------------------------------------------
-	//	Localization
-	//-----------------------------------------------------------------------------
-	public function load_textdomain_mofile($mofile,$domain){
-		$locale = get_locale();
-		switch($domain):
-			case 'make':
-				$alt_mofile = dirname(__FILE__)."/languages/{$domain}-{$locale}.mo";
-				if(defined('TTFMP_VERSION')) call_user_func(array($this,'copy_plugin_mofile'));
-			break;
-			default:
-				$alt_mofile = null;
-			break;
-		endswitch;
-		return file_exists($alt_mofile)?$alt_mofile:$mofile;
-	}
-
-	public function copy_plugin_mofile(){
-		$locale = get_locale();
-		$from = $this->root_dir.'/languages';
-		$to = WP_LANG_DIR;
-		$domains = array(
-			'make-plus' => "{$to}/plugins",
-		);
-		foreach($domains as $domain => $dirname){
-			$mofile = "{$domain}-{$locale}.mo";
-			$source = "{$from}/{$mofile}";
-			$target = "{$dirname}/{$mofile}";
-			if((file_exists($source)&&!file_exists($target))||filemtime($source)>$filemtime($target)){
-				if(!file_exists($dirname)){
-					mkdir($dirname,0777,true);
-				}
-				if(!file_exists($target)||filemtime($source)>filemtime($target)){
-					copy($source,$target);
-					chmod($source,0777);
-				}
-			}
-		}
-	}
-
-	//-----------------------------------------------------------------------------
-	//	Exclusive Functions
-	//-----------------------------------------------------------------------------
-	public function load_components(){
-		$components = array(
-			'classifier' => array(
-				'slug' => 'classifier',
-				'conditions' => array(
-					false === $this->passive,
-					defined('TTFMAKE_VERSION')&&true===version_compare(TTFMAKE_VERSION,'1.0.6','>='),
-				),
-			),
-		);
-		foreach($components as $id => $component){
-			if(!in_array(false,$component['conditions'])){
-				$file = $this->component_base.'/'.$component['slug'].'/'.$component['slug'].'.php';
-				if(file_exists($file)){
-					require_once $file;
-				}
-			}
-		}
-	}
-
-	//---------------------------------------------------------------------------
-	//	Customizer
-	//---------------------------------------------------------------------------
-	public function make_setting_defaults($defaults){
-		return array_merge($defaults,array(
-			'header-bar-menu-mobile-label' => __('Quicklinks',TEXTDOMAIN),
-			'footer-jframework-footer' => true,
-		));
-	}
-
-	public function make_customizer_general_sections($general_sections){
-		$theme_prefix = 'ml_';
-		$panel = 'ttfmake_general';
-
-		// header bar menu mobile label
-		$general_sections['labels']['options'] = array_merge(array(
-			'header-bar-menu-mobile-label' => array(
-				'setting' => array(
-					'sanitize_callback' => 'esc_html',
-					'theme_supports' => 'menus',
-					'transport' => 'postMessage',
-				),
-				'control' => array(
-					'label' => __('Header Bar Menu Label',TEXTDOMAIN),
-					'description' => __('Resize your browser window to preview the mobile menu label.','make'),
-					'type' => 'text',
-				),
-			),
-		),$general_sections['labels']['options']);
-
-		// jframework footer switch
-		$general_sections = array_merge($general_sections,array(
-			'footer-jframework-footer' => array(
-				'panel' => $panel,
-				'title' => __('jFramework Footer',TEXTDOMAIN),
-				'description' => __('On/off embeded global footer',TEXTDOMAIN),
-				'options' => array(
-					'footer-jframework-footer' => array(
-						'setting' => array(
-							'sanitize_callback' => 'absint',
-						),
-						'control' => array(
-							'type' => 'checkbox',
-							'label' => sprintf(
-								__('Use %1$s',TEXTDOMAIN),
-								__('jFramework footer',TEXTDOMAIN)
-							),
-							'description' => sprintf(
-								'<a href="%1$s" target="_blank">%2$s</a>',
-								'https://github.com/jinbonetwork/jframework',
-								sprintf(
-									__('Refer %1$s',TEXTDOMAIN),
-									__('Github repository',TEXTDOMAIN)
-								)
-							)
-						),
-					),
-				),
-			),
-		));
-		return $general_sections;
 	}
 
 	//---------------------------------------------------------------------------
@@ -356,6 +196,109 @@ class ML_App {
 		//makelab_test_resources();
 	}
 
+	//-----------------------------------------------------------------------------
+	//	Localization
+	//-----------------------------------------------------------------------------
+	public function load_textdomain_mofile($mofile,$domain){
+		$locale = get_locale();
+		switch($domain):
+			case 'make':
+				$alt_mofile = dirname(__FILE__)."/languages/{$domain}-{$locale}.mo";
+				if(defined('TTFMP_VERSION')) call_user_func(array($this,'copy_plugin_mofile'));
+			break;
+			default:
+				$alt_mofile = null;
+			break;
+		endswitch;
+		return file_exists($alt_mofile)?$alt_mofile:$mofile;
+	}
+
+	public function copy_plugin_mofile(){
+		$locale = get_locale();
+		$from = $this->root_dir.'/languages';
+		$to = WP_LANG_DIR;
+		$domains = array(
+			'make-plus' => "{$to}/plugins",
+		);
+		foreach($domains as $domain => $dirname){
+			$mofile = "{$domain}-{$locale}.mo";
+			$source = "{$from}/{$mofile}";
+			$target = "{$dirname}/{$mofile}";
+			if((file_exists($source)&&!file_exists($target))||filemtime($source)>$filemtime($target)){
+				if(!file_exists($dirname)){
+					mkdir($dirname,0777,true);
+				}
+				if(!file_exists($target)||filemtime($source)>filemtime($target)){
+					copy($source,$target);
+					chmod($source,0777);
+				}
+			}
+		}
+	}
+
+	//---------------------------------------------------------------------------
+	//	Make -- Customizer
+	//---------------------------------------------------------------------------
+	public function make_setting_defaults($defaults){
+		return array_merge($defaults,array(
+			'header-bar-menu-mobile-label' => __('Quicklinks',TEXTDOMAIN),
+			'footer-jframework-footer' => true,
+		));
+	}
+
+	public function make_customizer_general_sections($general_sections){
+		$theme_prefix = 'ml_';
+		$panel = 'ttfmake_general';
+
+		// header bar menu mobile label
+		$general_sections['labels']['options'] = array_merge(array(
+			'header-bar-menu-mobile-label' => array(
+				'setting' => array(
+					'sanitize_callback' => 'esc_html',
+					'theme_supports' => 'menus',
+					'transport' => 'postMessage',
+				),
+				'control' => array(
+					'label' => __('Header Bar Menu Label',TEXTDOMAIN),
+					'description' => __('Resize your browser window to preview the mobile menu label.','make'),
+					'type' => 'text',
+				),
+			),
+		),$general_sections['labels']['options']);
+
+		// jframework footer switch
+		$general_sections = array_merge($general_sections,array(
+			'footer-jframework-footer' => array(
+				'panel' => $panel,
+				'title' => __('jFramework Footer',TEXTDOMAIN),
+				'description' => __('On/off embeded global footer',TEXTDOMAIN),
+				'options' => array(
+					'footer-jframework-footer' => array(
+						'setting' => array(
+							'sanitize_callback' => 'absint',
+						),
+						'control' => array(
+							'type' => 'checkbox',
+							'label' => sprintf(
+								__('Use %1$s',TEXTDOMAIN),
+								__('jFramework footer',TEXTDOMAIN)
+							),
+							'description' => sprintf(
+								'<a href="%1$s" target="_blank">%2$s</a>',
+								'https://github.com/jinbonetwork/jframework',
+								sprintf(
+									__('Refer %1$s',TEXTDOMAIN),
+									__('Github repository',TEXTDOMAIN)
+								)
+							)
+						),
+					),
+				),
+			),
+		));
+		return $general_sections;
+	}
+
 	public function make_css_add_selector_patch($selector){
 		switch($selector):
 		case '.footer-social-links':
@@ -374,17 +317,87 @@ class ML_App {
 		return $data;
 	}
 
+	//-----------------------------------------------------------------------------
+	//	Makelab -- Components
+	//-----------------------------------------------------------------------------
+	public function load_components(){
+		$components = array(
+			'classifier' => array(
+				'slug' => 'classifier',
+				'conditions' => array(
+					false === $this->passive,
+					defined('TTFMAKE_VERSION')&&true===version_compare(TTFMAKE_VERSION,'1.0.6','>='),
+				),
+			),
+		);
+		foreach($components as $id => $component){
+			if(!in_array(false,$component['conditions'])){
+				$file = $this->component_base.'/'.$component['slug'].'/'.$component['slug'].'.php';
+				if(file_exists($file)){
+					require_once $file;
+				}
+			}
+		}
+	}
+
+	//---------------------------------------------------------------------------
+	//	Makelab -- Custom Fields
+	//---------------------------------------------------------------------------
+	public function add_meta_boxes(){
+	}
+
+	//---------------------------------------------------------------------------
+	//	Makelab -- Template Tags
+	//---------------------------------------------------------------------------
 	public function the_content($content){
 		$pattern = array(
 		);
 		$content = str_replace(array_keys($pattern),array_values($pattern),$content);
 		return $content;
 	}
+
+	//---------------------------------------------------------------------------
+	//	Constructor
+	//---------------------------------------------------------------------------
+	public static $instance;
+
+	public static function instance(){
+		if(is_null(self::$instance)){
+			self::$instance = new self();
+		}
+		return self::$instance;
+	}
+
+	public function init(){
+		if('make'===get_template()){
+			$this->passive = false;
+		}
+
+		// Resources
+		add_action('after_setup_theme',array($this,'register_resources'));
+		add_action('wp_enqueue_scripts',array($this,'enqueue_scripts'));
+		add_action('admin_enqueue_scripts',array($this,'admin_enqueue_scripts'));
+		add_filter('script_loader_tag',array($this,'filter_resource_tag'),0,2);
+		add_filter('style_loader_tag',array($this,'filter_resource_tag'),0,2);
+
+		// Localization
+		add_filter('load_textdomain_mofile',array($this,'load_textdomain_mofile'),999999999,2);
+		load_child_theme_textdomain(TEXTDOMAIN,$this->root_dir.'/languages');
+
+		// Make
+		add_filter('make_setting_defaults',array($this,'make_setting_defaults'));
+		add_filter('make_customizer_general_sections',array($this,'make_customizer_general_sections'));
+		add_filter('make_css_add',array($this,'make_css_add'));
+
+		// Makelab
+		add_action('after_setup_theme',array($this,'load_components'));
+		add_filter('add_meta_boxes',array($this,'add_meta_boxes'));
+	}
 }
 endif;
 
 //-----------------------------------------------------------------------------
-//	Singleton loader
+//	Singleton Loader
 //-----------------------------------------------------------------------------
 if(!function_exists('ml_get_app')):
 function ml_get_app(){
