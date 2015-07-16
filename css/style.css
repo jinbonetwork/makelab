@@ -3730,7 +3730,7 @@ body.page-template-template-builder .builder-section:last-of-type {
 body.page-template-template-builder .builder-section .builder-text-section-title,
 body.page-template-template-builder .builder-section .builder-gallery-section-title,
 body.page-template-template-builder .builder-section .builder-banner-section-title {
-  display: block;
+  display: none;
 }
 body.page-template-template-builder .builder-section .builder-section-content {
   margin-left: -15px;
