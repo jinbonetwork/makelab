@@ -440,13 +440,13 @@ class ML_App {
 	//---------------------------------------------------------------------------
 	public function the_time($d=''){
 		global $post;
-		$d = $this->get_date_string($d,get_the_time('U'),get_post_meta($post->ID,'post_published',true));
+		$d = $this->get_date_string($d,get_the_time('U'),get_post_meta($post->ID,'published_date',true));
 		return $d;
 	}
 
 	public function the_modified_time($d=''){
 		global $post;
-		$d = $this->get_date_string($d,get_the_modified_time('U'),get_post_meta($post->ID,'post_modified',true));
+		$d = $this->get_date_string($d,get_the_modified_time('U'),get_post_meta($post->ID,'modified_date',true));
 		return $d;
 	}
 
