@@ -59,6 +59,25 @@ class ML_App {
 	//---------------------------------------------------------------------------
 	//	Utilities
 	//---------------------------------------------------------------------------
+	public function array_insert($items,$key_position=null,$value_position=null,$insert_value,$insert_key=null){
+		$result = array();
+		foreach($items as $item_key => $item_value){
+			if(is_string($item_key)){
+				$result[$item_key] = $item_value;
+			}else{
+				$result[] = $item_value;
+			}
+			if($item_key==$key_position||$item_value==$value_position){
+				if(is_string($insert_key)){
+					$result[$insert_key] = $insert_value;
+				}else{
+					$result[] = $insert_value;
+				}
+			}
+		}
+		return $result;
+	}
+
 	public function recursive_stripslashes(&$item,$key){
 		$item = stripslashes($item);
 	}
@@ -246,6 +265,11 @@ class ML_App {
 		return array_merge($defaults,array(
 			'header-bar-menu-mobile-label' => __('Quicklinks',TEXTDOMAIN),
 			'footer-jframework-footer' => true,
+			'layout-blog-post-date-show-modified-date' => true,
+			'layout-archive-post-date-show-modified-date' => true,
+			'layout-search-post-date-show-modified-date' => true,
+			'layout-post-post-date-show-modified-date' => true,
+			'layout-page-post-date-show-modified-date' => true,
 		));
 	}
 
@@ -302,6 +326,30 @@ class ML_App {
 		return $general_sections;
 	}
 
+	public function make_customizer_contentlayout_sections($contentlayout_sections){
+		$theme_prefix = 'ml_';
+		$panel = 'ttfmake_content-layout';
+		$pattern = array('blog','archive','search','post','page');
+		foreach($pattern as $scope){
+			$section_options = $contentlayout_sections["layout-{$scope}"]['options'];
+			$key_position = "layout-{$scope}-post-date-location";
+			$insert_key = "layout-{$scope}-post-date-show-modified-date";
+			$insert_value	= array(
+				'setting' => array(
+					'sanitize_callback' => 'absint',
+				),
+				'control' => array(
+					'type' => 'checkbox',
+					'label' => __('Show modified date',TEXTDOMAIN),
+					'description' => '',
+				),
+			);
+			$section_options = $this->array_insert($section_options,$key_position,null,$insert_value,$insert_key);
+			$contentlayout_sections["layout-{$scope}"]['options'] = $section_options;
+		}
+		return $contentlayout_sections;
+	}
+
 	public function make_css_add_selector_patch($selector){
 		switch($selector):
 		case '.footer-social-links':
@@ -318,6 +366,20 @@ class ML_App {
 		}
 		$data['selectors'] = $new_selectors;
 		return $data;
+	}
+
+	//-----------------------------------------------------------------------------
+	//	Make Plus -- Customizer
+	//-----------------------------------------------------------------------------
+	public function perpage_allowed_keys($allowed_keys){
+		$scopes = array('post','page');
+		foreach($scopes as $scope){
+			$view_keys = $allowed_keys[$scope];
+			$value_position = "layout-{$scope}-post-date-location";
+			$insert_value = "layout-{$scope}-post-date-show-modified-date";
+			$allowed_keys[$scope] = $this->array_insert($view_keys,null,$value_position,$insert_value);
+		}
+		return $allowed_keys;
 	}
 
 	//-----------------------------------------------------------------------------
@@ -453,7 +515,11 @@ class ML_App {
 		// Make
 		add_filter('make_setting_defaults',array($this,'make_setting_defaults'));
 		add_filter('make_customizer_general_sections',array($this,'make_customizer_general_sections'));
+		add_filter('make_customizer_contentlayout_sections',array($this,'make_customizer_contentlayout_sections'));
 		add_filter('make_css_add',array($this,'make_css_add'));
+
+		// Make Plus
+		add_filter('ttfmp_perpage_allowed_keys',array($this,'perpage_allowed_keys'));
 
 		// Makelab
 		add_action('after_setup_theme',array($this,'load_components'));
