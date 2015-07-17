@@ -59,3 +59,9 @@ msgstr "%1$s 참조하기"
 
 msgid "Github repository"
 msgstr "깃허브 저장소"
+
+msgid "Published date"
+msgstr "등록일"
+
+msgid "Modified date"
+msgstr "수정일"

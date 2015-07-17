@@ -3317,9 +3317,15 @@ img.entry-thumbnail.post-header,
   font-size: 13px;
   margin-bottom: 20px;
 }
+.entry-date.modified {
+  margin-left: 1em;
+}
 .entry-date a {
   color: #333333;
   text-decoration: none;
+}
+.entry-date span.split {
+  margin-right: 0.5em;
 }
 .entry-author {
   float: left;
@@ -3645,9 +3651,15 @@ img.entry-thumbnail.post-header,
   font-size: 13px;
   margin-bottom: 20px;
 }
+.site-wrapper div.sharedaddy h3.modified {
+  margin-left: 1em;
+}
 .site-wrapper div.sharedaddy h3 a {
   color: #333333;
   text-decoration: none;
+}
+.site-wrapper div.sharedaddy h3 span.split {
+  margin-right: 0.5em;
 }
 /*---------------------------------------------------------
  Gallery shortcode slider (_posts.scss)

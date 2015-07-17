@@ -26,6 +26,9 @@ class ML_App {
 	var $deps_backend = array();
 	var $deps_frontend = array();
 
+	var $date_structure = '<span class="date-format date-format-date">%date%</span>';
+	var $time_structure = '<span class="date-format date-format-time">%time%</span>';
+
 	public function __construct(){
 		$this->root_dir = dirname(__FILE__);
 		$this->file_path = $this->root_dir.'/'.basename(__FILE__);
@@ -344,16 +347,79 @@ class ML_App {
 	//	Makelab -- Custom Fields
 	//---------------------------------------------------------------------------
 	public function add_meta_boxes(){
+		/*
+		$screens = array('post','page');
+		foreach($screen as $id => $data){
+		}
+		*/
 	}
 
 	//---------------------------------------------------------------------------
-	//	Makelab -- Template Tags
+	//	Makelab -- Template Tools
 	//---------------------------------------------------------------------------
+	public function get_date_option($view=''){
+		$view = $view?$view:ttfmake_get_view();
+		$key = "layout-{$view}-post-date";
+		$value = ttfmake_sanitize_choice(get_theme_mod($key,ttfmake_get_default($key)),$key);
+		return $value;
+	}
+
+	public function get_date_string($d,$u,$alt=''){
+		if($alt) return $alt;
+		$option = $this->get_date_option();
+		if($option=='relative'){
+			$d = sprintf(_x('%s ago','time period','make'),human_time_diff($u,current_time('timestamp')));
+		}
+		return $d;
+	}
+
+	//---------------------------------------------------------------------------
+	//	Makelab -- Template Hooks
+	//---------------------------------------------------------------------------
+	public function the_time($d=''){
+		global $post;
+		$d = $this->get_date_string($d,get_the_time('U'),get_post_meta($post->ID,'post_published',true));
+		return $d;
+	}
+
+	public function the_modified_time($d=''){
+		global $post;
+		$d = $this->get_date_string($d,get_the_modified_time('U'),get_post_meta($post->ID,'post_modified',true));
+		return $d;
+	}
+
 	public function the_content($content){
 		$pattern = array(
 		);
 		$content = str_replace(array_keys($pattern),array_values($pattern),$content);
 		return $content;
+	}
+
+	//---------------------------------------------------------------------------
+	//	Makelab -- Template Tags
+	//---------------------------------------------------------------------------
+	public function get_published_date($d='datetime'){
+		$date = str_replace('%date%',get_the_time(get_option('date_format')),$this->date_structure);
+		$time = str_replace('%time%',get_the_time(get_option('time_format')),$this->time_structure);
+		$datetime = "{$date} {$time}";
+		$markup = $$d?$$d:str_replace('%date%',get_the_time($d),$this->date_structure);
+		return apply_filters('the_time',$markup);
+	}
+
+	public function the_published_date($d='datetime'){
+		echo $this->get_published_date($d);
+	}
+
+	public function get_modified_date($d='datetime'){
+		$date = str_replace('%date%',get_the_modified_time(get_option('date_format')),$this->date_structure);
+		$time = str_replace('%time%',get_the_modified_time(get_option('time_format')),$this->time_structure);
+		$datetime = "{$date} {$time}";
+		$markup = $$d?$$d:str_replace('%date%',get_the_modified_time($d),$this->date_structure);
+		return $markup;
+	}
+
+	public function the_modified_date($d='datetime'){
+		echo $thic->get_modified_date($d);
 	}
 
 	//---------------------------------------------------------------------------
@@ -392,6 +458,10 @@ class ML_App {
 		// Makelab
 		add_action('after_setup_theme',array($this,'load_components'));
 		add_filter('add_meta_boxes',array($this,'add_meta_boxes'));
+
+		// Template Tags
+		add_filter('the_time',array($this,'the_time'),999999999);
+		add_filter('the_modified_time',array($this,'the_modified_time'),999999999);
 	}
 }
 endif;
