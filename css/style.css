@@ -5385,11 +5385,25 @@ object {
     float: right;
     margin: 1em 0 24px 24px;
   }
-  a .alignnone,
-  a .aligncenter,
-  a .alignleft,
-  a .alignright {
+  a .alignnone.alignnone,
+  a .aligncenter.alignnone,
+  a .alignleft.alignnone,
+  a .alignright.alignnone,
+  a .alignnone.aligncenter,
+  a .aligncenter.aligncenter,
+  a .alignleft.aligncenter,
+  a .alignright.aligncenter {
     margin-top: 0 !important;
+  }
+  a .alignnone.alignleft,
+  a .aligncenter.alignleft,
+  a .alignleft.alignleft,
+  a .alignright.alignleft,
+  a .alignnone.alignright,
+  a .aligncenter.alignright,
+  a .alignleft.alignright,
+  a .alignright.alignright {
+    margin-top: 0.3em !important;
   }
 }
 .entry-content iframe[src*="google.com/maps"] {

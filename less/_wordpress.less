@@ -62,7 +62,14 @@ object {
 			margin: @makelab-paragraph-spacing 0 @makelab-grid-gutter-width @makelab-grid-gutter-width;
 		}
 		a & {
-			margin-top: 0 !important;
+			&.alignnone,
+			&.aligncenter {
+				margin-top: 0 !important;
+			}
+			&.alignleft,
+			&.alignright {
+				margin-top: @makelab-floated-image-vspacing !important;
+			}
 		}
 	});
 }
