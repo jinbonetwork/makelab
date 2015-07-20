@@ -5386,6 +5386,12 @@ object {
     margin: 1em 0 24px 24px;
   }
 }
+a .alignnone,
+a .aligncenter,
+a .alignleft,
+a .alignright {
+  margin-top: 0;
+}
 .entry-content iframe[src*="google.com/maps"] {
   height: 600px;
   width: 100%;
