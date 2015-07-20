@@ -5389,7 +5389,7 @@ object {
   a .aligncenter,
   a .alignleft,
   a .alignright {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 }
 .entry-content iframe[src*="google.com/maps"] {
