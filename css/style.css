@@ -5297,102 +5297,82 @@ iframe,
 object {
   max-width: 100%;
 }
+.aligncenter {
+  float: none;
+  clear: both;
+  display: block;
+}
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+figure.alignnone {
+  margin: 1em 0;
+}
+figure.aligncenter {
+  margin: 1em auto;
+}
+figure.alignleft {
+  margin: 1em 24px 24px 0;
+}
+figure.alignright {
+  margin: 1em 0 24px 24px;
+}
+figure.alignleft img,
+figure.alignright img {
+  margin-top: 0.3em;
+}
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+img.aligncenter {
+  margin: 0 auto 1em auto;
+}
+img.alignleft {
+  margin: 0.3em 24px 24px 0;
+}
+img.alignright {
+  margin: 0.3em 0 24px 24px;
+}
 .alignnone,
 .aligncenter,
 .alignleft,
 .alignright {
-  float: none;
-  clear: both;
-  display: block;
-  width: 100%;
   max-width: 100%;
 }
-.alignnone img,
-.aligncenter img,
-.alignleft img,
-.alignright img {
-  width: 100%;
-  height: auto;
-}
-* + .alignnone,
-* + .aligncenter,
-* + .alignleft,
-* + .alignright,
-.alignnone + *,
-.aligncenter + *,
-.alignleft + *,
-.alignright + * {
-  margin-top: 1em;
-}
-@media screen and (min-width: 768px) {
-  .alignnone,
-  .aligncenter,
-  .alignleft,
-  .alignright {
-    width: auto;
+@media screen and (max-width: 767px) {
+  .alignnone:not(.icon),
+  .aligncenter:not(.icon),
+  .alignleft:not(.icon),
+  .alignright:not(.icon) {
+    float: none;
+    clear: both;
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
   }
-  .alignnone.alignnone,
-  .aligncenter.alignnone,
-  .alignleft.alignnone,
-  .alignright.alignnone {
-    clear: none;
-    display: inline-block;
+  figure.alignnone:not(.icon),
+  figure.aligncenter:not(.icon),
+  figure.alignleft:not(.icon),
+  figure.alignright:not(.icon) {
+    margin: 1em 0;
   }
-  .alignnone.aligncenter,
-  .aligncenter.aligncenter,
-  .alignleft.aligncenter,
-  .alignright.aligncenter {
-    margin: 1em auto;
+  figure.alignnone:not(.icon) img,
+  figure.aligncenter:not(.icon) img,
+  figure.alignleft:not(.icon) img,
+  figure.alignright:not(.icon) img {
+    margin-top: 0;
   }
-  .alignnone.alignleft,
-  .aligncenter.alignleft,
-  .alignleft.alignleft,
-  .alignright.alignleft {
-    float: left;
-    margin: 1em 24px 24px 0;
+  img.alignnone:not(.icon),
+  img.aligncenter:not(.icon),
+  img.alignleft:not(.icon),
+  img.alignright:not(.icon) {
+    margin: 0 0 1em 0;
   }
-  .alignnone.alignright,
-  .aligncenter.alignright,
-  .alignleft.alignright,
-  .alignright.alignright {
-    float: right;
-    margin: 1em 0 24px 24px;
-  }
-  a .alignnone.alignnone,
-  a .aligncenter.alignnone,
-  a .alignleft.alignnone,
-  a .alignright.alignnone,
-  a .alignnone.aligncenter,
-  a .aligncenter.aligncenter,
-  a .alignleft.aligncenter,
-  a .alignright.aligncenter {
-    margin-top: 0 !important;
-  }
-  a .alignnone.alignleft,
-  a .aligncenter.alignleft,
-  a .alignleft.alignleft,
-  a .alignright.alignleft,
-  a .alignnone.alignright,
-  a .aligncenter.alignright,
-  a .alignleft.alignright,
-  a .alignright.alignright {
-    margin-top: 0.3em !important;
-  }
-}
-.alignnone.icon img,
-.alignleft.icon img,
-.alignright.icon img,
-.aligncenter.icon img,
-.alignnone img.icon,
-.alignleft img.icon,
-.alignright img.icon,
-.aligncenter img.icon,
-img.alignnone.icon,
-img.alignleft.icon,
-img.alignright.icon,
-img.aligncenter.icon {
-  width: auto;
-  display: inline-block;
 }
 .entry-content iframe[src*="google.com/maps"] {
   height: 600px;
@@ -5411,10 +5391,8 @@ div.wp-video-shortcode {
 #site .wp-caption {
   display: block;
   width: 100%;
-  max-width: 100%;
   font-style: italic;
   line-height: 1.35;
-  margin-bottom: 24px;
 }
 img#site .wp-caption,
 #site .wp-caption img {
@@ -5424,10 +5402,6 @@ img#site .wp-caption,
   width: 100%;
   height: auto;
 }
-#site .wp-caption img[class*="wp-image-"] {
-  display: block;
-  margin: 0 auto;
-}
 #site .wp-caption .wp-caption-text {
   text-align: left;
   margin-top: 4px;
@@ -5435,17 +5409,6 @@ img#site .wp-caption,
   line-height: 1.35;
   font-size: 13px;
   margin: 8px 0;
-}
-@media screen and (max-width: 767px) {
-  #site .wp-caption {
-    width: 100% !important;
-  }
-}
-@media screen and (min-width: 768px) {
-  #site .wp-caption.alignleft img[class*="wp-image-"],
-  #site .wp-caption.alignright img[class*="wp-image-"] {
-    margin-top: 0.3em;
-  }
 }
 #site * + .gallery {
   margin-top: 1em;
