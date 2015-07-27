@@ -5407,8 +5407,17 @@ object {
   }
 }
 .alignnone.icon img,
+.alignleft.icon img,
+.alignright.icon img,
+.aligncenter.icon img,
 .alignnone img.icon,
-img.alignnone.icon {
+.alignleft img.icon,
+.alignright img.icon,
+.aligncenter img.icon,
+img.alignnone.icon,
+img.alignleft.icon,
+img.alignright.icon,
+img.aligncenter.icon {
   width: auto;
   display: inline-block;
 }
