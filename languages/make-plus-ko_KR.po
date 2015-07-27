@@ -624,7 +624,7 @@ msgstr "열쇠말"
 
 #: components/post-list/sections/builder-templates/post-list.php:68
 msgid "e.g. coffee"
-msgstr "예) 커피"
+msgstr "예:) 커피"
 
 #: components/post-list/sections/builder-templates/post-list.php:89
 msgid "Item offset"

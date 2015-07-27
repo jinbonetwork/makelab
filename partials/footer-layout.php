@@ -55,10 +55,13 @@ endif;
 ?>
 
 <?php
-$custom_footer = ml_get_app()->root_dir.'/custom/footer.html';
+$custom_footer = get_theme_mod('footer-custom-footer-file-path','');
+if($custom_footer):
+$custom_footer = ml_get_app()->root_dir."/custom/{$custom_footer}";
 if(file_exists($custom_footer)){
 	echo file_get_contents($custom_footer);
 }
+endif;
 ?>
 
 <?php

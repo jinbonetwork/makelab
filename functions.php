@@ -265,6 +265,7 @@ class ML_App {
 		return array_merge($defaults,array(
 			'header-bar-menu-mobile-label' => __('Quicklinks',TEXTDOMAIN),
 			'footer-jframework-footer' => true,
+			'footer-custom-footer-file-path' => '',
 			'layout-blog-post-date-show-modified-date' => true,
 			'layout-archive-post-date-show-modified-date' => true,
 			'layout-search-post-date-show-modified-date' => true,
@@ -329,24 +330,50 @@ class ML_App {
 	public function make_customizer_contentlayout_sections($contentlayout_sections){
 		$theme_prefix = 'ml_';
 		$panel = 'ttfmake_content-layout';
-		$pattern = array('blog','archive','search','post','page');
+		$pattern = array('footer','blog','archive','search','post','page');
 		foreach($pattern as $scope){
-			$section_options = $contentlayout_sections["layout-{$scope}"]['options'];
-			$key_position = "layout-{$scope}-post-date-location";
-			$insert_key = "layout-{$scope}-post-date-show-modified-date";
-			$insert_value	= array(
-				'setting' => array(
-					'sanitize_callback' => 'absint',
-				),
-				'control' => array(
-					'type' => 'checkbox',
-					'label' => __('Show modified date',TEXTDOMAIN),
-					'description' => '',
-				),
-			);
+			switch($scope){
+			case 'blog':
+			case 'archive':
+			case 'search':
+			case 'post':
+			case 'page':
+				$section_index = "layout-{$scope}";
+				$section_options = $contentlayout_sections[$section_index]['options'];
+				$key_position = "layout-{$scope}-post-date-location";
+				$insert_key = "layout-{$scope}-post-date-show-modified-date";
+				$insert_value	= array(
+					'setting' => array(
+						'sanitize_callback' => 'absint',
+					),
+					'control' => array(
+						'type' => 'checkbox',
+						'label' => __('Show modified date',TEXTDOMAIN),
+						'description' => '',
+					),
+				);
+				break;
+			case 'footer':
+				$section_index = 'footer';
+				$section_options = $contentlayout_sections[$section_index]['options'];
+				$key_position = 'footer-show-social';
+				$insert_key = 'footer-custom-footer-file-path';
+				$insert_value = array(
+					'setting' => array(
+						'sanitize_callback' => 'ttfmake_sanitize_text',
+					),
+					'control' => array(
+						'type' => 'text',
+						'label' => __('Custom footer file path',TEXTDOMAIN),
+						'description' => __('The file must be located in the <code>custom</code> subdirectory of the theme.',TEXTDOMAIN),
+					),
+				);
+				break;
+			}
 			$section_options = $this->array_insert($section_options,$key_position,null,$insert_value,$insert_key);
-			$contentlayout_sections["layout-{$scope}"]['options'] = $section_options;
+			$contentlayout_sections[$section_index]['options'] = $section_options;
 		}
+
 		return $contentlayout_sections;
 	}
 
