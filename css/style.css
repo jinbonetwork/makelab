@@ -557,18 +557,20 @@ img.banner,
 .site-description a:focus {
   text-decoration: none;
 }
-body #site #site-header {
-  position: relative;
-  z-index: 100;
+body #site > * {
   float: left;
   width: 100%;
   zoom: 1;
 }
-body #site #site-header:before,
-body #site #site-header:after {
+body #site > *:before,
+body #site > *:after {
   display: block;
   content: "";
   clear: both;
+}
+body #site #site-header {
+  position: relative;
+  z-index: 100;
 }
 body #site #site-header .header-bar {
   float: left;
@@ -623,17 +625,8 @@ body #site #site-header .site-header-main > .container:after {
   clear: both;
 }
 body #site #site-content {
-  float: left;
-  width: 100%;
-  zoom: 1;
   position: relative;
   z-index: 1;
-}
-body #site #site-content:before,
-body #site #site-content:after {
-  display: block;
-  content: "";
-  clear: both;
 }
 body #site #site-content #site-main,
 body #site #site-content #sidebar-left,
@@ -693,15 +686,6 @@ body #site #site-content #site-main + #sidebar-right {
 body #site #site-footer {
   position: relative;
   z-index: 100;
-  float: left;
-  width: 100%;
-  zoom: 1;
-}
-body #site #site-footer:before,
-body #site #site-footer:after {
-  display: block;
-  content: "";
-  clear: both;
 }
 body #site #site-footer > .container {
   float: none;
@@ -716,17 +700,6 @@ body #site #site-footer > .container {
 body #site #site-footer > .container:after {
   content: '';
   display: block;
-  clear: both;
-}
-body #site #global-footer {
-  float: left;
-  width: 100%;
-  zoom: 1;
-}
-body #site #global-footer:before,
-body #site #global-footer:after {
-  display: block;
-  content: "";
   clear: both;
 }
 body #site #global-footer > .container {
