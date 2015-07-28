@@ -176,7 +176,6 @@ class ML_App {
 		wp_register_style('makelab',"{$url_base}/css/style.css",$this->deps_frontend,$this->version);
 		wp_register_script('makelab',"{$url_base}/js/script.js",$this->deps_frontend,$this->version,true);
 		//makelab_test_resources();
-
 	}
 
 	public function enqueue_custom_resources(){
@@ -550,11 +549,16 @@ class ML_App {
 
 		// Makelab
 		add_action('after_setup_theme',array($this,'load_components'));
+		add_action('admin_init',array($this,'admin_init'));
 		add_filter('add_meta_boxes',array($this,'add_meta_boxes'));
 
 		// Template Tags
 		add_filter('the_time',array($this,'the_time'),999999999);
 		add_filter('the_modified_time',array($this,'the_modified_time'),999999999);
+	}
+
+	public function admin_init(){
+		add_editor_style("{$url_base}/css/editor.css");
 	}
 }
 endif;
