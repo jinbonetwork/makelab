@@ -12,6 +12,18 @@ msgstr ""
 "X-Generator: Poedit 1.8.3\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
+msgid "Alert"
+msgstr "알림"
+
+msgid "Information"
+msgstr "정보"
+
+msgid "Warning"
+msgstr "경고"
+
+msgid "Danger"
+msgstr "위험"
+
 msgid "Classify Section"
 msgstr "섹션 분류하기"
 

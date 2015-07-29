@@ -258,6 +258,40 @@ class ML_App {
 	}
 
 	//---------------------------------------------------------------------------
+	//	Make -- Admin
+	//---------------------------------------------------------------------------
+	public function tiny_mce_before_init($settings=array()){
+		$style_formats = array(
+			array(
+				'title' => __('Alert',TEXTDOMAIN),
+				'block' => 'div',
+				'classes' => 'alert alert-success',
+				'wrap' => true,
+			),
+			array(
+				'title' => __('Information',TEXTDOMAIN),
+				'block' => 'div',
+				'classes' => 'alert alert-info',
+				'wrap' => true,
+			),
+			array(
+				'title' => __('Warning',TEXTDOMAIN),
+				'block' => 'div',
+				'classes' => 'alert alert-warning',
+				'wrap' => true,
+			),
+			array(
+				'title' => __('Danger',TEXTDOMAIN),
+				'block' => 'div',
+				'classes' => 'alert alert-danger',
+				'wrap' => true,
+			),
+		);
+		$settings['style_formats'] = json_encode(array_merge(json_decode($settings['style_formats']),$style_formats));
+		return $settings;
+	}
+
+	//---------------------------------------------------------------------------
 	//	Make -- Customizer
 	//---------------------------------------------------------------------------
 	public function make_setting_defaults($defaults){
@@ -559,6 +593,7 @@ class ML_App {
 
 	public function admin_init(){
 		add_editor_style("{$url_base}/css/editor.css");
+		add_filter('tiny_mce_before_init',array($this,'tiny_mce_before_init'));
 	}
 }
 endif;

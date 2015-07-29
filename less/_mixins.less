@@ -229,6 +229,104 @@
 }
 
 //-----------------------------------------------------------------------------
+//	Align
+//-----------------------------------------------------------------------------
+.align {
+	&.alignnone {
+		margin-bottom: 0;
+	}
+	&.aligncenter {
+		float: none;
+		clear: both;
+		display: block;
+	}
+	&.alignleft {
+		float: left;
+	}
+	&.alignright {
+		float: right;
+	}
+	&.alignnone,
+	&.aligncenter,
+	&.alignleft,
+	&.alignright {
+		max-width: 100%;
+		&:not(.icon){
+			.max(@makelab-smallest-breakpoint,{
+				float: none;
+				clear: both;
+				display: block;
+				width: 100% !important;
+				max-width: 100%;
+			});
+		}
+	}
+}
+.align-block {
+	.align;
+	&.alignnone {
+		margin: @makelab-paragraph-spacing 0;
+	}
+	&.aligncenter {
+		margin: @makelab-paragraph-spacing auto;
+	}
+	&.alignleft {
+		margin: @makelab-paragraph-spacing @makelab-grid-gutter-width @makelab-grid-gutter-width 0;
+	}
+	&.alignright {
+		margin: @makelab-paragraph-spacing 0 @makelab-grid-gutter-width @makelab-grid-gutter-width;
+	}
+	&.alignleft,
+	&.alignright {
+		img {
+			margin-top: @makelab-floated-image-vspacing;
+		}
+	}
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	&:not(.icon){
+		.max(@makelab-smallest-breakpoint,{
+			margin: @makelab-paragraph-spacing 0;
+			img {
+				margin-top: 0;
+			}
+		});
+	}
+}
+.align-inline-block {
+	.align;
+	&.aligncenter {
+		margin: 0 auto @makelab-paragraph-spacing auto;
+	}
+	&.alignleft {
+		margin: @makelab-floated-image-vspacing @makelab-grid-gutter-width @makelab-grid-gutter-width 0;
+	}
+	&.alignright {
+		margin: @makelab-floated-image-vspacing 0 @makelab-grid-gutter-width @makelab-grid-gutter-width;
+	}
+	&:not(.icon){
+		.max(@makelab-smallest-breakpoint,{
+			margin: 0 0 @makelab-paragraph-spacing 0;
+		});
+	}
+}
+
+//-----------------------------------------------------------------------------
+//	Editor
+//-----------------------------------------------------------------------------
+.editor-generated-content {
+	.editor-generated-content;
+	.ttfmake-testimonial,
+	.alert {
+		margin-top: @makelab-paragraph-spacing;
+		margin-bottom: @makelab-paragraph-spacing;
+	}
+}
+
+//-----------------------------------------------------------------------------
 //	Inline components
 //-----------------------------------------------------------------------------
 .featured-figure {

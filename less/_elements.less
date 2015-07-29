@@ -1,10 +1,12 @@
 blockquote {
 	&.ttfmake-testimonial {
-		line-height: 0; //reset
-		background-color: @makelab-color-secondary;
-		margin-bottomi: (@makelab-grid-base-width * 2);
-		padding: (@makelab-grid-base-width * 1.5) @makelab-grid-gutter-width;
+		position: relative;
 		.border-radius;
+		background-color: @makelab-color-secondary;
+		margin-left: 0;
+		margin-right: 0;
+		padding: @makelab-grid-gutter-width (@makelab-grid-gutter-width / 1.5);
+		font-size: @makelab-font-size-large;
 		p {
 			margin-bottom: 0; // reset
 		}
@@ -17,14 +19,14 @@ blockquote {
 		}
 		&:after {
 			content: "";
-			position: relative;
+			position: absolute;
 			width: 0; //reset
 			height: 0; //reset
-			border-left: 22px solid transparent;
-			border-right: 22px solid transparent;
-			border-top: 22px solid @makelab-color-secondary;
-			left: 5px;
-			bottom: -60px;
+			border-left: @makelab-testimonial-tip-size solid transparent;
+			border-right: @makelab-testimonial-tip-size solid transparent;
+			border-top: @makelab-testimonial-tip-size solid @makelab-color-secondary;
+			left: @makelab-testimonial-tip-left;
+			bottom: (0 - @makelab-testimonial-tip-size);
 		}
 	}
 }
