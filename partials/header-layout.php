@@ -11,9 +11,9 @@ $show_search     = (int) get_theme_mod( 'header-show-search', ttfmake_get_defaul
 $subheader_class = ( 1 === $show_social || 1 === $show_search ) ? ' right-content' : '';
 $hide_site_title = (int) get_theme_mod( 'hide-site-title', ttfmake_get_default( 'hide-site-title' ) );
 $hide_tagline    = (int) get_theme_mod( 'hide-tagline', ttfmake_get_default( 'hide-tagline' ) );
-$header_bar_menu_toggle_label      = get_theme_mod('header-bar-menu-mobile-label',ttfmake_get_default('navigation-mobile-label'));
+$header_bar_menu_toggle_label	= get_theme_mod('header-bar-menu-mobile-label',ttfmake_get_default('header-bar-menu-mobile-label'));
 $header_bar_menu_toggle			= '<span class="menu-toggle">'.esc_html($header_bar_menu_toggle_label).'</span>';
-$header_bar_menu = wp_nav_menu(array(
+$header_bar_menu 				= wp_nav_menu(array(
 	'theme_location'  => 'header-bar',
 	'container_class' => 'header-bar-menu',
 	'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
@@ -21,8 +21,13 @@ $header_bar_menu = wp_nav_menu(array(
 	'fallback_cb'     => false,
 	'echo'            => false,
 ));
-$site_navigation_toggle_label      = get_theme_mod( 'navigation-mobile-label', ttfmake_get_default( 'navigation-mobile-label' ) );
+$site_navigation_toggle_label	= get_theme_mod( 'navigation-mobile-label', ttfmake_get_default( 'navigation-mobile-label' ) );
 $site_navigation_toggle			= '<span class="menu-toggle">'.esc_html($site_navigation_toggle_label).'</span>';
+$site_navigation				= wp_nav_menu(array(
+	'theme_location'	=> 'primary',
+	'container'			=> false,
+	'echo'				=> false,
+));
 ?>
 
 <header id="site-header" class="<?php echo esc_attr( ttfmake_get_site_header_class() ); ?>" role="banner">
@@ -76,13 +81,8 @@ $site_navigation_toggle			= '<span class="menu-toggle">'.esc_html($site_navigati
 
 			<nav id="site-navigation" class="site-navigation" role="navigation">
 				<a class="skip-link screen-reader-text" href="#site-content"><?php _e( 'Skip to content', 'make' ); ?></a>
-				<?php
-				echo $site_navigation_toggle;
-				wp_nav_menu(array(
-					'theme_location' => 'primary',
-					'container' => false,
-				));
-				?>
+				<?php echo $site_navigation_toggle; ?>
+				<?php echo $site_navigation; ?>
 			</nav>
 		</div>
 	</div>
