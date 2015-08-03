@@ -297,13 +297,13 @@ class ML_App {
 	public function make_setting_defaults($defaults){
 		return array_merge($defaults,array(
 			'header-bar-menu-mobile-label' => __('Quicklinks',TEXTDOMAIN),
-			'footer-jframework-footer' => true,
+			'footer-jframework-footer' => false,
 			'footer-custom-footer-file-path' => '',
-			'layout-blog-post-date-show-modified-date' => true,
-			'layout-archive-post-date-show-modified-date' => true,
-			'layout-search-post-date-show-modified-date' => true,
-			'layout-post-post-date-show-modified-date' => true,
-			'layout-page-post-date-show-modified-date' => true,
+			'layout-blog-post-date-show-modified-date' => false,
+			'layout-archive-post-date-show-modified-date' => false,
+			'layout-search-post-date-show-modified-date' => false,
+			'layout-post-post-date-show-modified-date' => false,
+			'layout-page-post-date-show-modified-date' => false,
 		));
 	}
 
