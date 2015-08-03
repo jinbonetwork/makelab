@@ -693,13 +693,13 @@
 .menu-inline-responsive(@makelab-menu-inline-responsive-item-height:@makelab-header-bar-height,@makelab-menu-inline-responsive-item-font-size:@makelab-menu-font-size){
 	.menu(@makelab-menu-inline-responsive-item-font-size);
 	.min(@makelab-menu-breakpoint,{
-		.menu-inline(@makelab-menu-inline-responsive-item-height);
+		.menu-inline(@makelab-menu-inline-responsive-item-height,@makelab-menu-inline-responsive-item-font-size);
 	});
 }
 
 .social-links {
 	.no-select;
-	.menu();
+	.menu(@makelab-font-size-small);
 	li {
 		&.external-link-square {
 			&.wiki a .fa:before {
