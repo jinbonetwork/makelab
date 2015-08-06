@@ -48,6 +48,7 @@ class ML_App {
 			'skrollr',
 			'notosans-subset',
 			'notosans-subset-black-and-thin',
+			'webfonts',
 			'jframework',
 			'maniprop.js',
 			'lazydo.js',
