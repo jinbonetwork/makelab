@@ -19,7 +19,7 @@ body.page-template-template-builder {
 //-----------------------------------------------------------------------------
 	.builder-section {
 		.clear;
-		.container-boxed;
+		.container-full;
 
 		// position -- for overlay
 		position: relative;
@@ -39,11 +39,13 @@ body.page-template-template-builder {
 		.builder-gallery-section-title,
 		.builder-banner-section-title {
 			display: none;
+			.container-boxed-nospacing;
 		}
 
 		// general section contents
 		.builder-section-content {
-			.row;
+			//.row;
+			.container-boxed-nospacing;
 			.builder-text-image {
 				.featured-figure;
 			}
@@ -57,9 +59,11 @@ body.page-template-template-builder {
 
 		// banner section
 		&.builder-section-banner {
-			.container-full;
 			.builder-banner-section-title {
 				.container-boxed-nospacing;
+			}
+			.builder-section-content {
+				.row;
 			}
 		}
 
