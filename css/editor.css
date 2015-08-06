@@ -14,7 +14,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "Nanum Gothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -2060,7 +2060,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "Nanum Gothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -2653,14 +2653,26 @@ form {
   padding: 0;
 }
 h1 {
-  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "Nanum Gothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Sans CJK KR Thin", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "Nanum Gothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans CJK KR Thin", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+h1 {
+  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans CJK KR Thin", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 input[type="number"] {
   -moz-appearance: textfield;
@@ -3248,7 +3260,7 @@ img.banner,
   color: #333333;
   margin: 0;
   font-weight: bold;
-  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "Nanum Gothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 32px;
 }
 .site-title a {
@@ -3542,7 +3554,8 @@ ol.ttfmake-list-dot li:before {
 }
 .jframework-global-footer .container .jframework-global-sitemap .jinbonet-sitemap dl.jinbonet-accounts dt {
   display: block;
-  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "Nanum Gothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 .jframework-global-footer .container .jframework-global-sitemap .jinbonet-sitemap dl.jinbonet-accounts dt a {
   font-size: 16px;

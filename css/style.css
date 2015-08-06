@@ -715,7 +715,7 @@ img.banner,
   color: #333333;
   margin: 0;
   font-weight: bold;
-  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "Nanum Gothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 32px;
 }
 .site-title a {
@@ -1043,7 +1043,7 @@ input,
 select,
 textarea {
   color: #333333;
-  font-family: "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "Nanum Gothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 pre,
@@ -5738,7 +5738,8 @@ div.sharedaddy:after {
 }
 .jframework-global-footer .container .jframework-global-sitemap .jinbonet-sitemap dl.jinbonet-accounts dt {
   display: block;
-  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "Nanum Gothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans CJK KR Black", "Apple SD Gothic Neo Medium", "NanumBarunGothic", "Malgun Gothic", "NanumGothic", "Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 .jframework-global-footer .container .jframework-global-sitemap .jinbonet-sitemap dl.jinbonet-accounts dt a {
   font-size: 16px;
