@@ -191,10 +191,9 @@ body.page-template-template-builder .builder-section.builder-section-banner .bui
   padding-left: 12px;
   padding-right: 12px;
   width: auto;
-  max-width: 1164px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1140px;
+  max-width: 1164px;
   padding: 0;
 }
 .container-boxed-nospacing:after {
@@ -213,6 +212,22 @@ body.page-template-template-builder .builder-section.builder-section-banner .bui
   margin-right: 0;
 }
 .container-full:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container-full-nospacing {
+  float: none;
+  clear: both;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: auto;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+.container-full-nospacing:after {
   content: '';
   display: block;
   clear: both;
@@ -3919,6 +3934,7 @@ body.page-template-template-builder .builder-section {
   max-width: none;
   margin-left: 0;
   margin-right: 0;
+  padding: 0;
   position: relative;
   margin-bottom: 24px;
   /*
@@ -3950,10 +3966,9 @@ body.page-template-template-builder .builder-section .builder-banner-section-tit
   padding-left: 12px;
   padding-right: 12px;
   width: auto;
-  max-width: 1164px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1140px;
+  max-width: 1164px;
   padding: 0;
 }
 body.page-template-template-builder .builder-section .builder-text-section-title:after,
@@ -3969,10 +3984,9 @@ body.page-template-template-builder .builder-section .builder-section-content {
   padding-left: 12px;
   padding-right: 12px;
   width: auto;
-  max-width: 1164px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1140px;
+  max-width: 1164px;
   padding: 0;
 }
 body.page-template-template-builder .builder-section .builder-section-content:after {
@@ -4084,10 +4098,9 @@ body.page-template-template-builder .builder-section.builder-section-banner .bui
   padding-left: 12px;
   padding-right: 12px;
   width: auto;
-  max-width: 1164px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1140px;
+  max-width: 1164px;
   padding: 0;
 }
 body.page-template-template-builder .builder-section.builder-section-banner .builder-banner-section-title:after {
@@ -5583,8 +5596,7 @@ div.sharedaddy:after {
   float: left;
   width: 100%;
   zoom: 1;
-  padding: 0 0 24px 0;
-  padding-top: 12px;
+  padding: 24px 0;
   background-color: #eeeeee;
   color: #333333;
   font-size: 13px;

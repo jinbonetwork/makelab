@@ -66,8 +66,8 @@
 .container-default {
 	float: none;
 	clear: both;
-	padding-left: (@grid-gutter-width / 2);
-	padding-right: (@grid-gutter-width / 2);
+	padding-left: (@makelab-grid-gutter-width / 2);
+	padding-right: (@makelab-grid-gutter-width / 2);
 	&:after {
 		content: '';
 		display: block;
@@ -83,7 +83,8 @@
 }
 .container-boxed-nospacing {
 	.container-boxed;
-	max-width: (@makelab-document-width - @grid-gutter-width);
+	//max-width: (@makelab-document-width - @makelab-grid-gutter-width);
+	max-width: @makelab-document-width;
 	padding: 0;
 }
 .container-full {
@@ -92,6 +93,10 @@
 	max-width: none;
 	margin-left: 0;
 	margin-right: 0;
+}
+.container-full-nospacing {
+	.container-full;
+	padding: 0;
 }
 .row {
 	.row;
@@ -103,8 +108,8 @@
 	position: relative;
 	min-height: 1px;
 	margin: 0;
-	padding-left:  (@grid-gutter-width / 2);
-	padding-right: (@grid-gutter-width / 2);
+	padding-left:  (@makelab-grid-gutter-width / 2);
+	padding-right: (@makelab-grid-gutter-width / 2);
 }
 .width(@span,@grid:@makelab-grid-columns){
 	width: percentage((@span / @grid));

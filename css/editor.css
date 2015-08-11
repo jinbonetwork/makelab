@@ -2737,10 +2737,9 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-left: 12px;
   padding-right: 12px;
   width: auto;
-  max-width: 1164px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1140px;
+  max-width: 1164px;
   padding: 0;
 }
 .container-boxed-nospacing:after {
@@ -2759,6 +2758,22 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-right: 0;
 }
 .container-full:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container-full-nospacing {
+  float: none;
+  clear: both;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: auto;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+.container-full-nospacing:after {
   content: '';
   display: block;
   clear: both;
@@ -3368,8 +3383,7 @@ ol.ttfmake-list-dot li:before {
   float: left;
   width: 100%;
   zoom: 1;
-  padding: 0 0 24px 0;
-  padding-top: 12px;
+  padding: 24px 0;
   background-color: #eeeeee;
   color: #333333;
   font-size: 13px;
