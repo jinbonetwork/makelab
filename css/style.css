@@ -4380,7 +4380,7 @@ body.page-template-template-builder .builder-section.builder-section-gallery .bu
   width: auto;
   height: 0;
   margin: 0;
-  padding: 0 0 100% 0;
+  padding: 0 0 0 0;
 }
 body.page-template-template-builder .builder-section.builder-section-gallery .builder-gallery-item .builder-gallery-image,
 body.page-template-template-builder .builder-section.builder-section-gallery .builder-gallery-item .builder-gallery-content {
@@ -4410,6 +4410,18 @@ body.page-template-template-builder .builder-section.builder-section-gallery .bu
   margin: 0;
   padding: 24px;
   text-align: center;
+}
+body.page-template-template-builder .builder-section.builder-section-gallery.builder-gallery-aspect-square .builder-gallery-item:after {
+  padding-bottom: 100%;
+}
+body.page-template-template-builder .builder-section.builder-section-gallery.builder-gallery-aspect-landscape .builder-gallery-item:after {
+  padding-bottom: 56.25%;
+}
+body.page-template-template-builder .builder-section.builder-section-gallery.builder-gallery-aspect-portrait .builder-gallery-item:after {
+  padding-bottom: 177.77777778%;
+}
+body.page-template-template-builder .builder-section.builder-section-gallery.builder-gallery-aspect-none .builder-gallery-item:after {
+  padding-bottom: 75%;
 }
 /*---------------------------------------------------------
  Text section: Columns (_pages.scss)
