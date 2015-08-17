@@ -70,10 +70,6 @@ body.page-template-default #site #site-content > .wrap:after,
 .site-footer .footer-widget-container:after,
 .site-footer .footer-widget-container:before,
 .site-footer .footer-widget-container:after,
-body.page-template-template-builder .builder-section.builder-section-banner .builder-section-content:before,
-body.page-template-template-builder .builder-section.builder-section-banner .builder-section-content:after,
-body.page-template-template-builder .builder-section.builder-section-banner .builder-section-content:before,
-body.page-template-template-builder .builder-section.builder-section-banner .builder-section-content:after,
 .infinite-footer-container:before,
 .infinite-footer-container:after,
 .page-template-template-builder-php .entry-content > .twitter-share:before,
@@ -128,8 +124,6 @@ body.page-template-default #site #site-content > .wrap:after,
 body.page-template-default #site #site-content > .wrap:after,
 .site-footer .footer-widget-container:after,
 .site-footer .footer-widget-container:after,
-body.page-template-template-builder .builder-section.builder-section-banner .builder-section-content:after,
-body.page-template-template-builder .builder-section.builder-section-banner .builder-section-content:after,
 .infinite-footer-container:after,
 .page-template-template-builder-php .entry-content > .twitter-share:after,
 .jframework-global-footer .container .jframework-global-sitemap .jinbonet-sitemap:after,
@@ -4109,10 +4103,20 @@ body.page-template-template-builder .builder-section.builder-section-banner .bui
   clear: both;
 }
 body.page-template-template-builder .builder-section.builder-section-banner .builder-section-content {
-  margin-left: -12px;
-  margin-right: -12px;
+  float: none;
+  clear: both;
+  padding-left: 12px;
+  padding-right: 12px;
   width: auto;
   max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+body.page-template-template-builder .builder-section.builder-section-banner .builder-section-content:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 body.page-template-template-builder .builder-section.builder-section-text .builder-text-column {
   float: left;
