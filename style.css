@@ -2,3 +2,185 @@
 Theme Name: Makelab
 Template: make
 */
+
+/* 첫 페이지 ********/
+/* 슬라이드 ****/
+#site #introduction a:link,
+#site #introduction a:visited,
+#site #introduction a:hover,
+#site #introduction a:active {
+	color: #333333;
+}
+#site #introduction .builder-banner-slide {
+	padding-bottom: 0 !important;
+	height: auto;
+
+}
+#site #introduction .builder-banner-content {
+	padding: 0;
+	position: static;
+	height: auto;
+
+}
+#site #introduction .builder-banner-inner-content {
+	max-width: 1140px;
+	color: #333333;
+	text-shadow: none;
+	font-family: "Noto Sans CJK KR Thin";
+	display: block;
+	position: static;
+	left: 0;
+	right: 0;
+	transform: none;
+	-wetkit-transform: none;
+	-ms-transform: none;
+	margin: 0 auto;
+}
+#site #introduction .builder-banner-inner-content:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+#site #introduction .builder-banner-content .subtitle {
+	font-size: 0.9em;
+	color: #DBA901
+}
+#site #introduction .builder-banner-content .title {
+	margin: 0;
+}
+#site #introduction .builder-banner-content .questions {
+	padding-top: 10px;
+	color: #DBA901;
+	text-decoration: underline; 
+}
+#site #introduction.builder-section-banner .cycle-prev,
+#site #introduction.builder-section-banner .cycle-next {
+	opacity: 0.3;
+}
+#site #introduction.builder-section-banner:hover .cycle-prev,
+#site #introduction.builder-section-banner:hover .cycle-next {
+	opacity: 1;
+}
+#site #introduction.builder-section-banner .cycle-prev:before,
+#site #introduction.builder-section-banner .cycle-next:before {
+	color: #333333;
+}
+
+/* 책 표지 ****/
+#site #covers {
+	display: none;
+}
+#site #introduction .cover-wrapper {
+	text-align: center;
+}
+#site #introduction .cover-list {
+	display: inline-block;
+	height: 70px; /* media */
+	text-align: center; /* media */
+	margin-top: 15px;
+}
+#site #introduction .cover-list:after {
+	content: '';
+	display: block;
+	both: clear;
+}
+#site #introduction .cover-list > div + div {
+	margin-left: 8px; /* media */
+}
+#site #introduction .cover-list .cover {
+	/*display: inline-block;*/ float: left;
+	overflow: hidden;
+	width: 40px; /* media */
+	height: 100%;
+}
+#site #introduction .cover-list .cover:nth-child(5) {
+	display: none; /* media */
+}
+#site #introduction .cover-list .margin {
+	height: 20%;
+	color: transparent;
+	font-size: 0.7em; /* media */
+	text-align: center;
+}
+#site #introduction .cover-list .margin.marked {
+	color: #cccccc;
+}
+#site #introduction .cover-list .cover .cover-image {
+	width: 100%;
+	height: 80%;
+	background-color: #cccccc;
+}
+#site #introduction .cover-list .cover .cover-image img {
+	width: 100%;
+}
+#site #introduction .cover-list .bracket {
+	width: 10px; /* media */
+	height: 100%;
+	/*display: inline-block;*/ float: left;
+}
+#site #introduction .cover-list .bracket .border {
+	height: 80%;
+	border: 6px solid #cccccc; /* media */
+}
+#site #introduction .cover-list .left.bracket .border {
+	border-right: 0;
+}
+#site #introduction .cover-list .right.bracket .border {
+	border-left: 0;
+}
+
+/* 스크린 폭에 따른  처리 ****/
+@media screen and (min-width: 360px) {
+	#site #introduction .cover-list .cover:nth-child(5) {
+		display: block;
+	}
+}
+@media screen and (min-width: 600px) {
+	#site #introduction .builder-banner-content {
+		padding: 20px 0 20px 0;
+	}
+	#site #introduction .builder-banner-content .image {
+		float: left;
+		width: 50%;
+		padding-right: 12px;
+	}
+	#site #introduction .builder-banner-content .image img{
+		margin: 0;
+	}
+	#site #introduction .builder-banner-content .header {
+		float: right;
+		width: 50%;
+		padding-bottom: 12px;
+	}
+}
+@media screen and (min-width: 960px) {
+	#site #introduction .builder-banner-content {
+		font-size: 1.2em;
+	}
+	#site #introduction .builder-banner-content .image {
+		padding-right: 3%;
+	}
+	#site #introduction.builder-section-banner .cycle-prev:before,
+	#site #introduction.builder-section-banner .cycle-next:before {
+		font-size: 50px;
+	}
+	#site #introduction .cover-list {
+		height: 105px;
+	}
+	#site #introduction .cover-list .cover {
+		width: 65px;
+	}
+	#site #introduction .cover-list .bracket {
+		width: 20px;
+	}
+	#site #introduction .cover-list .bracket .border {
+		border-width: 10px;
+	}
+	#site #introduction .cover-list .margin {
+		font-size: 0.9em;
+	}
+	#site #introduction .cover-list > div + div {
+		margin-left: 20px;
+	}
+
+}

@@ -1,3 +1,5 @@
 custom/*
 !custom/.dummy
 !custom/footer-sample.html
+!custom/footer-rights.html
+!custom/footer-digital.html
